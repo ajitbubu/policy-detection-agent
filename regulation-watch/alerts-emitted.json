@@ -12,5 +12,91 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO final Storage and Access Technologies guidance (DUAA exemptions)",
+    "publishedDate": "2026-04-29",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-09/RW-2026-05-09-T2-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-02",
+    "jurisdiction": "European Union",
+    "instrument": "EU Digital Omnibus proposal (Articles 88a+88b) — trilogue progress update",
+    "publishedDate": "2025-11-19",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-09/RW-2026-05-09-T2-02.md"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-03",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA amendment (promulgated 2026-03-10, effective 2026-09-11) — 10% revenue fines + CEO accountability",
+    "publishedDate": "2026-03-10",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-09/RW-2026-05-09-T2-03.md"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-LOW-01",
+    "jurisdiction": "Japan",
+    "instrument": "APPI amendment enacted 2026-04-14 — cookie IDs as contactable personally referable info",
+    "publishedDate": "2026-04-14",
+    "severity": "LOW",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "digestBatch": "weekly-tier2-2026-05-09",
+    "scanType": "tier2-weekly"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-LOW-02",
+    "jurisdiction": "United States (framework)",
+    "instrument": "IAB GPP new state sections: MD, IN, KY, RI finalized to production",
+    "publishedDate": "2026-01-01",
+    "severity": "LOW",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "digestBatch": "weekly-tier2-2026-05-09",
+    "scanType": "tier2-weekly"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-LOW-03",
+    "jurisdiction": "Brazil",
+    "instrument": "ANPD full independence + advertising/profiling enforcement priority",
+    "publishedDate": "2026-02-01",
+    "severity": "LOW",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "digestBatch": "weekly-tier2-2026-05-09",
+    "scanType": "tier2-weekly"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-LOW-04",
+    "jurisdiction": "New Zealand",
+    "instrument": "Privacy Amendment Act 2025 — IPP 3A effective 2026-05-01",
+    "publishedDate": "2026-05-01",
+    "severity": "LOW",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "digestBatch": "weekly-tier2-2026-05-09",
+    "scanType": "tier2-weekly"
+  },
+  {
+    "alertId": "RW-2026-05-09-T2-LOW-05",
+    "jurisdiction": "Canada (federal)",
+    "instrument": "Bill C-27 (CPPA) lapsed — federal privacy reform indefinitely deferred",
+    "publishedDate": "2025-01-01",
+    "severity": "LOW",
+    "sentAt": "2026-05-09T00:00:00Z",
+    "digestBatch": "weekly-tier2-2026-05-09",
+    "scanType": "tier2-weekly"
   }
 ]
