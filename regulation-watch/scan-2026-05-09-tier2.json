@@ -1,0 +1,67 @@
+{
+  "scanDate": "2026-05-09",
+  "scanType": "weekly-tier2",
+  "lookbackStart": "2026-04-09",
+  "lookbackEnd": "2026-05-09",
+  "tiersScanned": ["Tier 2", "Tier 3 (frameworks)"],
+  "sourcesAttempted": [
+    { "source": "Japan PPC (ppc.go.jp)", "status": "fetched-via-search", "note": "APPI amendment enacted 2026-04-14; written up as RW-2026-05-09-T2-LOW-01" },
+    { "source": "Singapore PDPC", "status": "fetched-via-search", "note": "NRIC authentication change effective 2026-12-31 is not cookies/consent-touching; no trigger" },
+    { "source": "Thailand PDPC", "status": "fetched-via-search", "note": "August 2025 fines are pre-window; iris-scan enforcement (Nov 2025) is not cookies-touching; no trigger" },
+    { "source": "Australia OAIC / Attorney-General", "status": "fetched-via-search", "note": "Privacy and Other Legislation Amendment Act 2024 (Royal Assent 2024-12-10) pre-window; automated-decision-making provisions Dec 2026 on watch list; no new trigger this cycle" },
+    { "source": "New Zealand OPC (privacy.org.nz)", "status": "fetched-via-search", "note": "Privacy Amendment Act 2025, IPP 3A effective 2026-05-01; written up as RW-2026-05-09-T2-LOW-04" },
+    { "source": "Korea PIPC (pipc.go.kr)", "status": "fetched-via-search", "note": "PIPA amendment promulgated 2026-03-10, effective 2026-09-11; written up as RW-2026-05-09-T2-03 (MEDIUM)" },
+    { "source": "China CAC (cac.gov.cn)", "status": "fetched-via-search", "note": "No new PIPL regulation in window; 2026 enforcement intensity increase is not a trigger event" },
+    { "source": "UAE DIFC / TDRA", "status": "fetched-via-search", "note": "Child Digital Safety Law (Federal Decree-Law No. 26/2025) is cookies-adjacent for under-18 profiling; primary source not directly fetched; recommend Tier 1 check next week" },
+    { "source": "South Africa Information Regulator", "status": "fetched-via-search", "note": "No in-window cookie/consent enforcement or guidance; steady state" },
+    { "source": "Brazil ANPD (gov.br/anpd)", "status": "fetched-via-search", "note": "ANPD full independence Feb 2026 + advertising enforcement priority; written up as RW-2026-05-09-T2-LOW-03" },
+    { "source": "Canada OPC / CAI Quebec", "status": "fetched-via-search", "note": "C-27 lapsed (Jan 2025 prorogation); written up as RW-2026-05-09-T2-LOW-05" },
+    { "source": "EU-US DPF / SCCs", "status": "fetched-via-search", "note": "No in-window update to DPF, UK Extension, or SCC guidance touching consent layer" },
+    { "source": "IAB Tech Lab GPP", "status": "fetched-via-search", "note": "MD, IN, KY, RI state sections finalized to production; written up as RW-2026-05-09-T2-LOW-02" },
+    { "source": "ICO (ico.org.uk)", "status": "fetched-via-search", "note": "Final SAT guidance published 2026-04-29 (deferred from Tier 1 daily scan per prior scan-2026-05-09.json recommendation); written up as RW-2026-05-09-T2-01 (MEDIUM)" },
+    { "source": "EU Digital Omnibus (EUR-Lex 52025PC0837)", "status": "fetched-via-search", "note": "Baseline item 10 promoted from LOW to MEDIUM: Council mandate 2026-03-13, EP position 2026-03-26, second trilogue 2026-04-28; written up as RW-2026-05-09-T2-02 (MEDIUM)" },
+    { "source": "Mexico INAI / Secretariat of Anti-Corruption", "status": "fetched-via-search", "note": "LFPDPPP reform effective 2025-03-21 is pre-window (>30-day dedupe); no new trigger" }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-05-09-T2-01",
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO final Storage and Access Technologies guidance",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-09/RW-2026-05-09-T2-01.md",
+      "confidence": "HIGH"
+    },
+    {
+      "alertId": "RW-2026-05-09-T2-02",
+      "jurisdiction": "European Union",
+      "instrument": "EU Digital Omnibus — trilogue progress (promoted from LOW baseline)",
+      "severity": "MEDIUM",
+      "publishedDate": "2025-11-19",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-09/RW-2026-05-09-T2-02.md",
+      "confidence": "MEDIUM"
+    },
+    {
+      "alertId": "RW-2026-05-09-T2-03",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA amendment — 10% revenue fines + CEO accountability",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-03-10",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-09/RW-2026-05-09-T2-03.md",
+      "confidence": "HIGH"
+    }
+  ],
+  "lowItemsAddedToDigest": [
+    "RW-2026-05-09-T2-LOW-01 — Japan APPI amendment",
+    "RW-2026-05-09-T2-LOW-02 — IAB GPP MD/IN/KY/RI sections",
+    "RW-2026-05-09-T2-LOW-03 — Brazil ANPD independence",
+    "RW-2026-05-09-T2-LOW-04 — New Zealand IPP 3A",
+    "RW-2026-05-09-T2-LOW-05 — Canada C-27 lapsed"
+  ],
+  "highestSeverity": "MEDIUM",
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on ico.org.uk, eur-lex.europa.eu, pipc.go.kr, and all official government domains. All primary source citations are link-verified-by-reference via >=2 independent secondary sources per alert. Counsel should click through to primary sources before any binding action.",
+    "UAE Child Digital Safety Law (Federal Decree-Law No. 26/2025) is potentially cookies-relevant for under-18 profiling prohibition. Primary source not confirmed. Recommend adding to Tier 1 daily scan list for next week.",
+    "EU Digital Omnibus trilogue conclusion expected 2026-05-13 (third scheduled trilogue). If political agreement reached, this item should be immediately re-assessed for severity promotion to HIGH."
+  ]
+}
