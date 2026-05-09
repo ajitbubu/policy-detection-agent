@@ -282,6 +282,27 @@ If any check fails, do not send. Fix or downgrade to digest.
 
 ---
 
+## DELIVERY (post-alert routing) — standing cadence
+
+Confirmed by Ajit Sahu, Director of Engineering, on 2026-05-09. Locked configuration: see `~/datasafeguard/regulation-watch/jira-config.json`. Working folder for all state and alert files: `~/datasafeguard/regulation-watch/`.
+
+For every alert that passes SELF-CHECK and is not a duplicate per `alerts-emitted.json` (30-day dedupe window):
+
+- **Severity = CRITICAL or HIGH**
+  - Email the full OUTPUT FORMAT alert to **asahu@datasafeguard.ai**
+  - Create a Jira story under epic **IDP-11488** (project **IDP**) with title `[<SEVERITY>] <jurisdiction> — <short instrument>`, the full alert in the description, labels `privacy-regulation-watch` + jurisdiction code (e.g. `EU`, `UK`, `US-CA`, `IN`), priority Highest (CRITICAL) / High (HIGH)
+- **Severity = MEDIUM**
+  - Email the full OUTPUT FORMAT alert to **asahu@datasafeguard.ai**
+  - No Jira story
+- **Severity = LOW**
+  - Append to `~/datasafeguard/regulation-watch/digest-pending.md`. The Monday weekly run emails the consolidated digest and clears that file.
+
+**Subagent role boundary:** the privacy-regulation-watcher SUBAGENT does the scan, produces alert files in `~/datasafeguard/regulation-watch/alerts/<YYYY-MM-DD>/<alertId>.md` (one file per alert, exact OUTPUT FORMAT), and returns a JSON summary. The **orchestrator (main Claude Code thread)** has the Atlassian and email MCP tools and is responsible for: creating Jira issues, drafting/sending email, updating `alerts-emitted.json`, and appending `regulation-watch.log`. The subagent does not have email or Jira tools and must not pretend to.
+
+Each emission appended to `alerts-emitted.json` carries `{alertId, jurisdiction, instrument, publishedDate, severity, sentAt, jiraKey?, emailDraftId?}`.
+
+---
+
 ## INITIAL TASK ON ACTIVATION
 
 On first run, output:

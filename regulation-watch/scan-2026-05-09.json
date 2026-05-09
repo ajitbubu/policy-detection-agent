@@ -1,0 +1,77 @@
+{
+  "scanDate": "2026-05-09",
+  "scanType": "daily-tier1",
+  "lookbackStart": "2026-05-02",
+  "lookbackEnd": "2026-05-09",
+  "tiersScanned": ["Tier 1"],
+  "sourcesAttempted": [
+    { "source": "EDPB (edpb.europa.eu)", "status": "fetched-via-search", "note": "April 2026 plenary outputs reviewed; nothing in window touching cookies/consent/CMP" },
+    { "source": "CNIL (cnil.fr)", "status": "fetched-via-search", "note": "no in-window cookie sanction or guidance; 2025 SHEIN/Google fines already in baseline" },
+    { "source": "ICO (ico.org.uk)", "status": "fetched-via-search", "note": "Final SAT guidance was published 2026-04-29 — outside 7-day window; logged under candidatesConsideredButRejected. WebFetch on ico.org.uk returned 403." },
+    { "source": "Garante (garanteprivacy.it)", "status": "fetched-via-search", "note": "no in-window cookie sanction surfaced" },
+    { "source": "AEPD (aepd.es)", "status": "fetched-via-search", "note": "no in-window cookie action surfaced" },
+    { "source": "BfDI / DSK (Germany)", "status": "fetched-via-search", "note": "no in-window federal-level action surfaced" },
+    { "source": "DPC Ireland (dataprotection.ie)", "status": "fetched-via-search", "note": "no in-window cookie decision surfaced" },
+    { "source": "EUR-Lex", "status": "fetched-via-search", "note": "no in-window cookie/ePrivacy publication" },
+    { "source": "UK Parliament", "status": "fetched-via-search", "note": "no in-window legislative event touching consent" },
+    { "source": "CPPA (cppa.ca.gov)", "status": "fetched-via-search", "note": "Apr 30–May 1 board meeting reviewed adequacy with EU; no cookie/consent rulemaking adopted in window. DROP-Audits preliminary comment period closed 2026-05-07 — pre-rulemaking, not a trigger event. WebFetch on cppa.ca.gov returned 403 historically." },
+    { "source": "California AG (oag.ca.gov)", "status": "fetched-via-search", "note": "no in-window enforcement announcement on cookies/consent" },
+    { "source": "Colorado AG (coag.gov)", "status": "fetched-via-search", "note": "no in-window enforcement announcement" },
+    { "source": "Connecticut AG (portal.ct.gov/ag)", "status": "fetched-via-search", "note": "no in-window enforcement announcement" },
+    { "source": "Texas AG (texasattorneygeneral.gov)", "status": "fetched-via-search", "note": "ongoing enforcement initiative; no in-window action surfaced" },
+    { "source": "Oregon DOJ", "status": "fetched-via-search", "note": "no in-window action surfaced" },
+    { "source": "Maryland AG", "status": "fetched-via-search", "note": "no in-window action surfaced" },
+    { "source": "NJ Consumer Affairs", "status": "fetched-via-search", "note": "no in-window action surfaced" },
+    { "source": "FTC (ftc.gov)", "status": "fetched-via-search", "note": "Kochava stipulated order signed 2026-05-04 — in-window; written up as RW-2026-05-09-01. WebFetch on ftc.gov returned 403; substantive facts corroborated across ≥4 independent secondary sources." },
+    { "source": "MeitY / DPDP Board (India)", "status": "fetched-via-search", "note": "no in-window notification; Phase II window remains 2026-11-13. WebFetch on meity.gov.in historically 403." },
+    { "source": "ANPD (Brazil)", "status": "fetched-via-search", "note": "no in-window cookie resolution surfaced" },
+    { "source": "OPC Canada / CAI Quebec", "status": "fetched-via-search", "note": "no in-window enforcement on consent/cookies surfaced" },
+    { "source": "CJEU / EU appellate", "status": "fetched-via-search", "note": "no in-window cookie/consent ruling. February 2026 CJEU ruling on judicial review of EDPB Art. 65 decisions is pre-window and not directly cookies-touching." },
+    { "source": "IAB Europe / IAB Tech Lab", "status": "fetched-via-search", "note": "no framework version update in window; TCF v2.3 deadline 2026-02-28 already in baseline" }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-05-09-01",
+      "jurisdiction": "United States (federal)",
+      "instrument": "FTC enforcement — stipulated order in FTC v. Kochava, Inc. (D. Idaho, 2:22-cv-00377-BLW)",
+      "severity": "HIGH",
+      "publishedDate": "2026-05-04",
+      "filePath": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Material federal enforcement action setting de-facto consent standard for sensitive-location data resale (Trigger #5: precedent-setting enforcement). Requires affirmative express consent + supplier-assessment program; 90-day deidentification of unconsented historical data."
+    }
+  ],
+  "candidatesConsideredButRejected": [
+    {
+      "item": "ICO final 'Storage and Access Technologies' (SAT) guidance, published 2026-04-29",
+      "rejectionReason": "publication-date-outside-7-day-window — published 10 days before scan date (2026-04-29 vs. lookback start 2026-05-02). Operating-prompt rule: flag older items only if 'binding effective-date crossing or enforcement action.' SAT guidance is interpretive DPA guidance, not a law commencement or enforcement action. Strongly recommend the orchestrator surface this on the next weekly Tier-2 / digest cycle as it is substantively material (new sub-chapters, post-DUAA examples) and would have been picked up by a Tier-1 daily scan run on 2026-04-29 or 2026-04-30."
+    },
+    {
+      "item": "CPPA Board Meeting 2026-04-30 to 2026-05-01 (reviewed EU-US adequacy)",
+      "rejectionReason": "speech-and-discussion-not-binding — board meeting reviewed adequacy considerations but adopted no rulemaking touching cookies/consent in this window. Trigger rules exclude non-binding regulator discussion."
+    },
+    {
+      "item": "CPPA preliminary comment period for DROP audits (closed 2026-05-07)",
+      "rejectionReason": "pre-rulemaking-procedural — closure of a preliminary comment invitation is not a regulatory act under Trigger #1–#9. The Delete Act and DROP itself are already in baseline."
+    },
+    {
+      "item": "EDPB April 2026 plenary outputs (Guidelines 1/2026 on scientific research; Europrivacy seal opinions; anonymisation team formation)",
+      "rejectionReason": "pre-window-and-out-of-scope — pre-scan-window (April 2026); none of the adopted items materially touch cookies/consent/CMP. Anonymisation guideline progress is a watch item for Tier-1 weekly digest."
+    },
+    {
+      "item": "Speculative law-firm '2026 enforcement outlook' pieces (Wiley, Holland & Knight, Arent Fox Schiff, OneTrust, etc.)",
+      "rejectionReason": "opinion-piece-not-binding — secondary commentary on enforcement priorities, not a regulatory event."
+    },
+    {
+      "item": "FTC v. Match/OkCupid action (March 2026)",
+      "rejectionReason": "duplicate-of-baseline-or-pre-window — pre-scan-window (March 2026); should have been picked up at activation if material. Recommend orchestrator review whether to backfill."
+    }
+  ],
+  "highestSeverity": "HIGH",
+  "runDurationSeconds": 248,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on ftc.gov primary URLs in this run, consistent with the standing operational caveat documented in the baseline. Substantive facts in alert RW-2026-05-09-01 are link-verified-by-reference and corroborated across ≥4 independent primary-tier secondary sources. Counsel should click through and verify the FTC press release and stipulated-order PDF before any externally-binding action.",
+    "WebFetch returned HTTP 403 on ico.org.uk; ICO SAT-guidance item was therefore confirmed via search-indexed news pages only.",
+    "First daily scan after activation: there are no prior daily-scan results to dedupe against (alerts-emitted.json was empty). If the orchestrator wants the ICO 2026-04-29 SAT guidance and FTC v. Match/OkCupid (March 2026) covered, those should be surfaced as a one-time activation-backfill alert pair, not via the daily-tier1 cadence — they fell into the gap between the baseline run (2026-05-09) and this first daily scan window."
+  ]
+}

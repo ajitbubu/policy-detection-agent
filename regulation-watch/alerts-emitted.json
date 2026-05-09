@@ -1,0 +1,16 @@
+[
+  {
+    "alertId": "RW-2026-05-09-01",
+    "jurisdiction": "United States (federal)",
+    "instrument": "FTC v. Kochava stipulated order — sensitive-location data",
+    "publishedDate": "2026-05-04",
+    "severity": "HIGH",
+    "sentAt": "2026-05-09T18:48:37Z",
+    "jiraKey": "IDP-11489",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11489",
+    "emailDraftId": "r-8257231129572050191",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  }
+]
