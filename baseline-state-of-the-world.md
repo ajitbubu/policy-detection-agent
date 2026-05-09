@@ -1,182 +1,182 @@
-# Baseline State of the World — Cookies & Consent Regulation
-
-**Prepared by:** Privacy Regulation Intelligence Agent (initial activation)
-**For:** Ajit, Director of Engineering, DataSafeguard — ID-PRIVACY®
-**Date generated:** 2026-05-09
+# Baseline State-of-the-World — Cookies & Consent Regulation
+**Agent:** Privacy Regulation Intelligence Agent for ID-PRIVACY®
+**Run date:** 2026-05-09
 **Window covered:** 2026-05-09 → 2027-05-09 (next 12 months)
-**Method:** Web search + targeted source verification. WebFetch was blocked (HTTP 403) for many official domains in this run; primary URLs are listed as surfaced in indexed search results and labelled accordingly. Each item below should be re-verified by counsel before any code change is shipped.
-
-Items are ordered by combined **severity × imminence** for an ID-PRIVACY-relevant CMP build. This is a watchlist, not legal advice.
+**For:** Director of Engineering, DataSafeguard
 
 ---
 
-## 1. IAB Europe TCF v2.3 — mandatory CMP transition
+## Preamble — verification methodology and caveats
 
-- **Jurisdiction:** EU/EEA (industry framework, applied across all 27 EU MS + UK adopters)
-- **Instrument:** IAB Europe Transparency & Consent Framework v2.3 (Policies and Technical Specifications)
-- **Issuing body:** IAB Europe
-- **Published / Announced:** 2025-06-19
-- **Effective (mandatory):** **2026-02-28** (already past — but enforcement, validator sweeps, and Google certification revalidation are ongoing through 2026)
-- **Primary source URL:** https://iabeurope.eu/all-you-need-to-know-about-the-transition-to-tcf-v2-3/ (IAB Europe official; verified via search index, WebFetch was blocked)
-- **What changed / why it matters:** TCF 2.3 introduces a mandatory **Disclosed Vendors** segment in the TC string and tightens UI/transparency requirements (vendor counts on layer 1, plain-language purpose examples, weekly Global Vendor List sync, bitfield consistency between UI and string). Google has confirmed its DSPs accept TCF 2.3 strings as of 2025-10-17 and will treat 2.2 strings as invalid post-deadline — meaning publishers running stale CMPs lose monetization. Automated IAB Europe validators are actively sweeping CMP implementations and can revoke certification.
-- **Severity:** **HIGH** (revenue / certification exposure for any customer relying on TCF; in-window enforcement)
-- **Confidence:** **HIGH** — IAB Europe published timeline; Google alignment confirmed by multiple secondary sources.
+- All items below were surfaced and cross-checked via **WebSearch** against multiple secondary sources (law-firm trackers, regulator press summaries, IAPP). URLs cited as "Primary source" are the canonical regulator / legislature / framework publisher pages reported by those secondary sources.
+- **WebFetch was blocked (HTTP 403) on every official domain attempted in this run** (cppa.ca.gov, meity.gov.in, edpb.europa.eu, ico.org.uk, iabeurope.eu, privacy.ca.gov). I therefore could not directly retrieve and parse the linked primary pages; URLs are reported as published by reputable secondary sources but should be treated as **link-verified by reference, not by direct fetch**. Engineering / counsel should click through to confirm before any binding action.
+- Where only secondary reporting exists with no clearly published primary text, the item is labeled **SECONDARY — pending primary confirmation**.
+- Severity rubric applied per the operating prompt (CRITICAL / HIGH / MEDIUM / LOW). Imminence is measured against today (2026-05-09). Confidence is HIGH/MEDIUM/LOW with a one-line rationale.
+- This is a baseline scan, not a per-change ALERT. It is **not** a substitute for legal review.
+
+Ordering: combined severity × imminence (T-minus). Items with active enforcement consequences in 2026 ranked first.
 
 ---
 
-## 2. EU Digital Omnibus — proposed GDPR Article 88a (cookies into GDPR)
+## 1. IAB TCF v2.3 — mandatory adoption deadline 28 February 2026 (PAST — non-compliant strings now invalid)
 
-- **Jurisdiction:** EU (proposal stage; will apply to all controllers offering goods/services in EU)
-- **Instrument:** Digital Omnibus Package — proposes new GDPR Articles 88a (cookies/terminal-equipment access) and 88b (machine-readable consent signals)
-- **Issuing body:** European Commission; co-decision by Parliament and Council
-- **Published:** 2025-11-19 (Commission proposal)
-- **Effective:** Article 88a → 6 months after entry into force; Article 88b → 24 months after entry into force. Adoption expected mid-to-late 2026 under ordinary legislative procedure (could be accelerated by urgent procedure)
-- **Enforcement:** TBD — depends on adoption
-- **Primary source URL:** https://digital-strategy.ec.europa.eu/en/faqs/digital-package (Commission Digital Package FAQ, surfaced in search; SECONDARY confirmation via Reed Smith, Bird & Bird, Taylor Wessing, BEUC briefings)
-- **What changed / why it matters:** Folds cookie/terminal-storage rules out of the ePrivacy Directive and into the GDPR. Mandates **single-click refusal**, **6-month re-prompt suppression** after a refusal, a closed list of exemptions (transmission, expressly-requested service, aggregated audience measurement, security), and machine-readable browser-level consent signalling. Direct CMP UX, signal handling, and cache/state implications across every EU tenant.
-- **Severity:** **HIGH** (transformational for CMP UX and signal handling, but *not* yet enacted; preparatory work only at this stage)
-- **Confidence:** **MEDIUM** — proposal text is public and stable, but final form, scope of Article 88b, and timeline are subject to trilogue. Track monthly.
+- **Jurisdiction:** EU/EEA + UK (industry framework; binding on every CMP claiming TCF compliance)
+- **Instrument + citation:** IAB Europe Transparency & Consent Framework v2.3 Policies & Technical Specifications (released 19 June 2025)
+- **Publication date:** 2025-06-19
+- **Effective / enforcement date:** 2026-02-28 — TC strings created on/after this date without the `disclosedVendors` segment are invalid; ad requests fall back to "Limited Ads"
+- **Primary source URL:** https://iabeurope.eu/all-you-need-to-know-about-the-transition-to-tcf-v2-3/  (status: link-verified-by-reference; WebFetch blocked)
+- **What changed and why it matters:** TCF v2.3 makes the Disclosed Vendors segment mandatory and signed, so vendors can technically prove they were actually disclosed to the user. CMPs that did not migrate by 28 Feb 2026 emit invalid strings — programmatic revenue for downstream publishers reportedly drops >50%. This is now a remediation matter, not forward planning.
+- **Severity:** **CRITICAL** — deadline already passed; any TCF-claiming customer not on v2.3 today is shipping invalid signals.
+- **Confidence:** HIGH — IAB Europe published spec; deadline corroborated by Didomi, OneTrust, Usercentrics, Cookiebot.
 
 ---
 
-## 3. UK DUAA 2025 — PECR amendments + new ICO guidance
+## 2. California CCPA Regulations — ADMT, Risk Assessments, Cybersecurity Audits — effective 1 January 2026 (LIVE)
+
+- **Jurisdiction:** California, USA
+- **Instrument + citation:** CPPA final regulations adopted 24 July 2025; OAL approval 22 September 2025; CCRC § 7000 et seq. amendments
+- **Publication date:** 2025-09-22 (filed with Secretary of State)
+- **Effective date:** 2026-01-01 (regulations in force)
+- **Enforcement / staggered deadlines:** Risk assessments — pre-existing processing must be assessed by 2027-12-31; ADMT consumer rights — 2027-01-01; first cybersecurity audit certifications — 2028-04-01 (>$100M revenue), 2029-04-01 ($50–100M), 2030-04-01 (<$50M)
+- **Primary source URL:** https://cppa.ca.gov/regulations/ccpa_updates.html  (status: link-verified-by-reference; WebFetch blocked)
+- **What changed and why it matters:** Adds enforceable risk-assessment, ADMT opt-out / access, and annual cybersecurity-audit obligations on top of CCPA/CPRA. For CMPs, the ADMT opt-out interacts with the existing "Do Not Sell or Share" / Limit Use of SPI flow and may need to be surfaced as a distinct preference; risk-assessment obligations require evidence the CMP is generating (consent records, vendor disclosures).
+- **Severity:** **HIGH** — code/configuration change required for ADMT surface; record-keeping changes required for audits; enforcement window for ADMT consumer rights opens 2027-01-01.
+- **Confidence:** HIGH — CPPA press release, OAL filing, and uniform reporting from Skadden, Wiley, Greenberg Traurig, Alston & Bird.
+
+---
+
+## 3. UK Data (Use and Access) Act 2025 — PECR cookie reforms — commenced 5 February 2026 (LIVE)
 
 - **Jurisdiction:** United Kingdom
-- **Instrument:** Data (Use and Access) Act 2025 (DUAA), amending PECR; ICO Guidance on Storage and Access Technologies (final 2026-04-29)
-- **Issuing body:** UK Parliament; Information Commissioner's Office
-- **Published:** Royal Assent 2025-06-19
-- **Effective:** Key data-protection / PECR provisions: **2026-02-05**. Mandatory data-protection complaints procedure: **2026-06-19**.
-- **Enforcement:** Live as of 2026-02-05; PECR fines now uplifted to UK GDPR ceilings (£17.5m / 4% global turnover)
-- **Primary source URL:** https://www.legislation.gov.uk/ukpga/2025/18/contents (legislation.gov.uk, verified via search; WebFetch blocked) and https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/ (ICO official)
-- **What changed / why it matters:** Three new categories of cookies become **exempt from prior consent** (statistical/audience-measurement-only first-party, UI personalisation/preferences, emergency assistance) — alongside pre-existing strictly-necessary. CMPs must reclassify many analytics cookies that were previously consent-gated, AND add the operational complaints workflow by June. Fine ceiling increases ~35× (£500k → £17.5m).
-- **Severity:** **HIGH** (in-window, live, cookie classification + audit trail changes)
-- **Confidence:** **HIGH** — Royal Assent confirmed, commencement order published, ICO guidance final.
+- **Instrument + citation:** Data (Use and Access) Act 2025 (c. 18), Royal Assent 19 June 2025; commencement regulations bringing key provisions into force 5 Feb 2026
+- **Publication date:** 2025-06-19 (Royal Assent)
+- **Effective date:** 2026-02-05 for cookie/PECR amendments
+- **Enforcement date:** Immediate from 5 Feb 2026; new £17.5M / 4% global turnover PECR fine ceiling now applicable. Mandatory complaints procedure from 19 June 2026.
+- **Primary source URL:** https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/the-data-use-and-access-act-2025-what-does-it-mean-for-organisations/  (status: link-verified-by-reference; WebFetch blocked)
+- **What changed and why it matters:** Three new cookie consent exemptions are now live in the UK: (1) first-party-only statistical/analytics cookies, (2) appearance/functionality customisation cookies, (3) emergency-assistance cookies. PECR fine ceiling increased from £500k to UK-GDPR levels. CMPs should expose UK-specific rule sets so these categories can be deployed without a consent gate while remaining gated in the EU.
+- **Severity:** **HIGH** — divergence between UK and EU rule sets is now substantive; tenants targeting UK can legitimately reduce banner friction, but only if jurisdiction-routing is correct.
+- **Confidence:** HIGH — ICO published guidance; Clifford Chance, Mayer Brown, Stevens & Bolton, Moore Barlow, Berry Smith all corroborate the 5 Feb 2026 commencement.
 
 ---
 
-## 4. India DPDP Act + Rules — staged commencement
+## 4. India DPDP Act + DPDP Rules 2025 — phased enforcement; Phase II 13 November 2026 (Consent Managers)
 
 - **Jurisdiction:** India
-- **Instrument:** Digital Personal Data Protection Act, 2023 + Digital Personal Data Protection Rules, 2025
-- **Issuing body:** Ministry of Electronics and Information Technology (MeitY); Data Protection Board of India (DPBI)
-- **Published:** Rules notified 2025-11-13 (Gazette 2025-11-14)
-- **Effective:** Three-phase rollout — Phase 1 (definitions, Board): 2025-11-14 (already live); **Phase 2 — Rule 4 Consent Managers: 2026-11-14** (in window); **Phase 3 — substantive obligations including notice & consent: 2027-05-13** (just outside 12-month window but customer prep starts now)
-- **Enforcement:** DPBI begins functioning 2025-11-14; substantive enforcement aligns with Phase 3
-- **Primary source URL:** https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa (MeitY official, surfaced in search; WebFetch blocked) — also https://www.dpdpa.com/DPDP_Rules_2025_English_only.pdf (mirror copy of gazetted rules)
-- **What changed / why it matters:** Introduces a **registered Consent Manager** intermediary model — a regulated entity that gives data principals a single interface to grant, manage, review, and withdraw consent across multiple Data Fiduciaries. Notice content is prescriptive (itemised data, specific purpose, direct withdrawal/complaint link). For ID-PRIVACY this opens both a compliance obligation (interoperate with Consent Managers) and a potential product positioning (ID-PRIVACY itself as a registered Consent Manager — strategic decision for product/legal).
-- **Severity:** **HIGH** (Phase 2 in-window; novel architecture)
-- **Confidence:** **HIGH** — gazetted text and dates confirmed via multiple legal trackers.
+- **Instrument + citation:** Digital Personal Data Protection Act 2023 (DPDP Act); Digital Personal Data Protection Rules 2025, MeitY Gazette notification dated 13 November 2025
+- **Publication date:** 2025-11-13
+- **Effective dates (phased):**
+  - Phase I — 2025-11-14 (Data Protection Board provisions; LIVE)
+  - **Phase II — 2026-11-13** (Consent Manager registration / framework provisions)
+  - Phase III — 2027-05-13 (substantive DSAR, breach notification, child-data, cross-border)
+- **Primary source URL:** https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa  (status: link-verified-by-reference; WebFetch blocked)
+- **What changed and why it matters:** India introduces a regulator-licensed "Consent Manager" archetype — a registered intermediary that captures, manages, and revokes consent. Phase II turns this into an active regime. ID-PRIVACY® must decide whether to (a) register itself as a Consent Manager in India or (b) integrate with registered Consent Managers; either path requires schema, audit-trail, and revocation-API work. Phase III (May 2027) brings DSARs and child-data verification into scope.
+- **Severity:** **HIGH** — strategic product decision required now; Phase II clock is ~6 months.
+- **Confidence:** HIGH — MeitY gazette, S&R Associates, Shardul Amarchand, DLA Piper IN, IAPP all confirm phasing.
 
 ---
 
-## 5. California — CCPA Regulations Package (Cybersecurity Audits, Risk Assessments, ADMT, Insurance, plus consent/dark-pattern clarifications)
+## 5. California Delete Act — DROP platform live; data-broker obligations from 1 August 2026
 
 - **Jurisdiction:** California, USA
-- **Instrument:** CCPA Regulations (CPPA rulemaking package finalised 2025-09-22 by OAL)
-- **Issuing body:** California Privacy Protection Agency (CPPA)
-- **Published:** OAL approval 2025-09-22; filed with Secretary of State same day
-- **Effective:** **2026-01-01** (most provisions); ADMT pre-use notice / opt-out / access: **2027-01-01**; Cybersecurity audit certifications phased 2028-2030 by revenue
-- **Enforcement:** Live 2026-01-01 for the consent/dark-pattern clarifications
-- **Primary source URL:** https://cppa.ca.gov/regulations/ccpa_updates.html (CPPA official; surfaced in search, WebFetch blocked) and https://cppa.ca.gov/announcements/2025/20250923.html (CPPA announcement)
-- **What changed / why it matters:** Codifies that a consumer **closing or navigating away from a consent pop-up without affirmatively clicking accept does not constitute consent** (per se dark pattern). Adds opt-out, access, and pre-use notice rights against Automated Decisionmaking Technology (effective 2027-01-01 — must be designed in 2026). Triggers risk assessment and cybersecurity audit obligations (longer runway).
-- **Severity:** **HIGH** (already in effect; affects all CA-facing customers)
-- **Confidence:** **HIGH** — finalised regulations text published.
+- **Instrument + citation:** SB 362 (Delete Act, 2023); CPPA regulations approved 13 November 2025; DROP system requirements
+- **Publication date (regs):** 2025-11-13
+- **Effective dates:**
+  - Consumer-facing DROP submission live January 2026
+  - **Data brokers must access DROP at least every 45 days from 2026-08-01**
+  - Determinations must be completed within 90 days of retrieval
+- **Primary source URLs:** https://cppa.ca.gov/announcements/2025/20251113.html  and https://privacy.ca.gov/drop/about-drop-and-the-delete-act/  (status: link-verified-by-reference; WebFetch blocked)
+- **What changed and why it matters:** Centralised, regulator-run deletion intake replaces vendor-by-vendor opt-outs for registered California data brokers. Customers who are registered data brokers in California must integrate with DROP polling and feed deletion outcomes back. Even non-broker tenants benefit from a unified DROP-aware deletion workflow inside the DSR engine. Penalty: $200/request/day for non-compliance.
+- **Severity:** **HIGH** — concrete API/polling integration obligation with a hard 1 Aug 2026 date for any data-broker tenant.
+- **Confidence:** HIGH — CPPA announcement, Governor's office release, Benesch, Clark Hill, OneTrust corroboration.
 
 ---
 
-## 6. California AB 566 — "Opt Me Out Act" browser opt-out preference signal
+## 6. New US state privacy laws effective 1 January 2026 — Indiana, Kentucky, Rhode Island, Minnesota
 
-- **Jurisdiction:** California, USA
-- **Instrument:** AB 566 (2025), amending CCPA — opt-out preference signal in browsers
-- **Issuing body:** California Legislature; signed by Governor (2025)
-- **Published:** Signed 2025
-- **Effective:** **2027-01-01**
-- **Enforcement:** From effective date; CPPA + AG
-- **Primary source URL:** https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB566 (official CA legislative info; verified via search, WebFetch blocked)
-- **What changed / why it matters:** Requires **all browsers operating in California** (desktop and mobile) to ship native, easy-to-use opt-out preference signal functionality (OOPS) by 2027-01-01. Although the obligation is on browser vendors, it dramatically expands the population of users sending GPC-equivalent signals. CMPs must be hardened to honor signals from a much wider variety of sources (mobile in-app browsers, OS-integrated signals, etc.), not just desktop GPC extensions, and must not display banners that contradict an inbound signal.
-- **Severity:** **HIGH** (large population impact, 8-month preparation window)
-- **Confidence:** **HIGH** — bill enacted and chaptered.
-
----
-
-## 7. Multi-state US — Universal Opt-Out becomes mandatory in Connecticut, Oregon (and amendments tightening Colorado, NJ rules)
-
-- **Jurisdiction:** Connecticut, Oregon, Colorado, New Jersey (USA — multi-state)
-- **Instrument:** CTDPA, OCPA, CPA, NJDPA + their implementing regs / amendments
-- **Issuing body:** State legislatures; State AGs (CT, OR, NJ); Colorado AG; NJ Division of Consumer Affairs
-- **Published / Effective dates relevant in window:**
-  - **OR OCPA UOOM mandatory: 2026-01-01** (already live)
-  - **OR cure period removed: 2026-01-01** (live)
-  - **NJ proposed regulations adoption deadline: 2026-06-02**
-  - **NJ cure period sunsets: ~2026-07-15**
-  - **CT amendment lowering thresholds: 2026-07-01**
-- **Enforcement:** Live (OR), imminent (NJ, CT)
-- **Primary source URLs:**
-  - OR DOJ: https://www.doj.state.or.us/consumer-protection/id-theft-data-breaches/privacy/
-  - CT AG: https://portal.ct.gov/ag/sections/privacy/the-connecticut-data-privacy-act
-  - CO AG (UOOM): https://coag.gov/opt-out/
-  - NJ Consumer Affairs: https://www.njconsumeraffairs.gov/ocp/Pages/NJ-Data-Privacy-Law-FAQ.aspx
-- **What changed / why it matters:** Ten-plus US states now require recognition of universal opt-out signals (GPC). Several lose their cure-period safe harbor in 2026, exposing CMP customers to direct enforcement. Geo-routing rules and signal-handling code paths must be precise: which states require the signal to act as an opt-out from sale only vs. sale+share+targeted advertising; which require deduplication with prior banner choices; which require user prompt to confirm.
-- **Severity:** **HIGH** (multiple in-window dates, multi-state surface area)
-- **Confidence:** **HIGH** — all dates confirmed via state AG / DOJ pages.
+- **Jurisdiction:** USA — Indiana, Kentucky, Rhode Island, Minnesota
+- **Instruments + citations:**
+  - Indiana SEA 5 (2023, Ind. Code § 24-15)
+  - Kentucky HB 15 (KCDPA, 2024)
+  - Rhode Island Data Transparency and Privacy Protection Act (2024)
+  - Minnesota Consumer Data Privacy Act (Minn. Stat. ch. 325O, 2024)
+- **Publication dates:** 2023–2024 (signing dates vary)
+- **Effective date:** 2026-01-01 (all four)
+- **Enforcement:** Immediate from effective date for IN, KY, RI; MN cure period sunsets 2026-01-31 in some readings — confirm against statute.
+- **Primary source URLs:** State legislature bill pages (Ind. Code § 24-15; Ky. KRS Chapter newly added by HB 15; R.I. Gen. Laws Ch. 6-48.1; Minn. Stat. ch. 325O). MultiState and Husch Blackwell trackers used as radar.
+- **What changed and why it matters:** Four more state ruleset routes the CMP must serve. Rhode Island's threshold is unusually low (35,000 consumers, or 10,000 if >20% revenue from sale of PD) — many SMB tenants will newly fall in scope. Minnesota requires recognition of universal opt-out signals. No novel signal types beyond what existing US ruleset templates already cover.
+- **Severity:** **MEDIUM** — incremental expansion of an existing pattern; primary cost is jurisdiction-routing rules + privacy-notice text variants.
+- **Confidence:** HIGH — multiple independent law-firm summaries and state legislature publications.
 
 ---
 
-## 8. Maryland Online Data Privacy Act (MODPA) — applicability date
+## 7. Maryland Online Data Privacy Act (MODPA) — applies to processing on/after 1 April 2026
 
 - **Jurisdiction:** Maryland, USA
-- **Instrument:** Maryland Online Data Privacy Act (MODPA)
-- **Issuing body:** Maryland General Assembly; Maryland AG enforces
-- **Published:** Enacted 2024; took legal effect 2025-10-01
-- **Effective (applies to processing):** **2026-04-01** (already crossed — but customers still mid-remediation)
-- **Enforcement:** Live from 2026-04-01; MD AG
-- **Primary source URL:** Maryland AG / EPIC summary (https://epic.org/maryland-online-data-privacy-act-comes-into-effect/ — SECONDARY) — Title 14 Subtitle 38 of the Commercial Law Article (request counsel to pull primary cite).
-- **What changed / why it matters:** Strictest US state law on sensitive data: **prohibits sale of sensitive data outright — consent does not override**. Sensitive data includes precise geolocation, biometrics, neural/biological, health, children's data. Requires **data minimisation as a default** ("strictly necessary" test), not just notice-and-consent. CMPs must distinguish MD residents and apply a different processing rule (suppress sale category for sensitive data even if user clicks accept). Affects vendor/SDK governance.
-- **Severity:** **HIGH** (in effect; novel "consent does not override" rule changes CMP logic)
-- **Confidence:** **MEDIUM** — primary statute citation needs counsel verification; effective dates are well-documented.
+- **Instrument + citation:** MODPA, Md. Code, Com. Law § 14-4601 et seq. (HB 567 / SB 541, 2024)
+- **Publication date:** 2024-05-09 (signed)
+- **Effective date:** 2025-10-01 (law in force)
+- **Operative date for processing activities:** **2026-04-01** (data-minimisation, sensitive-data, and minor-data prohibitions apply to processing taking place on or after this date)
+- **Primary source URL:** https://mgaleg.maryland.gov/2024RS/bills/hb/hb0567E.pdf  (link-verified-by-reference)
+- **What changed and why it matters:** Strictest US data-minimisation rule to date. Sensitive data of any consumer, and any data of a known-under-18 consumer, may not be collected/processed/shared beyond what is "strictly necessary" — even with consent. Outright prohibition on the sale of sensitive data, including precise geolocation. CMP impact: consent for sensitive data is no longer a sufficient legal basis on its own in MD; vendor/SDK gating must enforce a per-purpose necessity test, not a blanket consent grant.
+- **Severity:** **HIGH** — first US jurisdiction where consent ≠ lawful basis for sensitive-data sale; requires new tenant policy controls and likely a "sensitive-data block list" for MD geo.
+- **Confidence:** HIGH — operative date confirmed across Manatt, Koley Jessen, DWT, Privado, Wiley.
 
 ---
 
-## 9. EDPB Guidelines 2/2023 — Article 5(3) ePrivacy (final, in active enforcement)
+## 8. Connecticut and Oregon — Universal Opt-Out Mechanism (UOOM / GPC) recognition mandates from 1 January 2026 (LIVE); CT neural data 1 July 2026
+
+- **Jurisdiction:** Connecticut, Oregon (USA)
+- **Instruments + citations:**
+  - Connecticut Data Privacy Act, Conn. Gen. Stat. § 42-515 et seq.; SB 3 amendments 2024
+  - Oregon Consumer Privacy Act (OCPA), ORS Ch. 646A; HB 2008 (2025 amendments)
+- **Effective date:** **2026-01-01** for UOOM recognition obligation
+- **Subsequent dates:** CT — 2026-07-01 expanded "sensitive data" includes neural data; OR — minor-data and precise-geolocation sale prohibitions live
+- **Primary source URLs:** Connecticut Attorney General privacy pages and Oregon Department of Justice consumer-protection privacy pages (URLs vary by AG/DOJ revision; verify before linking in customer-facing artefacts).
+- **What changed and why it matters:** From 2026-01-01, controllers in CT and OR must technically detect and honour browser-level opt-out signals (currently GPC). Combined with existing CA, CO, DE, MD, MN, MT, NJ, NH, TX requirements, GPC is a near-universal US signal. CT's expansion of "sensitive data" to neural data (2026-07-01) follows Colorado.
+- **Severity:** **MEDIUM** — confirms an existing trajectory; mainly a coverage / QA matter for the GPC pipeline.
+- **Confidence:** MEDIUM-HIGH — multiple secondary trackers; CT neural-data 2026-07-01 detail should be confirmed against the bill text before any downstream change.
+
+---
+
+## 9. Colorado — Biometric and Neural Data amendments (HB24-1130 + HB24-1058)
+
+- **Jurisdiction:** Colorado, USA
+- **Instruments + citations:** Colorado Privacy Act, Colo. Rev. Stat. § 6-1-1301 et seq.; HB24-1058 (neural data); HB24-1130 (biometrics)
+- **Publication / signing:** 2024
+- **Effective dates:** Biometric provisions live since 2024-07-01; neural-data inclusion in "sensitive data" live since 2025-08-06; some downstream operational dates flow into 2026-06-30 in secondary trackers (treat with caution).
+- **Primary source URL:** https://coag.gov/resources/colorado-privacy-act/  and https://leg.colorado.gov/bills/hb24-1058  (link-verified-by-reference)
+- **What changed and why it matters:** Biometric identifiers and neural data are now opt-in sensitive categories with explicit consent + retention schedule + sale prohibition. Sets a template other states are following (CT). Cookie/SDK governance must surface these as distinct purpose categories and enforce non-bundled consent.
+- **Severity:** **MEDIUM** — most ID-PRIVACY tenants do not collect neural data, but biometric features (face geometry from chat-widget cameras, voice prints from session-replay analogues) are increasingly common.
+- **Confidence:** MEDIUM — bill texts are clear; the "30 June 2026" CPA effective date reported in one secondary source could not be reconciled and is flagged for verification.
+
+---
+
+## 10. EDPB Guidelines 01/2025 on Pseudonymisation — final pending; EU Digital Omnibus consent reforms — proposal active
 
 - **Jurisdiction:** EU/EEA
-- **Instrument:** EDPB Guidelines 2/2023 on the Technical Scope of Article 5(3) of the ePrivacy Directive (final version)
-- **Issuing body:** European Data Protection Board
-- **Published:** Adopted final version **2024-10-07**
-- **Effective:** Immediately (interpretive guidance); national DPAs have been actively enforcing on this expanded scope through 2025-2026 (CNIL Google €325M, Shein €150M)
-- **Primary source URL:** https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en (EDPB official; surfaced in search, WebFetch blocked)
-- **What changed / why it matters:** Confirms that the cookie consent rule applies far beyond cookies — to **pixels, URL/link decoration tracking, IP-only tracking, fingerprinting, IoT identifiers, mobile SDK identifiers, and local-processing-then-exfiltration**. Forces ID-PRIVACY's classification ML to widen its taxonomy and forces vendor governance to capture non-cookie tracking technologies. EDPB Cookie Banner Taskforce report was updated 2026-04-30 reaffirming "minimum threshold" positions on dark patterns and reject-all parity.
-- **Severity:** **HIGH** (binding interpretive force across DPAs; enforcement is active and large)
-- **Confidence:** **HIGH** — EDPB final adoption; Taskforce report update widely covered.
+- **Instruments:**
+  - EDPB Guidelines 01/2025 on Pseudonymisation (draft adopted 2025-01-16, public consultation closed 2025-02-28; stakeholder report 2026-02-18; final pending)
+  - European Commission **Digital Omnibus** proposal (published November 2025) including a draft new GDPR Article 88a that would absorb cookie/tracking rules from the ePrivacy Directive into GDPR; Commission formally withdrew the long-pending ePrivacy Regulation in February 2025
+- **Publication dates:** 2025-01-16 (draft EDPB); November 2025 (Digital Omnibus proposal); 2025-02 (ePrivacy Regulation withdrawal)
+- **Effective dates:** **None yet** — both items pre-effective; Digital Omnibus is a proposal, not adopted law.
+- **Primary source URLs:**
+  - https://www.edpb.europa.eu/our-work-tools/documents/public-consultations/2025/guidelines-012025-pseudonymisation_en
+  - European Commission Digital Omnibus proposal landing page on https://commission.europa.eu/  (link-verified-by-reference)
+- **What changed and why it matters:** Two convergent EU developments worth tracking but not yet actionable. The Pseudonymisation Guidelines, when finalised, will tighten what "pseudonymised" means for consent-storage and audit-log retention claims. The Digital Omnibus, if adopted as drafted, would meaningfully restructure the legal basis for cookies — moving from Art. 5(3) ePrivacy to a proposed GDPR Article 88a — and explicitly targets "consent fatigue."
+- **Severity:** **LOW** (current status) — pre-binding; promote to MEDIUM if pseudonymisation guidelines finalise or if Digital Omnibus reaches a Council general approach.
+- **Confidence:** MEDIUM — status is fluid; this item is the most likely to change category before next quarter's scan. Labeled **SECONDARY — pending primary confirmation** for the Digital Omnibus Article 88a wording specifically.
 
 ---
 
-## 10. France CNIL — sustained enforcement of dark-pattern / reject-all parity
+## Honourable mentions (watch list, not in top 10 but cited for completeness)
 
-- **Jurisdiction:** France (with broad EU influence)
-- **Instrument:** CNIL Guidelines and Recommendations on Cookies and Other Trackers (2020) + sustained 2025–2026 enforcement actions
-- **Issuing body:** CNIL
-- **Recent enforcement dates:** Google €325M (Sept 2025), Shein €150M (Sept 2025), Free Mobile €27M (Jan 2026), Free €15M (Jan 2026)
-- **Effective:** Continuous enforcement; CNIL has stated cookie banners remain a 2026 priority
-- **Primary source URL:** https://www.cnil.fr/en/dark-patterns-cookie-banners-cnil-issues-formal-notice-website-publishers (CNIL official) — and CNIL annual control plan page on cnil.fr
-- **What changed / why it matters:** CNIL operationalises EDPB principles into concrete CMP UI rules: **same number of clicks** to reject as to accept, **equal visual weight** (size, color, contrast), no pre-checked boxes, no nudging copy. The size of the 2025 fines signals that pattern-level non-compliance now carries 9-figure exposure. Even US-headquartered DataSafeguard customers with .fr traffic are in scope.
-- **Severity:** **HIGH** (precedent-setting fine sizes; immediate exposure for customers shipping non-parity banners)
-- **Confidence:** **HIGH** for the enforcement actions themselves; **MEDIUM** for any specific 2026 CNIL guidance update — recheck within 30 days.
+- **Texas TDPSA universal opt-out recognition** — already in force; enforcement uplift expected through 2026.
+- **Brazil ANPD 2026–2027 enforcement priorities** targeting advertising / profiling (announced as ANPD became fully autonomous in February 2026). Likely guidance, not yet binding rule.
+- **Quebec CAI** — explicit-consent expectation on tracking cookies under Law 25 is established; expect more enforcement actions in 2026.
+- **EU AI Act** — 2 August 2026 is the Commission's enforcement-powers milestone for general-purpose AI; relevant for tenant-facing AI features in the CMP, not for the cookie banner per se.
+- **Garante (Italy)** — continued enforcement of the 2021 cookie guidelines; the "X-button" requirement and 6-month re-prompt rule remain frequent fine generators.
+- **CNIL (France)** — announced 2026 work on cross-domain consent guidelines; once published, will affect multi-property group tenants.
 
 ---
 
-## Items considered but ranked below the top 10 (watchlist)
-
-- **Brazil ANPD** — Operational independence achieved Feb 2026 and reported EU mutual adequacy decision Jan 2026. Cookie guidance is from 2022; no new binding rule confirmed. **Track for fresh resolution.**
-- **Quebec Law 25** — Substantive provisions live since 2023-09-22. No new 2026-2027 effective date detected. Maintenance-mode enforcement.
-- **Australia Privacy Act Tranche 2** — Politically signalled but **no introduced bill / no fixed timeline** as of activation. Watch-list only.
-- **Texas TDPSA** — Live and being enforced aggressively by AG. No new in-window legislative date; included implicitly under multi-state UOOM monitoring.
-- **EU AI Act** — Provisions on AI systems used in CMPs (e.g., consent-flow personalisation) may intersect with consent law in 2026; not currently a cookie rule per se.
-- **Tennessee TIPA** — Effective 2025-07-01, in-effect but already past the in-window threshold for "imminent change."
-- **EU–Brazil mutual adequacy decision** — Reported Jan 2026; pending primary confirmation in EU Official Journal.
-
----
-
-## Notes on source verification
-
-WebFetch returned HTTP 403 for many official `.gov`, `.europa.eu`, and `.gov.uk` domains in this run, likely due to environment-level egress controls. URLs above are taken from the surfaced search-result indexes against those primary domains and have not been individually re-fetched in this session. Before any external client-facing communication, **engineering/legal must independently re-verify every URL and date.**
+*End of baseline.*
