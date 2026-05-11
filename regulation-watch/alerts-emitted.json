@@ -11,6 +11,53 @@
     "emailDraftId": "r-8257231129572050191",
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
-    "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-11-01",
+    "jurisdiction": "EU/EEA + UK (global TCF)",
+    "instrument": "IAB TCF v2.3 — mandatory disclosedVendors segment; deadline 2026-02-28 PASSED",
+    "publishedDate": "2025-06-19",
+    "severity": "CRITICAL",
+    "sentAt": "2026-05-11T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-11-02",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO finalized Storage and Access Technologies guidance — DUAA PECR amendments",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-11T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-02.md"
+  },
+  {
+    "alertId": "RW-2026-05-11-03",
+    "jurisdiction": "United States — California",
+    "instrument": "CPPA CCPA 2026 regulations — opt-out confirmation, GPC acknowledgment, pop-up-close-not-consent",
+    "publishedDate": "2025-09-22",
+    "severity": "HIGH",
+    "sentAt": "2026-05-11T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-03.md"
+  },
+  {
+    "alertId": "RW-2026-05-11-04",
+    "jurisdiction": "France (EU/EEA benchmark)",
+    "instrument": "CNIL Deliberation 2025-131 — final recommendations on multi-terminal cross-device cookie consent",
+    "publishedDate": "2026-01-18",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-11T00:00:00Z",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-04.md"
   }
 ]
