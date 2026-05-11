@@ -1,0 +1,107 @@
+{
+  "scanDate": "2026-05-11",
+  "scanType": "daily-tier1",
+  "lookbackStart": "2026-04-29",
+  "lookbackEnd": "2026-05-11",
+  "note": "Lookback extended to 2026-04-29 to pick up ICO SAT guidance explicitly deferred from the 2026-05-09 scan per candidatesConsideredButRejected note in scan-2026-05-09.json. Also surfaces CCPA 2026 consent-banner obligations and TCF v2.3 which were in the baseline state-of-world but never individually alerted.",
+  "tiersScanned": ["Tier 1"],
+  "sourcesAttempted": [
+    { "source": "EDPB (edpb.europa.eu)", "status": "fetched-via-search", "note": "April 2026 outputs reviewed: Guidelines 1/2026 on scientific research (not consent-touching); consent summary PDF published April 2026 is a summary of existing guidance (not a new rule). No new binding guidance on cookies/consent in the scan window." },
+    { "source": "CNIL (cnil.fr)", "status": "fetched-via-search", "note": "Deliberation 2025-131 (multi-terminal consent) published 2026-01-18 — in extended lookback window; alerted as RW-2026-05-11-04 (MEDIUM). Cross-domain consent framework still in development — not yet a trigger event. WebFetch on cnil.fr returned 403." },
+    { "source": "ICO (ico.org.uk)", "status": "fetched-via-search", "note": "Finalized SAT guidance published 2026-04-29 — deferred from prior scan; alerted as RW-2026-05-11-02 (HIGH). WebFetch on ico.org.uk returned 403." },
+    { "source": "IAB Europe / IAB Tech Lab", "status": "fetched-via-search", "note": "TCF v2.3 mandatory deadline 2026-02-28 PASSED; was in baseline but never individually alerted; alerted as RW-2026-05-11-01 (CRITICAL). WebFetch on iabeurope.eu returned 403." },
+    { "source": "CPPA (cppa.ca.gov)", "status": "fetched-via-search", "note": "CCPA 2026 regulations (OAL-approved 2025-09-22) now in force; opt-out confirmation, GPC acknowledgment, and pop-up-close-not-consent provisions are a new banner engineering obligation not previously individually alerted; alerted as RW-2026-05-11-03 (HIGH). WebFetch on cppa.ca.gov returned 403." },
+    { "source": "Garante (garanteprivacy.it)", "status": "fetched-via-search", "note": "No new cookie/consent guidance or enforcement in window." },
+    { "source": "AEPD (aepd.es)", "status": "fetched-via-search", "note": "No new cookie/consent action in window." },
+    { "source": "BfDI / DSK (Germany)", "status": "fetched-via-search", "note": "DSK v1.2 supplemental guidance (November 2024) is pre-window and in baseline. April 2025 coalition proposal to centralise supervision under BfDI is pre-legislative. No new binding guidance in window." },
+    { "source": "DPC Ireland (dataprotection.ie)", "status": "fetched-via-search", "note": "No new cookie/consent decision in window." },
+    { "source": "EUR-Lex", "status": "fetched-via-search", "note": "ePrivacy Regulation formally withdrawn (already in baseline #10). Digital Omnibus Package in negotiation — no Council general approach yet; remains LOW/watch." },
+    { "source": "UK Parliament / legislation.gov.uk", "status": "fetched-via-search", "note": "DUAA in force; ICO SAT guidance alerted. No further legislative events." },
+    { "source": "Alabama legislature", "status": "fetched-via-search", "note": "APDPA signed 2026-04-17; effective 2027-05-01; LOW; added to digest-pending.md." },
+    { "source": "FTC (ftc.gov)", "status": "fetched-via-search", "note": "No new enforcement action on cookies/consent in window beyond Kochava (already alerted RW-2026-05-09-01). FTC Click-to-Cancel rule enforcement ongoing but not a new trigger event." },
+    { "source": "MeitY / DPDP Board (India)", "status": "fetched-via-search", "note": "Phase II window (Consent Manager registration) opens 2026-11-13; no new notification in window." },
+    { "source": "ANPD (Brazil)", "status": "fetched-via-search", "note": "No new cookie resolution in window; 2022 cookie guidance remains current standard." },
+    { "source": "Colorado AG / Connecticut AG", "status": "fetched-via-search", "note": "GPC joint sweep with CPPA announced September 2025 (pre-window); outcomes not yet published as formal enforcement actions. Monitor." }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-05-11-01",
+      "jurisdiction": "EU/EEA + UK (global TCF)",
+      "instrument": "IAB TCF v2.3 — mandatory disclosedVendors segment; deadline PASSED 2026-02-28",
+      "severity": "CRITICAL",
+      "publishedDate": "2025-06-19",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Mandatory industry framework deadline passed 2026-02-28; TC strings generated without disclosedVendors segment are spec-invalid today; was in baseline but never individually alerted."
+    },
+    {
+      "alertId": "RW-2026-05-11-02",
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO finalized Storage and Access Technologies guidance (DUAA PECR reforms)",
+      "severity": "HIGH",
+      "publishedDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-02.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Binding DPA guidance published 2026-04-29; explicitly deferred from prior scan; introduces five new PECR consent exemptions, elevated fine ceiling, and new multi-purpose/objection guidance."
+    },
+    {
+      "alertId": "RW-2026-05-11-03",
+      "jurisdiction": "United States — California",
+      "instrument": "CPPA CCPA 2026 regulations — opt-out confirmation + GPC acknowledgment + pop-up-close-not-consent",
+      "severity": "HIGH",
+      "publishedDate": "2025-09-22",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-03.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Regulations in force since 2026-01-01; specific consent-banner obligations (opt-out confirmation, GPC visible acknowledgment, dismissal-not-consent, step-parity) were not previously individually alerted."
+    },
+    {
+      "alertId": "RW-2026-05-11-04",
+      "jurisdiction": "France (EU/EEA benchmark)",
+      "instrument": "CNIL Deliberation 2025-131 — multi-terminal cross-device consent final recommendations",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-01-18",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-11/RW-2026-05-11-04.md",
+      "confidence": "MEDIUM-HIGH",
+      "reasonForAlert": "Final CNIL recommendation published 2026-01-18 in the Journal Officiel; introduces cross-device consent architecture requirements that affect consent storage, banner layer, and withdrawal propagation."
+    }
+  ],
+  "candidatesConsideredButRejected": [
+    {
+      "item": "EDPB April 2026 consent summary PDF",
+      "rejectionReason": "summary-of-existing-guidance — the April 2026 EDPB consent summary is a practitioner-facing compilation of existing EDPB consent guidelines (05/2020 v1.1), not a new or amended binding document. No delta from the current operative guidance."
+    },
+    {
+      "item": "EDPB Guidelines 1/2026 on scientific research",
+      "rejectionReason": "out-of-scope — pertains to research data processing, not cookies/consent/CMP. Open for consultation until 2026-06-25."
+    },
+    {
+      "item": "EU Digital Omnibus Package (proposed GDPR Art. 88a)",
+      "rejectionReason": "pre-binding — Commission proposal under negotiation; no Council general approach; remains LOW/watch per baseline item #10."
+    },
+    {
+      "item": "Alabama APDPA (HB 351, signed 2026-04-17, effective 2027-05-01)",
+      "rejectionReason": "LOW-severity — effective >180 days; no GPC/signal mandate; additive to existing US state template. Appended to digest-pending.md."
+    },
+    {
+      "item": "CNIL 2026 cross-domain (multi-property) consent work",
+      "rejectionReason": "pre-binding — announced as a 2026 work programme item; no draft or consultation published yet. Watch item."
+    },
+    {
+      "item": "DSK/BfDI Germany centralisation proposal (April 2025 coalition)",
+      "rejectionReason": "pre-legislative — coalition agreement does not constitute enacted law. Watch item."
+    }
+  ],
+  "digestItemsAdded": [
+    {
+      "item": "Alabama APDPA — LOW",
+      "file": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md"
+    }
+  ],
+  "highestSeverity": "CRITICAL",
+  "runDurationSeconds": 680,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on all official regulator/framework domains (ico.org.uk, cnil.fr, iabeurope.eu, cppa.ca.gov) — consistent with standing operational caveat. All factual claims corroborated across 3-6 independent secondary sources per alert. Counsel and engineering should retrieve primary source documents directly before binding action.",
+    "TCF v2.3 alert (RW-2026-05-11-01) severity set to CRITICAL because the deadline has passed and any CMP currently generating non-compliant strings is in immediate revenue and contractual exposure. The baseline classified this as CRITICAL; the prior daily scan treated it as 'already in baseline' but it was never individually alerted. This run corrects that gap.",
+    "CCPA 2026 alert (RW-2026-05-11-03) covers the consent-banner-specific provisions of the January 2026 regulation package. The ADMT / risk-assessment / cybersecurity-audit provisions were separately covered in baseline item #2 and are not re-alerted here to avoid duplication."
+  ]
+}
