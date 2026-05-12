@@ -20,9 +20,9 @@
     "publishedDate": "2026-04-29",
     "severity": "HIGH",
     "sentAt": "2026-05-12T13:00:00Z",
-    "jiraKey": null,
-    "jiraUrl": null,
-    "emailDraftId": null,
+    "jiraKey": "IDP-11510",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11510",
+    "emailDraftId": "r8972703938511414312",
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-12/RW-2026-05-12-01.md"
