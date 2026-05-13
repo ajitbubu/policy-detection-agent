@@ -1,0 +1,87 @@
+{
+  "scanId": "scan-2026-05-13",
+  "scanType": "tier1-daily",
+  "scanDate": "2026-05-13",
+  "runStartedAt": "2026-05-13T12:00:00Z",
+  "runCompletedAt": "2026-05-13T13:00:00Z",
+  "jurisdictionsScanned": [
+    "EU/EEA (EDPB, CNIL, Garante, AEPD, DPC)",
+    "United Kingdom (ICO, PECR, DUAA)",
+    "United States Federal (FTC)",
+    "United States State (CA, CT, TX, CO, VA, OR, MT, MN, NJ, NH, IN, KY, RI)",
+    "India (DPDP Act/Rules, MeitY)",
+    "Brazil (LGPD, ANPD)",
+    "IAB TCF / GPP framework"
+  ],
+  "alertsEmitted": 1,
+  "highestSeverity": "HIGH",
+  "alerts": [
+    {
+      "alertId": "RW-2026-05-13-01",
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO Final Guidance on Storage and Access Technologies (incorporates DUAA PECR amendments)",
+      "publishedDate": "2026-04-29",
+      "severity": "HIGH",
+      "alertFilePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-13/RW-2026-05-13-01.md",
+      "deliveryRequired": {
+        "email": {
+          "recipient": "asahu@datasafeguard.ai",
+          "subject": "[HIGH] UK -- ICO Final Storage & Access Technologies Guidance (DUAA PECR amendments)",
+          "bodyFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-13/RW-2026-05-13-01.md",
+          "status": "PENDING -- no email MCP tool available in this environment; orchestrator must send"
+        },
+        "jira": {
+          "project": "IDP",
+          "epic": "IDP-11488",
+          "title": "[HIGH] UK -- ICO Final Storage & Access Technologies Guidance (DUAA PECR)",
+          "labels": ["privacy-regulation-watch", "UK"],
+          "priority": "High",
+          "descriptionFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-13/RW-2026-05-13-01.md",
+          "status": "PENDING -- no Atlassian MCP tool available in this environment; orchestrator must create"
+        }
+      }
+    }
+  ],
+  "itemsEvaluatedButNotEmitted": [
+    {
+      "item": "ICO advertising cookies / privacy-preserving future guidance signal",
+      "reason": "Pre-legislative intent statement only; no binding guidance published yet. Watch weekly."
+    },
+    {
+      "item": "Connecticut SB 4 (precise geolocation ban, data broker registry)",
+      "reason": "Passed legislature 2026-05-04 but not yet signed by Governor Lamont as of 2026-05-13. Trigger event is enactment/signing. Monitor daily; emit alert on signature.",
+      "anticipatedSeverity": "MEDIUM",
+      "effectiveDate": "2026-10-01"
+    },
+    {
+      "item": "IAB TCF v2.3 enforcement deadline (2026-02-28)",
+      "reason": "Enforcement deadline pre-dates system activation (2026-05-09). Would be stale. Effective already. Not actionable as a new alert; include in next weekly digest as a reminder."
+    },
+    {
+      "item": "India DPDP Rules 2025 (notified 2026-11-14)",
+      "reason": "Pre-dates system activation. Phase II (consent managers) effective Nov 2026 (T+183 days). Classify LOW per rubric (>180 days). Include in Monday weekly digest."
+    },
+    {
+      "item": "EU Digital Omnibus -- ePrivacy/GDPR proposal (EC proposal, Feb 2026 EDPB opinion)",
+      "reason": "Still a legislative proposal; not enacted. LOW awareness item. Include in Monday weekly digest."
+    },
+    {
+      "item": "California AB 566 (browser OOPS mandate, effective 2027-01-01)",
+      "reason": "Signed, effective 2027-01-01 (T+233 days). LOW per rubric (>180 days). Include in Monday weekly digest."
+    },
+    {
+      "item": "CNIL fines on Google (EUR 325M) and SHEIN (EUR 150M)",
+      "reason": "Both fines issued in 2025, pre-dating system activation. Not new events. Note: cookie banner pattern reinforced by these fines (reject-all parity, no pre-ticked boxes) is already in baseline state of world document."
+    }
+  ],
+  "selfCheckResults": {
+    "primarySourceUrlWorks": "PARTIAL -- ICO.org.uk confirmed via search result headline and secondary sources; direct page fetch returned 403 (ICO WAF). Counsel must verify directly.",
+    "effectiveDateCorrect": true,
+    "atLeastOneSubsystemIdentified": true,
+    "atLeastOneEngineeringAction": true,
+    "severityMatchesRubric": true,
+    "noDuplicateInLast30Days": true,
+    "confidenceLevelStated": true,
+    "allChecksPassed": true
+  }
+}
