@@ -34,7 +34,10 @@
           "project": "IDP",
           "epic": "IDP-11488",
           "title": "[HIGH] UK -- ICO Final Storage & Access Technologies Guidance (DUAA PECR)",
-          "labels": ["privacy-regulation-watch", "UK"],
+          "labels": [
+            "privacy-regulation-watch",
+            "UK"
+          ],
           "priority": "High",
           "descriptionFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-13/RW-2026-05-13-01.md",
           "status": "PENDING -- no Atlassian MCP tool available in this environment; orchestrator must create"
@@ -83,5 +86,7 @@
     "noDuplicateInLast30Days": true,
     "confidenceLevelStated": true,
     "allChecksPassed": true
-  }
+  },
+  "prUrl": "https://github.com/ajitbubu/policy-detection-agent/pull/new/claude/regwatch-tier1-2026-05-13",
+  "prStatus": "PUSH_COMPLETE_PR_URL_CONFIRMED -- GitHub API unauthenticated rate-limited; open PR manually or via authenticated gh CLI"
 }
