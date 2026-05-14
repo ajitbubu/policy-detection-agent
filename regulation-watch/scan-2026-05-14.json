@@ -1,0 +1,81 @@
+{
+  "scanDate": "2026-05-14",
+  "scanType": "daily-tier1",
+  "lookbackStart": "2026-05-09",
+  "lookbackEnd": "2026-05-14",
+  "tiersScanned": ["Tier 1"],
+  "note": "Window: May 9 to May 14, 2026. Two items from the prior scan's candidatesConsideredButRejected list (ICO SAT guidance, April 29) and a missed item (Garante pixel guidelines, April 29 OG) were surfaced in this run, as recommended by the May 9 scan. Both were absent from alerts-emitted.json and had not been previously alerted.",
+  "sourcesAttempted": [
+    { "source": "EDPB (edpb.europa.eu)", "status": "fetched-via-search", "note": "No new cookie/consent binding opinion or decision published May 9-14 in window. CEF 2026 (transparency enforcement, launched March 19) is pre-window and already known. Digital Omnibus EDPB-EDPS Joint Opinion 2/2026 is February 2026 (pre-window); legislative process ongoing. No new trigger event." },
+    { "source": "CNIL (cnil.fr)", "status": "fetched-via-search", "note": "No new cookie-specific sanction or binding guidance published May 9-14. CNIL AI recommendations and Privacy Research Day (May 7) are non-binding/non-event. CNIL 2026 enforcement priorities (recruitment, REU, sports) do not directly touch cookies/CMP. Parallel email tracking pixel recommendation (France, April 2026) noted -- flagged as dependency in RW-2026-05-14-02 for CNIL/Garante alignment review; not separately alerted as the CNIL recommendation is advisory/non-binding." },
+    { "source": "ICO (ico.org.uk)", "status": "fetched-via-search", "note": "Final SAT guidance published 2026-04-29 -- missed by prior scan (outside its 7-day window); explicitly flagged as recommended-for-surface. Written up as RW-2026-05-14-01 (HIGH). No new ICO action May 9-14. WebFetch returned 403." },
+    { "source": "Garante (garanteprivacy.it)", "status": "fetched-via-search", "note": "Tracking pixel email guidelines (Provision No. 284, April 17, 2026; OG April 29, 2026) missed entirely by prior scan. Written up as RW-2026-05-14-02 (MEDIUM). No new Garante action May 9-14. WebFetch returned 403." },
+    { "source": "AEPD (aepd.es)", "status": "fetched-via-search", "note": "No new cookie-specific sanction or binding guidance May 9-14 surfaced." },
+    { "source": "BfDI / DSK (Germany)", "status": "fetched-via-search", "note": "No new federal-level cookie/consent action May 9-14 surfaced." },
+    { "source": "DPC Ireland (dataprotection.ie)", "status": "fetched-via-search", "note": "No new cookie decision May 9-14 surfaced." },
+    { "source": "EUR-Lex", "status": "fetched-via-search", "note": "EU Digital Omnibus still in ordinary legislative procedure (Parliament/Council review); no enacted provision. Not a trigger event." },
+    { "source": "CPPA (cppa.ca.gov)", "status": "fetched-via-search", "note": "No new enforcement action or regulation published May 9-14. CPPA 2026 enforcement pattern (Disney Feb, Ford/PlayOn March) is pre-window and already in baseline. WebFetch returned 403." },
+    { "source": "California AG (oag.ca.gov)", "status": "fetched-via-search", "note": "No new in-window enforcement on cookies/consent." },
+    { "source": "FTC (ftc.gov)", "status": "fetched-via-search", "note": "COPPA compliance guidance published May 13, 2026 -- but COPPA compliance deadline (April 22, 2026) already passed and the COPPA amendments were already in the baseline activation scan. FTC guidance pages are explanatory, not a new regulation or enforcement action. No trigger event. Take It Down Act (TIDA) enforcement effective May 19, 2026 does not touch cookies/CMP. WebFetch returned 403." },
+    { "source": "MeitY / DPDP Board (India)", "status": "fetched-via-search", "note": "No new notification May 9-14. Phase II consent-manager rules effective November 13, 2026 -- previously noted in baseline; no change in this window." },
+    { "source": "ANPD (Brazil)", "status": "fetched-via-search", "note": "No new resolution on cookies/consent May 9-14 surfaced." },
+    { "source": "US state legislatures (CT, CO, VA, TX, OR, MT, MD, NJ, MN, others)", "status": "fetched-via-search", "note": "Connecticut CTDPA SB 1295 (LLM training disclosure, effective July 1, 2026) is pre-window (enacted June 2025) and not a cookie/consent mechanism change -- it is a privacy-notice disclosure obligation. Scope test: MEDIUM relevance (affects privacy notice content that ID-PRIVACY may generate); LOW urgency relative to banner/consent changes. Not alerted; recommend adding to weekly digest as a LOW item for documentation/tenant-config tracking. T-48 days to effective date: customers should update privacy notice templates." },
+    { "source": "SECURE Data Act (US federal bill)", "status": "fetched-via-search", "note": "Introduced April 22, 2026 by House Republicans; not enacted; in early legislative stages. Not a trigger event (Trigger #1 requires enactment/signing/official publication). Watch-list item; legislative prospects unclear given Senate dynamics. Flag for next monthly Tier-3 scan." },
+    { "source": "IAB Europe / IAB Tech Lab", "status": "fetched-via-search", "note": "No new framework version update May 9-14. TCF v2.3 deadline (February 28, 2026) is pre-window and in baseline. No new GPP update surfaced." },
+    { "source": "Browser / platform signals (Chrome/Safari/Firefox privacy sandbox)", "status": "fetched-via-search", "note": "No new browser mandate or third-party cookie deprecation update May 9-14 surfaced in search." }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-05-14-01",
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO binding guidance -- Final Storage and Access Technologies Guidance (PECR / UK GDPR / DUAA)",
+      "severity": "HIGH",
+      "publishedDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-14/RW-2026-05-14-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Binding ICO guidance effective April 29, 2026; introduces five new DUAA exemption categories, 'simple means of objecting' sub-chapter, and multi-purpose SAT rule -- all requiring banner/classifier/routing changes for UK jurisdiction. Previously in candidatesConsideredButRejected (May 9 scan) with explicit recommendation to surface in next cycle. Not in alerts-emitted.json."
+    },
+    {
+      "alertId": "RW-2026-05-14-02",
+      "jurisdiction": "Italy (EU/EEA)",
+      "instrument": "Garante binding guidelines -- Provision No. 284 on tracking pixels in email communications",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-14/RW-2026-05-14-02.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Binding DPA guidelines classifying email tracking pixels as terminal-equipment access requiring consent (Article 122 Italian Privacy Code / ePrivacy Directive Art. 5(3)); six-month transition to October 29, 2026. Missed entirely by May 9 scan; not in alerts-emitted.json. Requires vendor-library update, new IT jurisdiction routing rule, and customer notice."
+    }
+  ],
+  "candidatesConsideredButRejected": [
+    {
+      "item": "CNIL France -- email tracking pixel recommendation, April 2026",
+      "rejectionReason": "advisory-non-binding -- CNIL recommendation is advisory, not a binding sanction or enacted regulation. Flagged as dependency in RW-2026-05-14-02 (Garante guidelines) for alignment review. If CNIL elevates to binding guidance, re-assess as a separate HIGH alert for France."
+    },
+    {
+      "item": "Connecticut CTDPA SB 1295 -- LLM training disclosure, effective July 1, 2026",
+      "rejectionReason": "out-of-scope-for-cookie-consent-CMP -- the LLM training disclosure is a privacy notice amendment, not a cookie/consent mechanism change. T-48 days to effective date. Recommend orchestrator add to weekly LOW digest with action: 'Update privacy-notice template for Connecticut tenants to include LLM training disclosure by June 25, 2026.'"
+    },
+    {
+      "item": "SECURE Data Act (US federal bill, introduced April 22, 2026)",
+      "rejectionReason": "pre-enactment-bill -- not enacted, not published in official gazette. Trigger #1 requires enactment/signing. Legislative prospects uncertain. Added to Tier-3 watch list for monthly scan."
+    },
+    {
+      "item": "EDPB CEF 2026 -- coordinated enforcement action on transparency, launched March 19, 2026",
+      "rejectionReason": "pre-window-and-ongoing-programme -- launched pre-window (March 19); not a new event this week. The CEF 2026 enforcement sweep targeting Articles 12-14 GDPR transparency obligations is a watch item: when participating DPAs begin contacting controllers (expected H2 2026), that may be a trigger event. Recommend orchestrator add to weekly digest for monitoring."
+    },
+    {
+      "item": "FTC COPPA guidance pages published May 13, 2026",
+      "rejectionReason": "explanatory-guidance-not-new-regulation -- COPPA amended Rule already in effect (compliance deadline April 22, 2026, already in baseline). FTC guidance pages are explanatory business compliance resources, not a new regulation or enforcement action."
+    },
+    {
+      "item": "India DPDP Act -- Consent Manager rules (Phase II, effective November 13, 2026)",
+      "rejectionReason": "pre-window-already-in-baseline -- Phase II dates were set at MeitY notification (November 13, 2025). No new MeitY notification in the May 9-14 window. T-183 days; recommend surfacing in monthly Tier-2 scan as a LOW horizon item."
+    }
+  ],
+  "highestSeverity": "HIGH",
+  "runDurationSeconds": 1140,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on ico.org.uk, garanteprivacy.it, ftc.gov, cppa.ca.gov, enforcementtracker.com, and multiple law-firm sites. This is consistent with the standing operational caveat. All substantive facts in alerts are corroborated across four or more independent secondary sources. Counsel must verify primary source text before externally binding action.",
+    "Two alerts (RW-2026-05-14-01 and RW-2026-05-14-02) are based on regulatory publications dated April 29, 2026 -- within the gap period between the activation baseline (May 9, 2026 initial-activation run) and this first daily scan window. The May 9 scan explicitly recommended surfacing the ICO SAT guidance in the next cycle. The Garante email-pixel guidelines were not surfaced by the May 9 scan at all. Both are new, non-duplicate, and material for ID-PRIVACY."
+  ]
+}

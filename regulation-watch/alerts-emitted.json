@@ -2,7 +2,7 @@
   {
     "alertId": "RW-2026-05-09-01",
     "jurisdiction": "United States (federal)",
-    "instrument": "FTC v. Kochava stipulated order — sensitive-location data",
+    "instrument": "FTC v. Kochava stipulated order -- sensitive-location data",
     "publishedDate": "2026-05-04",
     "severity": "HIGH",
     "sentAt": "2026-05-09T18:48:37Z",
@@ -12,5 +12,32 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-14-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO final guidance -- Storage and Access Technologies (PECR / UK GDPR / DUAA)",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-14T00:00:00Z",
+    "jiraKey": "IDP-11537",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11537",
+    "emailDraftId": "r-3718211757498087145",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-14/RW-2026-05-14-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-14-02",
+    "jurisdiction": "Italy (EU/EEA)",
+    "instrument": "Garante Provision No. 284 -- tracking pixels in email communications",
+    "publishedDate": "2026-04-29",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-14T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "r-9033778666560955157",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-14/RW-2026-05-14-02.md"
   }
 ]
