@@ -12,5 +12,33 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-15-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Final Storage and Access Technologies (SAT) Guidance",
+    "publishedDate": "2026-04-29",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-15T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-15/RW-2026-05-15-01.md",
+    "deliveryNote": "MEDIUM severity — email draft to be created by orchestrator; no Jira story per delivery rules"
+  },
+  {
+    "alertId": "RW-2026-05-15-DIGEST",
+    "jurisdiction": "Global (Tier 2: APAC, MENA, LatAm, cross-border)",
+    "instrument": "Weekly LOW-severity digest — 6 items (JP APPI, KR PIPA, AU Children Code, EU Digital Omnibus Art.88a/88b, BR ANPD independence, KSA PDPL enforcement)",
+    "publishedDate": "2026-05-15",
+    "severity": "LOW",
+    "sentAt": "2026-05-15T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md",
+    "deliveryNote": "LOW digest — Gmail draft to be created by orchestrator; digest-pending.md to be cleared after draft creation"
   }
 ]
