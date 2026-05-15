@@ -1,0 +1,152 @@
+{
+  "scanDate": "2026-05-15",
+  "scanType": "weekly-tier2",
+  "lookbackStart": "2026-05-09",
+  "lookbackEnd": "2026-05-15",
+  "tiersScanned": ["Tier 2"],
+  "tier2SourcesAttempted": [
+    {
+      "source": "Japan PPC / APPI (ppc.go.jp)",
+      "status": "fetched-via-search",
+      "note": "Japanese Cabinet approved APPI amendment bill 2026-04-07; submitted to Diet. Key changes: consent exemption for statistical processing / AI training, children-under-16 parental consent, risk-based framework. Effective: enactment expected ~2026 Q3–Q4; operative date for businesses ~2028. No immediate CMP code change required."
+    },
+    {
+      "source": "Korea PIPC / PIPA (pipc.go.kr)",
+      "status": "fetched-via-search",
+      "note": "National Assembly passed PIPA amendment 2026-02-12; signed 2026-03-10; effective 2026-09-11. Changes: 10% turnover fine ceiling, CEO accountability, CPO board approval, ISMS-P mandatory from 2027-07-01. No new cookie/consent mechanism. Classified LOW — governance uplift only, no banner or consent-signal change required."
+    },
+    {
+      "source": "OAIC / Australia Privacy Act (oaic.gov.au)",
+      "status": "fetched-via-search",
+      "note": "OAIC published exposure draft Children's Online Privacy Code 2026-03-31; consultation open until 2026-06-05; final Code must register by 2026-12-10; commencement date TBD (likely 2027). Pre-final. Children's data / targeted advertising prohibition for under-15s. Classified LOW — pre-effective >180 days."
+    },
+    {
+      "source": "EU Commission Digital Omnibus — GDPR Art. 88a/88b (commission.europa.eu / EUR-Lex)",
+      "status": "fetched-via-search",
+      "note": "Digital Omnibus published 2025-11-19 by Commission. Art. 88a (cookie rules into GDPR) and Art. 88b (browser consent signals) still at early Council/Parliament stage — no general approach adopted on the GDPR/ePrivacy portions as of 2026-05-15. The AI Omnibus portion reached provisional trilogue agreement 2026-05-07 but that is separate. Art. 88a applies 6 months after entry into force; earliest realistic operative date ~late 2027. Classified LOW."
+    },
+    {
+      "source": "Brazil ANPD (gov.br/anpd)",
+      "status": "fetched-via-search",
+      "note": "ANPD became formally independent via Law 15.352/2026 (February 2026). Enforcement priorities for 2026-27 explicitly target advertising/profiling. Existing ANPD cookie guidance (October 2022) unchanged. Independence increases enforcement credibility and speed. Classified LOW — no new rule; increased enforcement capacity is an awareness item."
+    },
+    {
+      "source": "Singapore PDPC (pdpc.gov.sg)",
+      "status": "fetched-via-search",
+      "note": "2026-02-02: PDPC announced NRIC authentication ban by 2026-12-31 (not cookies/consent relevant). Data portability obligation not yet in force. No new cookie/consent rulemaking in period. No qualifying change."
+    },
+    {
+      "source": "Thailand PDPC (pdpc.or.th)",
+      "status": "fetched-via-search",
+      "note": "Active enforcement in 2025-2026 (THB 21.5M fines Aug 2025; iris-scan operator ordered to halt Nov 2025). No new cookie-specific regulation or guidance published in scan window. Enforcement awareness item. No qualifying change."
+    },
+    {
+      "source": "UAE Data Office / UAE PDPL",
+      "status": "fetched-via-search",
+      "note": "UAE PDPL enacted 2021; implementing regulations stable. No new guidance or enforcement action on cookies/consent in scan window. No qualifying change."
+    },
+    {
+      "source": "Saudi Arabia SDAIA / PDPL (sdaia.gov.sa)",
+      "status": "fetched-via-search",
+      "note": "SDAIA issued 48 enforcement decisions confirming PDPL violations as of January 2026; Clyde & Co confirmed enforcement is live. No new cookie-specific guidance published; enforcement of existing PDPL framework escalating. Classified LOW — awareness item; confirms existing CMP configuration for KSA is materially correct."
+    },
+    {
+      "source": "Canada OPC / CAI Quebec (priv.gc.ca / cai.gouv.qc.ca)",
+      "status": "fetched-via-search",
+      "note": "Bill C-27 (federal CPPA) died with prorogation January 2025; replacement not yet introduced as of May 2026. Quebec Law 25 fully in force; no new CAI enforcement actions on cookies in scan window. No qualifying change."
+    },
+    {
+      "source": "China CAC / PIPL",
+      "status": "fetched-via-search",
+      "note": "Measures for Certification of Cross-Border Transfer of Personal Information effective 2026-01-01 (covers data-transfer certification pathway, not cookies directly). Cookie consent obligations under PIPL unchanged. No qualifying change for CMP layer."
+    },
+    {
+      "source": "New Zealand OPC / Privacy Act 2020",
+      "status": "fetched-via-search",
+      "note": "No new cookie/consent guidance or enforcement action in scan window. No qualifying change."
+    },
+    {
+      "source": "India MeitY / DPDP Rules 2025",
+      "status": "fetched-via-search",
+      "note": "Consent Manager framework (Rule 4) effective November 2026 — already in baseline as HIGH. Government expected to operationalise the framework June–August 2026. No new MeitY notification in scan window beyond what is in baseline. Baseline item; no new alert required."
+    },
+    {
+      "source": "UK ICO SAT Guidance (ico.org.uk)",
+      "status": "fetched-via-search",
+      "note": "Final Storage and Access Technologies guidance published 2026-04-29. This was a candidate-rejected item in the 2026-05-09 Tier 1 scan (outside 7-day daily-scan window). Picked up in this Tier 2 weekly run. Written up as alert RW-2026-05-15-01 (MEDIUM)."
+    }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-05-15-01",
+      "jurisdiction": "United Kingdom",
+      "instrument": "Binding DPA guidance — ICO Final Storage and Access Technologies (SAT) Guidance (published 2026-04-29)",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-04-29",
+      "effectiveDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-15/RW-2026-05-15-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Binding ICO guidance replacing entire UK cookies guidance; expands SAT taxonomy to tracking pixels/fingerprinting/web storage; codifies 5 DUAA-exempt categories; new mixed-purpose restriction sub-chapter. Requires UK ruleset, classification ML, and banner updates. Severity MEDIUM: configuration/content change; not code-breaking; no hard enforcement deadline beyond immediate."
+    }
+  ],
+  "lowItemsAddedToDigest": [
+    {
+      "item": "Japan APPI 2026 amendment (Cabinet approved 2026-04-07, Diet pending)",
+      "digestReason": "Pre-enactment; operative date ~2028. Awareness only."
+    },
+    {
+      "item": "Korea PIPA amendment (signed 2026-03-10, effective 2026-09-11)",
+      "digestReason": "Governance/penalty uplift only. No new cookie/consent mechanism. LOW for CMP platform."
+    },
+    {
+      "item": "Australia Children's Online Privacy Code exposure draft (OAIC, 2026-03-31)",
+      "digestReason": "Consultation stage; registration by 2026-12-10; commencement TBD. Pre-effective >180 days."
+    },
+    {
+      "item": "EU Digital Omnibus — GDPR Art. 88a/88b (Commission proposal, 2025-11-19)",
+      "digestReason": "Proposal stage; no Council/Parliament position on ePrivacy/cookie provisions. Operative date ~2027+ at earliest."
+    },
+    {
+      "item": "Brazil ANPD independence (Law 15.352/2026, February 2026)",
+      "digestReason": "Enforcement-capacity uplift; no new cookie rule. Awareness item."
+    },
+    {
+      "item": "Saudi Arabia PDPL active enforcement (48 SDAIA decisions, Jan 2026)",
+      "digestReason": "Confirms existing framework is being enforced. No new guidance or rule. Awareness item."
+    }
+  ],
+  "candidatesConsideredButRejected": [
+    {
+      "item": "Singapore PDPC — NRIC authentication ban (2026-02-02)",
+      "rejectionReason": "Not cookies/consent relevant."
+    },
+    {
+      "item": "Thailand PDPC enforcement actions (Aug/Nov 2025)",
+      "rejectionReason": "Pre-scan-window; no new rule published in this window."
+    },
+    {
+      "item": "UAE PDPL — no new action in window",
+      "rejectionReason": "No qualifying change in window."
+    },
+    {
+      "item": "Canada — Bill C-27 dead; Quebec Law 25 stable",
+      "rejectionReason": "No qualifying change in window."
+    },
+    {
+      "item": "China PIPL cross-border certification measures (effective 2026-01-01)",
+      "rejectionReason": "Pre-window (effective date before scan lookback start); covers cross-border transfer pathway, not cookie consent. Should have been picked up in an earlier scan if material."
+    },
+    {
+      "item": "India DPDP Consent Manager framework (Nov 2026)",
+      "rejectionReason": "Already in baseline as HIGH. No new MeitY notification in scan window."
+    },
+    {
+      "item": "EU Digital Omnibus AI Omnibus provisional agreement (2026-05-07)",
+      "rejectionReason": "AI governance provisions; not cookies/consent/CMP. Out of scope per operating rules."
+    }
+  ],
+  "highestSeverity": "MEDIUM",
+  "alertsEmitted": 1,
+  "lowItemsInDigest": 6,
+  "runDurationSeconds": 412
+}
