@@ -12,5 +12,33 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-18-01",
+    "jurisdiction": "Italy",
+    "instrument": "Garante Provvedimento n. 284 — email tracking pixel guidelines",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-18T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-18/RW-2026-05-18-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-18-02",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO final guidance on storage and access technologies — DUAA PECR amendments",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-18T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-18/RW-2026-05-18-02.md"
   }
 ]
