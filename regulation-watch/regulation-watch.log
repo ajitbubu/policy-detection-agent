@@ -2,3 +2,4 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-05-19T00:00:00Z | tier1-daily | 3 alerts emitted | HIGH | RW-2026-05-19-01 (UK/ICO SAT guidance HIGH), RW-2026-05-19-02 (US-CA/CCPA GPC+dark-patterns HIGH), RW-2026-05-19-03 (EU/IAB TCF v2.3 MEDIUM)
