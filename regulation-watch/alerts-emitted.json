@@ -12,5 +12,32 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-20-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO final guidance on Storage and Access Technologies (post-DUAA) — analytics exemption, instigator scope, PECR fine ceiling 35x increase",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-20T00:00:00Z",
+    "jiraKey": "IDP-11599",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11599",
+    "emailDraftId": "r3167199671198386656",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-20/RW-2026-05-20-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-20-02",
+    "jurisdiction": "Italy (EU/EEA)",
+    "instrument": "Garante Provvedimento n. 284 — binding guidelines on email tracking pixels, consent required, 28 October 2026 deadline",
+    "publishedDate": "2026-04-29",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-20T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "r1459489279101894233",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-20/RW-2026-05-20-02.md"
   }
 ]
