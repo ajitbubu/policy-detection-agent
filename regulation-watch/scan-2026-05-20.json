@@ -1,0 +1,73 @@
+{
+  "scanDate": "2026-05-20",
+  "scanType": "daily-tier1",
+  "lookbackStart": "2026-05-09",
+  "lookbackEnd": "2026-05-20",
+  "tiersScanned": ["Tier 1"],
+  "note": "Extended lookback to 2026-05-09 (date of last scan) rather than 7 days, because the ICO SAT guidance was flagged in the 2026-05-09 scan as a candidate rejected on window grounds, and the orchestrator note in scan-2026-05-09.json explicitly recommended surfacing it on the next cycle. Connecticut SB4 was also active in this window.",
+  "sourcesAttempted": [
+    { "source": "EDPB (edpb.europa.eu)", "status": "fetched-via-search", "note": "May 2026 outputs: Joint Opinion 1/2026 on AI Omnibus (not cookie/consent-touching). Anonymisation guidelines still in progress (sprint team; summer target). CEF 2026 transparency action launched 2026-03-19 -- flagged in digest (LOW). No new binding cookie/consent instrument in window." },
+    { "source": "CNIL (cnil.fr)", "status": "fetched-via-search", "note": "No new sanction or guidance in window beyond previously-baselined 2025 Google/Shein fines. Cross-domain consent recommendations announced for 2026 public consultation -- not yet published. Monitoring." },
+    { "source": "ICO (ico.org.uk)", "status": "fetched-via-search", "note": "Final 'Storage and Access Technologies' guidance published 2026-04-29. Although published before the prior scan's 7-day lookback window, it was explicitly flagged as a candidate in scan-2026-05-09.json and recommended for next cycle. Emitted as RW-2026-05-20-01 (HIGH). WebFetch returned 403; facts corroborated via 5 secondary sources." },
+    { "source": "Garante (garanteprivacy.it)", "status": "fetched-via-search", "note": "Provvedimento n. 284 (email tracking pixel guidelines) published in Official Gazette 2026-04-29. Not captured in prior scan. Emitted as RW-2026-05-20-02 (MEDIUM). WebFetch returned 403; doc web n. 10241943 confirmed via Italian-language search index and 4 English secondary sources." },
+    { "source": "AEPD (aepd.es)", "status": "fetched-via-search", "note": "No in-window cookie/consent action surfaced." },
+    { "source": "BfDI / DSK (Germany)", "status": "fetched-via-search", "note": "No in-window federal-level binding action surfaced. German state DPAs continue cookie enforcement but no new binding guidance in window." },
+    { "source": "DPC Ireland (dataprotection.ie)", "status": "fetched-via-search", "note": "No in-window cookie decision surfaced." },
+    { "source": "EUR-Lex / ePrivacy Regulation", "status": "fetched-via-search", "note": "No in-window ePrivacy Regulation publication. Still in legislative limbo." },
+    { "source": "UK Parliament / DUAA commencement orders", "status": "fetched-via-search", "note": "No new DUAA commencement order in window. DUAA PECR provisions already in force since 2026-02-05; ICO guidance emitted as RW-2026-05-20-01." },
+    { "source": "CPPA (cppa.ca.gov)", "status": "fetched-via-search", "note": "No new enforcement action or rulemaking in window beyond PlayOn Sports (March 2026, pre-window). DROP audit regulations still pre-rulemaking. Monitoring." },
+    { "source": "California AG (oag.ca.gov)", "status": "fetched-via-search", "note": "No in-window enforcement announcement on cookies/consent beyond multi-state GPC sweep (September 2025, pre-window and pre-baseline)." },
+    { "source": "Colorado AG (coag.gov)", "status": "fetched-via-search", "note": "No in-window enforcement announcement." },
+    { "source": "Connecticut AG / Legislature", "status": "fetched-via-search", "note": "SB 4 passed legislature 2026-05-04/2026-04-23; transmitted to Governor 2026-05-15; signature not confirmed as of 2026-05-20. Flagged in digest-pending.md as WATCH/PENDING PRIMARY CONFIRMATION. Will escalate to HIGH alert on confirmed signature." },
+    { "source": "Texas AG (texasattorneygeneral.gov)", "status": "fetched-via-search", "note": "No in-window binding enforcement action surfaced." },
+    { "source": "Oregon DOJ", "status": "fetched-via-search", "note": "No in-window action surfaced." },
+    { "source": "Maryland AG / MODPA", "status": "fetched-via-search", "note": "MODPA enforcement commenced 2026-04-01. No specific in-window enforcement action surfaced." },
+    { "source": "FTC (ftc.gov)", "status": "fetched-via-search", "note": "Kochava stipulated order (RW-2026-05-09-01) already in alerts-emitted.json. No new FTC cookie/tracking enforcement action in window." },
+    { "source": "MeitY / DPDP Board (India)", "status": "fetched-via-search", "note": "DPDP Rules notified 2026-11-14 (already in baseline). Consent manager framework effective 2026-11-13. No new notifications in window. Monitoring." },
+    { "source": "ANPD (Brazil)", "status": "fetched-via-search", "note": "No new resolution or cookie guidance in window. ANPD gained independence February 2026; enforcement capacity growing. No binding cookie instrument surfaced." },
+    { "source": "OPC Canada / CAI Quebec", "status": "fetched-via-search", "note": "No in-window enforcement on consent/cookies surfaced." },
+    { "source": "CJEU / EU appellate courts", "status": "fetched-via-search", "note": "No in-window cookie/consent ruling surfaced." },
+    { "source": "IAB Europe / IAB Tech Lab", "status": "fetched-via-search", "note": "TCF v2.3 compliance deadline 2026-02-28 passed (already in baseline). Belgian Market Court January 2026 ruling (IAB Europe wins appeal, APD must reassess) is pre-window. No new TCF policy update in window." }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-05-20-01",
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO final guidance on Storage and Access Technologies (post-DUAA)",
+      "severity": "HIGH",
+      "publishedDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-20/RW-2026-05-20-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Binding ICO guidance implementing DUAA PECR amendments in force since 2026-02-05. Material changes: 5 new consent exemptions including analytics-without-consent; scope expansion to 'instigators' (directly implicating CMPs); 'simple means of objecting' requirement for exempt categories; PECR fine ceiling raised 35x to GBP 17.5M / 4% global turnover. Requires new banner mode code change in ID-PRIVACY. Flagged as candidate in scan-2026-05-09 and recommended for next cycle by prior orchestrator."
+    },
+    {
+      "alertId": "RW-2026-05-20-02",
+      "jurisdiction": "Italy (EU/EEA)",
+      "instrument": "Garante Provvedimento n. 284 -- email tracking pixel guidelines",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-20/RW-2026-05-20-02.md",
+      "confidence": "MEDIUM-HIGH",
+      "reasonForAlert": "First binding Italian regulation on email tracking pixels. Requires prior consent for unique per-user tracking pixels in emails to Italian residents. Six-month compliance window from Official Gazette publication (2026-04-29) ends 2026-10-28. Not captured in prior scan. Requires consent taxonomy, admin UI, and documentation changes in ID-PRIVACY. Customer advisory required."
+    }
+  ],
+  "digestPendingAdditions": [
+    {
+      "item": "Connecticut SB 4 (2026) -- CTDPA amendment + precise geolocation ban",
+      "status": "PENDING PRIMARY CONFIRMATION -- governor signature not confirmed",
+      "action": "Escalate to HIGH alert on confirmed signature. Monitor daily through 2026-06-01."
+    },
+    {
+      "item": "EDPB CEF 2026 -- coordinated enforcement on GDPR transparency",
+      "status": "LOW -- enforcement initiative launched 2026-03-19, not a new regulatory instrument",
+      "action": "Include as background context in next customer advisory."
+    }
+  ],
+  "highestSeverity": "HIGH",
+  "runDurationSeconds": 1187,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on ico.org.uk and garanteprivacy.it in this run. Both alerts rely on search-corroborated secondary sources (5 sources for ICO; 4 sources for Garante). Counsel must verify primary source text before externally-binding action.",
+    "Connecticut SB 4: bill text and legislative history confirmed via multiple sources; governor signature not yet confirmed as of 2026-05-20. Alert will be elevated to HIGH upon confirmation.",
+    "Lookback extended to 2026-05-09 (full gap since last scan) rather than the nominal 7-day window, per orchestrator note in scan-2026-05-09.json recommending the ICO SAT guidance be surfaced on the next cycle."
+  ]
+}
