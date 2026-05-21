@@ -12,5 +12,29 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-21-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO final guidance on storage and access technologies (DUAA PECR update) — 5 new consent exemptions, £17.5M penalty ceiling, affiliate pixel clarification",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-21T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-21/RW-2026-05-21-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-21-02",
+    "jurisdiction": "EU/EEA (IAB TCF — global CMP framework)",
+    "instrument": "IAB TCF v2.3 mandatory disclosedVendors segment — deadline 2026-02-28 (PASSED)",
+    "publishedDate": "2025-06-19",
+    "severity": "CRITICAL",
+    "sentAt": "2026-05-21T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-21/RW-2026-05-21-02.md"
   }
 ]
