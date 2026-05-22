@@ -12,5 +12,28 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "DIG-2026-05-22-DIGEST",
+    "jurisdiction": "Multiple (UK, EU, KR, AU, IN, BR)",
+    "instrument": "Weekly Tier 2 digest — 7 LOW-severity items",
+    "publishedDate": "2026-05-22",
+    "severity": "LOW",
+    "sentAt": "2026-05-22T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": "PENDING — to be updated by orchestrator after Gmail draft creation",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-22/tier2-weekly-scan-2026-05-22.json",
+    "digestItems": [
+      "DIG-2026-05-22-01",
+      "DIG-2026-05-22-02",
+      "DIG-2026-05-22-03",
+      "DIG-2026-05-22-04",
+      "DIG-2026-05-22-05",
+      "DIG-2026-05-22-06",
+      "DIG-2026-05-22-07"
+    ]
   }
 ]

@@ -1,0 +1,99 @@
+{
+  "scanDate": "2026-05-22",
+  "scanType": "weekly-tier2",
+  "lookbackStart": "2026-05-15",
+  "lookbackEnd": "2026-05-22",
+  "tiersScanned": ["Tier 2"],
+  "sourcesAttempted": [
+    { "source": "PIPL / CAC (China)", "status": "fetched-via-search", "note": "Cross-border certification measures effective 2026-01-01 (pre-window); Cybersecurity Law amendments in force; no in-window new cookie/consent action surfaced." },
+    { "source": "PDPC (Singapore)", "status": "fetched-via-search", "note": "NRIC auth ban announced Feb 2026 (pre-window); no in-window cookie/consent advisory." },
+    { "source": "PDPA (Thailand)", "status": "fetched-via-search", "note": "No in-window action surfaced." },
+    { "source": "OAIC (Australia)", "status": "fetched-via-search", "note": "Children's Online Privacy Code exposure draft published 2026-03-31, consultation closes 2026-06-05 — surfaced as DIGEST ITEM 4." },
+    { "source": "OPC (Canada)", "status": "fetched-via-search", "note": "Bill C-27 died on Order Paper Jan 2025; no successor bill tabled as of scan date. PIPEDA remains operative." },
+    { "source": "PIPC (South Korea)", "status": "fetched-via-search", "note": "PIPA amendment enacted 2026-03-10, effective 2026-09-11 — surfaced as DIGEST ITEM 3." },
+    { "source": "APPI (Japan)", "status": "fetched-via-search", "note": "No in-window amendment or guidance action surfaced." },
+    { "source": "ANPD (Brazil)", "status": "fetched-via-search", "note": "ANPD independence law (Law 15.352/2026, Feb 2026) and Resolution CD/ANPD No. 30 (Dec 2025) surfaced — DIGEST ITEM 7; both pre-window but not previously reported." },
+    { "source": "MeitY / DPDP (India)", "status": "fetched-via-search", "note": "No new in-window gazette notification; consent manager framework T-175 horizon reminder surfaced as DIGEST ITEM 5." },
+    { "source": "ICO (UK)", "status": "fetched-via-search", "note": "Final SAT guidance published 2026-04-29 — pre-window but backfill recommended by prior scan; surfaced as DIGEST ITEM 1. WebFetch on ico.org.uk returned 403 (standing caveat)." },
+    { "source": "EDPB (EU)", "status": "fetched-via-search", "note": "Pay-or-consent updated guidelines reportedly published May 2026 — PENDING PRIMARY CONFIRMATION on edpb.europa.eu; surfaced as DIGEST ITEM 2. Guidelines 1/2026 (scientific research) confirmed published April 2026 — not cookie/consent touching, excluded." },
+    { "source": "European Commission (Digital Omnibus)", "status": "fetched-via-search", "note": "Proposal from 2025-11-19; legislative progress update surfaced as DIGEST ITEM 6; no new parliamentary position in scan window." },
+    { "source": "IAB Europe (TCF)", "status": "fetched-via-search", "note": "TCF v2.3 deadline was 2026-02-28 (pre-window, in baseline); no new TCF version update in scan window." },
+    { "source": "UAE PDPL / KSA PDPL", "status": "fetched-via-search", "note": "No in-window action surfaced." },
+    { "source": "POPIA (South Africa) / NDPA (Nigeria)", "status": "fetched-via-search", "note": "No in-window action surfaced." }
+  ],
+  "deduplicationCheck": {
+    "alertsEmittedReviewed": ["RW-2026-05-09-01"],
+    "duplicatesFound": 0,
+    "note": "RW-2026-05-09-01 (FTC v. Kochava, HIGH, US federal) does not overlap with any Tier 2 item in this digest."
+  },
+  "digestItems": [
+    {
+      "digestItemId": "DIG-2026-05-22-01",
+      "title": "UK ICO Final SAT Guidance",
+      "jurisdiction": "United Kingdom",
+      "severity": "LOW",
+      "publishedDate": "2026-04-29",
+      "note": "Backfill from prior scan recommendation (candidatesConsideredButRejected in scan-2026-05-09.json)"
+    },
+    {
+      "digestItemId": "DIG-2026-05-22-02",
+      "title": "EDPB Updated Pay-or-Consent Guidelines",
+      "jurisdiction": "EU/EEA",
+      "severity": "LOW",
+      "publishedDate": "2026-05 (PENDING PRIMARY CONFIRMATION)",
+      "note": "Primary source URL on edpb.europa.eu not independently verified; labeled SECONDARY in digest"
+    },
+    {
+      "digestItemId": "DIG-2026-05-22-03",
+      "title": "South Korea PIPA Amendment",
+      "jurisdiction": "South Korea",
+      "severity": "LOW",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "note": "Enacted pre-window; not previously reported; 112 days to effectiveness"
+    },
+    {
+      "digestItemId": "DIG-2026-05-22-04",
+      "title": "Australia OAIC Children's Online Privacy Code Exposure Draft",
+      "jurisdiction": "Australia",
+      "severity": "LOW",
+      "publishedDate": "2026-03-31",
+      "consultationCloses": "2026-06-05",
+      "expectedRegistration": "2026-12-10",
+      "note": "Consultation closes in 14 days; horizon item"
+    },
+    {
+      "digestItemId": "DIG-2026-05-22-05",
+      "title": "India DPDP Consent Manager Framework Horizon Reminder",
+      "jurisdiction": "India",
+      "severity": "LOW",
+      "publishedDate": "2025-11-14",
+      "phase2Effective": "2026-11-13",
+      "note": "T-175 days horizon reminder; no new gazette notification in scan window"
+    },
+    {
+      "digestItemId": "DIG-2026-05-22-06",
+      "title": "EU Digital Omnibus Cookie Reform Legislative Progress",
+      "jurisdiction": "European Union",
+      "severity": "LOW",
+      "proposalDate": "2025-11-19",
+      "earliestInForce": "2027",
+      "note": "Watch item; no material legislative progress in scan window"
+    },
+    {
+      "digestItemId": "DIG-2026-05-22-07",
+      "title": "Brazil ANPD Independence + 2026-2027 Enforcement Priorities",
+      "jurisdiction": "Brazil",
+      "severity": "LOW",
+      "lawPublished": "2026-02",
+      "resolutionPublished": "2025-12-24",
+      "note": "Pre-window; not previously reported; informational enforcement-risk update"
+    }
+  ],
+  "highestSeverity": "LOW",
+  "alertsWrittenToAlertFiles": 0,
+  "digestItemsCount": 7,
+  "gmailDraftCreated": false,
+  "jiraCommentPosted": false,
+  "runDurationNote": "See regulation-watch.log"
+}
