@@ -12,5 +12,59 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-22-01",
+    "jurisdiction": "United States — California",
+    "instrument": "CPPA v. PlayOn Sports — Stipulated Final Order (cookie dark pattern + GPC failure)",
+    "publishedDate": "2026-03-03",
+    "severity": "HIGH",
+    "sentAt": "2026-05-22T00:00:00Z",
+    "jiraKey": "IDP-11621",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11621",
+    "emailDraftId": "r6426260661619748359",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-22/RW-2026-05-22-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-22-02",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Final Guidance — Storage and Access Technologies (DUA Act new PECR exemptions)",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-22T00:00:00Z",
+    "jiraKey": "IDP-11622",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11622",
+    "emailDraftId": "r6426260661619748359",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-22/RW-2026-05-22-02.md"
+  },
+  {
+    "alertId": "RW-2026-05-22-03",
+    "jurisdiction": "France",
+    "instrument": "CNIL Recommendation — Email Tracking Pixels (Article 82 consent requirement)",
+    "publishedDate": "2026-04-14",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-22T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "r6426260661619748359",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-22/RW-2026-05-22-03.md"
+  },
+  {
+    "alertId": "RW-2026-05-22-04",
+    "jurisdiction": "Italy",
+    "instrument": "Garante Provision No. 284 — Email Tracking Pixels binding guidelines (GU No. 98/2026)",
+    "publishedDate": "2026-04-29",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-22T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "r6426260661619748359",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-22/RW-2026-05-22-04.md"
   }
 ]
