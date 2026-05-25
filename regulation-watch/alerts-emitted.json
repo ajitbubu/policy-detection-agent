@@ -12,5 +12,55 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-25-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Final Guidance on Storage and Access Technologies (DUAA PECR update)",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-25T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-25/RW-2026-05-25-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-25-02",
+    "jurisdiction": "France (EU/EEA)",
+    "instrument": "CNIL Deliberation 2026-042 — Email Tracking Pixels Recommendation",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-05-25T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-25/RW-2026-05-25-02.md"
+  },
+  {
+    "alertId": "RW-2026-05-25-03",
+    "jurisdiction": "Italy (EU/EEA)",
+    "instrument": "Garante Provision 284 — Email Tracking Pixels Binding Guidelines",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-25T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-25/RW-2026-05-25-03.md"
+  },
+  {
+    "alertId": "RW-2026-05-25-04",
+    "jurisdiction": "United States — California",
+    "instrument": "CPPA CCPA Revised Regulations (dark patterns, GPC confirmation, consent symmetry)",
+    "publishedDate": "2025-09-22",
+    "severity": "HIGH",
+    "sentAt": "2026-05-25T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-25/RW-2026-05-25-04.md"
+  },
+  {
+    "alertId": "RW-2026-05-25-05",
+    "jurisdiction": "EU/EEA (global — IAB TCF)",
+    "instrument": "IAB TCF v2.3 mandatory migration — disclosedVendors segment",
+    "publishedDate": "2025-06-19",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-25T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-25/RW-2026-05-25-05.md"
   }
 ]
