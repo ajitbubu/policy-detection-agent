@@ -2,3 +2,4 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-05-26T00:00:00Z | tier1-daily | 4 alerts emitted (RW-2026-05-26-01, RW-2026-05-26-02, RW-2026-05-26-03, RW-2026-05-26-04) | HIGH | 0s

@@ -12,5 +12,61 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-26-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Guidance on Storage and Access Technologies (finalised)",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-26T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-26/RW-2026-05-26-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-26-02",
+    "jurisdiction": "France",
+    "instrument": "CNIL Recommendation on Email Tracking Pixels (deliberation 2026-042)",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-05-26T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-26/RW-2026-05-26-02.md"
+  },
+  {
+    "alertId": "RW-2026-05-26-03",
+    "jurisdiction": "United States — California",
+    "instrument": "CPPA CCPA/CPRA 2026 Regulations — GPC opt-out confirmation mandate + enforcement",
+    "publishedDate": "2026-01-01",
+    "severity": "HIGH",
+    "sentAt": "2026-05-26T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-26/RW-2026-05-26-03.md"
+  },
+  {
+    "alertId": "RW-2026-05-26-04",
+    "jurisdiction": "France",
+    "instrument": "CNIL Multi-device Consent Recommendation (deliberation 2025-131)",
+    "publishedDate": "2026-01-18",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-26T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-26/RW-2026-05-26-04.md"
   }
 ]
