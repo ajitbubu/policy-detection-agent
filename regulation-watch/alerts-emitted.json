@@ -12,5 +12,33 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-27-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Storage and Access Technologies Guidance (final) — PECR/DUA Act analytics exemption",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-27T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-27/RW-2026-05-27-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-27-02",
+    "jurisdiction": "United States — Minnesota",
+    "instrument": "MCDPA (Minn. Stat. Ch. 325O) — cure period expiry T-65 enforcement milestone",
+    "publishedDate": "2024-05-24",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-27T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-27/RW-2026-05-27-02.md"
   }
 ]
