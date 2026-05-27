@@ -25,6 +25,7 @@
     "emailDraftId": null,
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
+    "deliveryNote": "Gmail MCP and Atlassian MCP not available in execution environment — email and Jira creation require manual orchestrator action",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-27/RW-2026-05-27-01.md"
   },
   {
@@ -39,6 +40,7 @@
     "emailDraftId": null,
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
+    "deliveryNote": "Gmail MCP not available in execution environment — email requires manual orchestrator action",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-27/RW-2026-05-27-02.md"
   }
 ]
