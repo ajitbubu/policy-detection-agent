@@ -12,5 +12,53 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-28-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO finalised cookie guidance + DUAA PECR amendments — analytics exemptions and simple means of objecting",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-28T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-28/RW-2026-05-28-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-28-02",
+    "jurisdiction": "France",
+    "instrument": "CNIL Deliberation 2026-042 — tracking pixels in email, consent requirement",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-05-28T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-28/RW-2026-05-28-02.md"
+  },
+  {
+    "alertId": "RW-2026-05-28-03",
+    "jurisdiction": "EU/EEA",
+    "instrument": "IAB TCF 2.3 — mandatory disclosedVendors segment (deadline 2026-02-28, already past)",
+    "publishedDate": "2025-06-19",
+    "severity": "HIGH",
+    "sentAt": "2026-05-28T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-28/RW-2026-05-28-03.md"
+  },
+  {
+    "alertId": "RW-2026-05-28-04",
+    "jurisdiction": "France",
+    "instrument": "CNIL final recommendations on multi-device cookie consent",
+    "publishedDate": "2026-01-16",
+    "severity": "MEDIUM",
+    "sentAt": "2026-05-28T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-28/RW-2026-05-28-04.md"
   }
 ]
