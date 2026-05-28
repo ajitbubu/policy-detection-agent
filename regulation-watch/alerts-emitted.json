@@ -12,5 +12,47 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-15-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Finalised Guidance on Storage and Access Technologies (PECR/DUAA)",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-15T13:00:00Z",
+    "jiraKey": "IDP-11551",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11551",
+    "emailDraftId": "r-8838103838492758660",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-15/RW-2026-05-15-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-15-02",
+    "jurisdiction": "France (EU)",
+    "instrument": "CNIL Decision No. 2026-042 — Recommendation on Email Tracking Pixels",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-05-15T13:00:00Z",
+    "jiraKey": "IDP-11552",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11552",
+    "emailDraftId": "r5144521074038949622",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-15/RW-2026-05-15-02.md"
+  },
+  {
+    "alertId": "RW-2026-05-15-03",
+    "jurisdiction": "Italy (EU)",
+    "instrument": "Garante Provision No. 284/2026 — Guidelines on Email Tracking Pixels",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-15T13:00:00Z",
+    "jiraKey": "IDP-11553",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11553",
+    "emailDraftId": "r-5272529709719113400",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-15/RW-2026-05-15-03.md"
   }
 ]
