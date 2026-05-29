@@ -23,8 +23,9 @@
     "scanType": "weekly-tier2",
     "digestFile": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md",
     "emailRecipient": "asahu@datasafeguard.ai",
-    "emailDraftId": null,
+    "emailDraftId": "r289738540188918482",
     "jiraKey": null,
-    "note": "Gmail draft to be created by orchestrator. digest-pending.md to be cleared after draft creation."
+    "prUrl": "https://github.com/ajitbubu/policy-detection-agent/pull/20",
+    "note": "Gmail draft created. digest-pending.md cleared."
   }
 ]
