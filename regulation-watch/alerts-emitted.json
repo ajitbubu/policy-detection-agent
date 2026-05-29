@@ -12,5 +12,33 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-29-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Guidance on Storage and Access Technologies (finalized) — DUAA cookie exemptions + PECR penalty uplift",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-05-29T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-29/RW-2026-05-29-01.md"
+  },
+  {
+    "alertId": "RW-2026-05-29-02",
+    "jurisdiction": "European Union / EEA",
+    "instrument": "EDPB expanded pay-or-consent guidance — all-platform scope, three-tier model requirement",
+    "publishedDate": "2026-05-12",
+    "severity": "HIGH",
+    "sentAt": "2026-05-29T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-05-29/RW-2026-05-29-02.md"
   }
 ]
