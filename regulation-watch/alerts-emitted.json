@@ -12,5 +12,33 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-01-01",
+    "jurisdiction": "France (EU/EEA)",
+    "instrument": "CNIL Deliberation 2026-042 — email tracking pixel consent recommendation",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-06-01T08:00:00Z",
+    "jiraKey": "IDP-11738",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11738",
+    "emailDraftId": "r1485189031213939848",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-01/RW-2026-06-01-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-01-02",
+    "jurisdiction": "United Kingdom",
+    "instrument": "Data (Use and Access) Act 2025 — PECR new SAT consent exemptions + ICO final guidance",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-06-01T08:00:00Z",
+    "jiraKey": "IDP-11739",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-11739",
+    "emailDraftId": "r1485189031213939848",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-01/RW-2026-06-01-02.md"
   }
 ]
