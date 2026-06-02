@@ -12,5 +12,33 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-02-01",
+    "jurisdiction": "France",
+    "instrument": "CNIL Recommendation on Email Tracking Pixels (Recommandation pixels de suivi dans les courriers electroniques)",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-06-02T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-02/RW-2026-06-02-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-02-02",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Final Guidance on Storage and Access Technologies (PECR / DUAA)",
+    "publishedDate": "2026-04-29",
+    "severity": "MEDIUM",
+    "sentAt": "2026-06-02T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-02/RW-2026-06-02-02.md"
   }
 ]
