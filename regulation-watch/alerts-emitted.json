@@ -20,9 +20,9 @@
     "publishedDate": "2026-04-14",
     "severity": "HIGH",
     "sentAt": "2026-06-02T00:00:00Z",
-    "jiraKey": null,
-    "jiraUrl": null,
-    "emailDraftId": null,
+    "jiraKey": "IDP-12144",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12144",
+    "emailDraftId": "r3541231719634090075",
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-02/RW-2026-06-02-01.md"
@@ -36,7 +36,7 @@
     "sentAt": "2026-06-02T00:00:00Z",
     "jiraKey": null,
     "jiraUrl": null,
-    "emailDraftId": null,
+    "emailDraftId": "r6062051016674851294",
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-02/RW-2026-06-02-02.md"
