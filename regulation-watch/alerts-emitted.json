@@ -2,7 +2,7 @@
   {
     "alertId": "RW-2026-05-09-01",
     "jurisdiction": "United States (federal)",
-    "instrument": "FTC v. Kochava stipulated order — sensitive-location data",
+    "instrument": "FTC v. Kochava stipulated order -- sensitive-location data",
     "publishedDate": "2026-05-04",
     "severity": "HIGH",
     "sentAt": "2026-05-09T18:48:37Z",
@@ -12,5 +12,47 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-03-01",
+    "jurisdiction": "France (EU/EEA)",
+    "instrument": "CNIL Recommendation on Email Tracking Pixels (Article 82 loi I&L)",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-06-03T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-03/RW-2026-06-03-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-03-02",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Finalized Storage and Access Technologies Guidance (DUAA 2025 / PECR amendment)",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-06-03T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-03/RW-2026-06-03-02.md"
+  },
+  {
+    "alertId": "RW-2026-06-03-03",
+    "jurisdiction": "EU/EEA (global CMP framework)",
+    "instrument": "IAB TCF 2.3 mandatory transition (disclosedVendors, LI removal for Purposes 3-4)",
+    "publishedDate": "2025-06-19",
+    "severity": "MEDIUM",
+    "sentAt": "2026-06-03T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-03/RW-2026-06-03-03.md"
   }
 ]
