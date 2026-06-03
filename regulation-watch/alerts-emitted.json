@@ -25,6 +25,7 @@
     "emailDraftId": null,
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
+    "deliveryNote": "PENDING -- Atlassian and Gmail MCP tools did not load in this session run. Jira story and email require manual creation or re-run with MCP tools active. Alert file committed to repo.",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-03/RW-2026-06-03-01.md"
   },
   {
@@ -39,6 +40,7 @@
     "emailDraftId": null,
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
+    "deliveryNote": "PENDING -- Atlassian and Gmail MCP tools did not load in this session run. Jira story and email require manual creation or re-run with MCP tools active. Alert file committed to repo.",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-03/RW-2026-06-03-02.md"
   },
   {
@@ -53,6 +55,7 @@
     "emailDraftId": null,
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
+    "deliveryNote": "PENDING -- Gmail MCP tool did not load in this session run. Email requires manual send or re-run with MCP tools active. Alert file committed to repo. No Jira story (MEDIUM severity).",
     "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-03/RW-2026-06-03-03.md"
   }
 ]
