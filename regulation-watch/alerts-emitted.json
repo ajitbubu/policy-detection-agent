@@ -12,5 +12,53 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-04-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO Final Guidance on Storage and Access Technologies (PECR/DUAA)",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-06-04T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-04/RW-2026-06-04-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-04-02",
+    "jurisdiction": "France",
+    "instrument": "CNIL Recommendation on Tracking Pixels in Electronic Emails (Decision 2026-042)",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-06-04T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-04/RW-2026-06-04-02.md"
+  },
+  {
+    "alertId": "RW-2026-06-04-03",
+    "jurisdiction": "EU",
+    "instrument": "IAB TCF Policy v5.0b Technical Specification Update (Public Comment Draft)",
+    "publishedDate": "2026-05-29",
+    "severity": "MEDIUM",
+    "sentAt": "2026-06-04T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-04/RW-2026-06-04-03.md"
+  },
+  {
+    "alertId": "RW-2026-06-04-04",
+    "jurisdiction": "US-OR",
+    "instrument": "Oregon OCPA Universal Opt-Out Mechanism — Privacy Notice Disclosure Deadline",
+    "publishedDate": "2026-01-01",
+    "severity": "MEDIUM",
+    "sentAt": "2026-06-04T00:00:00Z",
+    "jiraKey": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-04/RW-2026-06-04-04.md"
   }
 ]
