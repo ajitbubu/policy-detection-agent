@@ -12,5 +12,45 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO final Storage and Access Technologies guidance (post-DUAA) — three new PECR cookie exemptions",
+    "publishedDate": "2026-04-29",
+    "severity": "HIGH",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-02",
+    "jurisdiction": "France",
+    "instrument": "CNIL Recommendation No. 2026-042 — tracking pixels in email, prior consent required, transition deadline 2026-07-14",
+    "publishedDate": "2026-04-14",
+    "severity": "HIGH",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-02.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-03",
+    "jurisdiction": "EU/EEA (IAB TCF framework)",
+    "instrument": "IAB Europe TCF Policy v5.0.b public comment — standardTexts UI requirement, multi-device consent, LI-bit workaround removal; CMP web deadline mid-October 2026",
+    "publishedDate": "2026-05-29",
+    "severity": "HIGH",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-03.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-04",
+    "jurisdiction": "California, United States",
+    "instrument": "CPPA Stipulated Final Order — PlayOn Sports, USD 1.1M fine for no-opt-out cookie banner and NAI/DAA redirect insufficiency",
+    "publishedDate": "2026-03-03",
+    "severity": "HIGH",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "scanType": "tier1-daily",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-04.md"
   }
 ]

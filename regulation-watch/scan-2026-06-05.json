@@ -1,0 +1,101 @@
+{
+  "scanDate": "2026-06-05",
+  "scanType": "daily-tier1",
+  "lookbackStart": "2026-05-09",
+  "lookbackEnd": "2026-06-05",
+  "tiersScanned": ["Tier 1"],
+  "sourcesAttempted": [
+    { "source": "EDPB (edpb.europa.eu)", "status": "fetched-via-search", "note": "121st Plenary scheduled 2026-06-08/09 (future); April 2026 plenary outputs (Guidelines 1/2026 on scientific research, Opinion 15/2026 on Europrivacy) reviewed -- none touch cookies/consent/CMP." },
+    { "source": "CNIL (cnil.fr)", "status": "fetched-via-search", "note": "Recommendation 2026-042 on email tracking pixels (adopted 2026-03-12, published 2026-04-14) confirmed as material and unalerted. Written up as RW-2026-06-05-02. WebFetch on cnil.fr returned 403." },
+    { "source": "ICO (ico.org.uk)", "status": "fetched-via-search", "note": "Final Storage and Access Technologies guidance published 2026-04-29 confirmed. Previously flagged in scan-2026-05-09.json as outside lookback window; now surfaced as RW-2026-06-05-01. WebFetch on ico.org.uk returned 403." },
+    { "source": "Garante (garanteprivacy.it)", "status": "fetched-via-search", "note": "No new enforcement action or guidance materially touching cookies/consent/CMP surfaced in window. Garante 2026 inspection plan includes cookie compliance but no specific in-window decision." },
+    { "source": "AEPD (aepd.es)", "status": "fetched-via-search", "note": "No in-window cookie action surfaced above MEDIUM threshold." },
+    { "source": "BfDI / DSK (Germany)", "status": "fetched-via-search", "note": "DSK Guidance v1.2 (November 2024) remains the current instrument; no new in-window federal-level action surfaced." },
+    { "source": "DPC Ireland (dataprotection.ie)", "status": "fetched-via-search", "note": "No in-window enforcement decision touching cookies/CMP surfaced." },
+    { "source": "EUR-Lex", "status": "fetched-via-search", "note": "No in-window cookie/ePrivacy or ePrivacy Regulation publication. Digital Omnibus proposal still pending -- no Council general approach reached in window." },
+    { "source": "CPPA (cppa.ca.gov)", "status": "fetched-via-search", "note": "PlayOn Sports order (adopted 2026-02-27, announced 2026-03-03) confirmed as material and unalerted (fell before prior scan lookback window). Written up as RW-2026-06-05-04. No new CPPA enforcement actions surfaced in the May-June window. Disney/ABC settlement (2026-02-11) was also reviewed; it does not directly concern cookie banner design and falls in the same pre-window gap; assessed as below-threshold incremental (primarily an opt-out-linkage across logged-in accounts finding, not a banner UI finding); not written up separately but noted for the weekly digest." },
+    { "source": "California AG (oag.ca.gov)", "status": "fetched-via-search", "note": "No in-window new enforcement announcement on cookies/consent beyond PlayOn Sports." },
+    { "source": "Colorado AG (coag.gov)", "status": "fetched-via-search", "note": "No in-window enforcement announcement." },
+    { "source": "Connecticut AG (portal.ct.gov/ag)", "status": "fetched-via-search", "note": "UOOM/GPC recognition live since 2026-01-01 (in baseline). Neural data expansion 2026-07-01 noted -- assessed as MEDIUM and already in baseline item #8; no new instrument published in window." },
+    { "source": "Texas AG (texasattorneygeneral.gov)", "status": "fetched-via-search", "note": "No specific new in-window enforcement action surfaced." },
+    { "source": "Oregon DOJ", "status": "fetched-via-search", "note": "No in-window action surfaced." },
+    { "source": "FTC (ftc.gov)", "status": "fetched-via-search", "note": "No new FTC enforcement action touching cookies/consent/CMP in window beyond RW-2026-05-09-01 (Kochava, already emitted). Click-to-Cancel rule enforcement ongoing but no new order surfaced." },
+    { "source": "MeitY / DPDP Board (India)", "status": "fetched-via-search", "note": "No new MeitY notification in window. Phase II clock (2026-11-13) confirmed. No new consent-manager registration framework details published." },
+    { "source": "ANPD (Brazil)", "status": "fetched-via-search", "note": "International transfer regulation effective 2026 confirmed; no new cookie-specific guidance published in window." },
+    { "source": "OPC Canada / CAI Quebec", "status": "fetched-via-search", "note": "No in-window enforcement on consent/cookies surfaced." },
+    { "source": "IAB Europe / IAB Tech Lab", "status": "fetched-via-search", "note": "TCF Policy v5.0.b released for public comment 2026-05-29. Written up as RW-2026-06-05-03. WebFetch on iabtechlab.com returned 403; substantive facts corroborated across IAB Tech Lab announcement summary and secondary sources." },
+    { "source": "CJEU / EU appellate", "status": "fetched-via-search", "note": "No in-window cookie/consent ruling surfaced." }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-06-05-01",
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO final Storage and Access Technologies guidance — three new PECR DUAA exemptions (Statistical, Appearance, Emergency); simple means of objecting requirement",
+      "severity": "HIGH",
+      "publishedDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Binding DPA guidance (Trigger #4) finalising the three new PECR cookie exemptions introduced by DUAA. Requires new UK-specific jurisdiction routing and banner opt-out controls (not a consent gate) for Statistical and Appearance categories. Previously in scan gap; first coverage."
+    },
+    {
+      "alertId": "RW-2026-06-05-02",
+      "jurisdiction": "France",
+      "instrument": "CNIL Recommendation No. 2026-042 — email tracking pixels under Article 82 French Data Protection Act; prior consent required; transition deadline 2026-07-14",
+      "severity": "HIGH",
+      "publishedDate": "2026-04-14",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-02.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Binding CNIL recommendation (Trigger #4) extending cookie consent rule to email pixels; active transition deadline 39 days out (2026-07-14). Requires new email_tracking_pixels purpose in consent taxonomy, transition notification flow, and consent-at-collection workflow. First coverage."
+    },
+    {
+      "alertId": "RW-2026-06-05-03",
+      "jurisdiction": "EU/EEA (IAB TCF framework)",
+      "instrument": "IAB Europe TCF Policy v5.0.b — standardTexts UI requirement, multi-device consent propagation, LI-bit workaround removal; CMP web deadline mid-October 2026",
+      "severity": "HIGH",
+      "publishedDate": "2026-05-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-03.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Industry framework update (Trigger #8) requiring CMP code changes. Three distinct obligations: standardTexts rendering in banner, multi-device TC string propagation, removal of legacy LI-bit workaround. GVL update mid-July 2026; CMP web deadline mid-October 2026. First coverage."
+    },
+    {
+      "alertId": "RW-2026-06-05-04",
+      "jurisdiction": "California, United States",
+      "instrument": "CPPA Stipulated Final Order — PlayOn Sports, USD 1.1M fine for cookie banner lacking opt-out parity and NAI/DAA redirect insufficiency as sole opt-out mechanism",
+      "severity": "HIGH",
+      "publishedDate": "2026-03-03",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-04.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Precedent-setting enforcement action (Trigger #5) directly sanctioning a specific cookie banner pattern (no equivalent opt-out/reject) and confirming NAI/DAA redirects are insufficient CCPA opt-out mechanisms. Requires banner configurator validation rule and tenant audit. Fell in scan gap before first daily scan; first coverage."
+    }
+  ],
+  "candidatesConsideredButRejected": [
+    {
+      "item": "California AG / CPPA Disney/ABC settlement (2026-02-11, USD 2.75M)",
+      "rejectionReason": "pre-window and partially-out-of-scope — primarily addresses opt-out linkage across authenticated accounts and cross-service opt-out chaining, not cookie banner design. The finding (opt-out must apply across logged-in account services) is incremental to existing multi-property consent guidance and does not create a new engineering obligation beyond what PlayOn Sports RW-2026-06-05-04 already covers. Recommended for weekly digest."
+    },
+    {
+      "item": "Connecticut 2026-07-01 neural data sensitive category expansion",
+      "rejectionReason": "already-in-baseline — covered in baseline item #8 as CT 2026-07-01 sensitive data expansion. No new instrument published in window; no new engineering delta beyond what the baseline noted."
+    },
+    {
+      "item": "EDPB 121st Plenary 2026-06-08/09 (scheduled)",
+      "rejectionReason": "future-event — plenary is scheduled for 3 days after today; no documents have been adopted yet. Will be assessed in the next daily scan on 2026-06-10."
+    },
+    {
+      "item": "Germany EinwV (Einwilligungsverwaltungsverordnung) consent management ordinance — effective April 2025",
+      "rejectionReason": "pre-window and already-known — EinwV was effective April 2025, before the scan lookback window, and establishes a voluntary (not mandatory) framework for recognised consent management services in Germany. No new implementing act or enforcement action in window. Monitor for any mandatory-adoption signal."
+    },
+    {
+      "item": "IAB CCPA / MSPA / GPP updates",
+      "rejectionReason": "no-new-version-in-window — GPP and MSPA frameworks have no new version published in the scan window. The TCF v5.0.b update (RW-2026-06-05-03) is the only framework update in scope."
+    }
+  ],
+  "highestSeverity": "HIGH",
+  "runDurationSeconds": 312,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on all official domains attempted (ico.org.uk, cnil.fr, iabtechlab.com, privacy.ca.gov, ftc.gov). All four alerts are link-verified-by-reference and corroborated across minimum four independent primary-tier secondary sources each. Counsel should click through primary source URLs before any externally binding action.",
+    "CNIL Recommendation 2026-042 primary source URL inferred from CNIL canonical domain naming convention; decision number 2026-042 and adoption date 2026-03-12 confirmed by multiple secondary sources including Hogan Lovells, BCLP, Inside Privacy, and Nomos Paris. Labeled SECONDARY -- pending primary confirmation in the alert.",
+    "IAB TCF Policy v5.0.b is in public comment until 2026-06-29; minor changes to the multi-device and standardTexts specifications may occur before finalisation. Engineering should track the final publication (expected early July 2026) for any delta from the draft.",
+    "RW-2026-06-05-04 (PlayOn Sports) was announced 2026-03-03, before the first daily scan's lookback window. It is issued now as it was not covered in any prior alert. Assigned today's date as sentAt."
+  ]
+}
