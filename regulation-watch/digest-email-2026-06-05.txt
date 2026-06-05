@@ -1,0 +1,305 @@
+TO: asahu@datasafeguard.ai
+SUBJECT: [ID-PRIVACY Reg Watch] Tier-2 Weekly LOW Digest — 2026-06-05 | IDP-11488
+
+---
+
+ID-PRIVACY REGULATION WATCH
+Weekly Tier-2 LOW-Severity Digest
+Week ending: 2026-06-05
+Epic: IDP-11488
+Prepared by: Privacy Regulation Intelligence Agent
+
+Five items surfaced in this week's Tier-2 scan (APAC, MENA, LatAm, global
+cross-border, industry frameworks). All are LOW severity: no immediate code
+deployment required, but each has an engineering or documentation action with
+a deadline in the next 60-187 days.
+
+A full-format alert file exists for each item in:
+regulation-watch/alerts/2026-06-05/
+
+===============================================================
+ITEM 1 OF 5 -- LOW
+Alert ID: RW-2026-06-05-01
+Jurisdiction: United Kingdom
+Instrument: Interpretive guidance (ICO)
+Published: 2026-04-29
+Effective: 2026-04-29 (DUAA analytics exception already in force 2026-02-05)
+Primary source: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/
+===============================================================
+
+WHAT CHANGED
+
+The ICO published its final Storage and Access Technologies (SAT) guidance on
+29 April 2026, replacing all prior cookies guidance. It finalises three new
+consent exemptions introduced by the Data (Use and Access) Act 2025 (DUAA),
+which came into force on 5 February 2026:
+
+  (1) Analytics/statistical cookies (aggregate site-improvement stats only)
+  (2) Appearance preference cookies
+  (3) Emergency-assistance location cookies
+
+For analytics and appearance exemptions, organisations must provide a "simple
+and free means of objecting" -- the ICO confirms this requires a visible,
+one-step opt-out toggle in the banner itself (not a link to browser settings).
+Dual-purpose analytics + advertising cookies do NOT qualify for the exemption.
+Guidance scope is also broadened from "cookies" to all storage and access
+technologies (pixels, fingerprinting, web storage, tag scripts). PECR maximum
+fine is now GBP 17.5 M / 4% global turnover (DUAA-aligned since Feb 2026).
+
+KEY ID-PRIVACY ACTIONS
+
+Engineering (Abhishek):
+  1. Add analytics_exemption_uk feature flag + layer-1 opt-out toggle to UK
+     banner variant [jurisdiction == UK] -- 5 pts -- by 2026-07-18
+  2. Update consent storage schema: add "objection" state distinct from
+     "consent_given" for UK analytics exemption path -- 3 pts -- by 2026-07-18
+  3. TC String encoding: analytics purpose under exemption must NOT flip
+     consent bit to 1; confirm UK-specific encoding path -- 3 pts -- by 2026-08-01
+  4. ML: label dual-purpose analytics+advertising cookies to prevent mis-
+     routing to exemption path -- 3 pts -- by 2026-08-01
+
+Product/Legal:
+  - Draft customer advisory on DUAA analytics exemption option -- by 2026-07-05
+  - Update UK banner template copy for customers enabling the exemption
+  - Update RoPA/cookie audit templates: use "storage and access technologies"
+
+BLOCKER: Confirm with IAB Europe whether TCF v2.3 TC string can represent the
+DUAA exemption path for UK traffic before implementing encoding change. (See
+Item 2 below, which may affect sequencing.)
+
+Confidence: HIGH
+
+
+===============================================================
+ITEM 2 OF 5 -- LOW
+Alert ID: RW-2026-06-05-02
+Jurisdiction: EU/EEA (global CMP applicability)
+Instrument: Industry framework update -- IAB TCF Policy v5.0.b / TCF v2.4
+Issuing body: IAB Europe + IAB Tech Lab (joint announcement)
+Published: 2026-05-29
+Web compliance deadline: Mid-October 2026 (T-minus ~133 days)
+App/CTV compliance deadline: Mid-February 2027
+Public comment closes: 2026-06-29
+Primary source: https://iabeurope.eu/transparency-consent-framework/
+GitHub PR: https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework (PR #443)
+NOTE: PENDING PRIMARY URL CONFIRMATION -- recheck iabeurope.eu/cmp-vendor-notifications/ within 72 hours
+===============================================================
+
+WHAT CHANGED
+
+On 29 May 2026, IAB Europe and IAB Tech Lab jointly announced TCF Policy v5.0.b
+and TCF v2.4, advancing from v5.0.a / TCF v2.3. Three substantive changes:
+
+  (1) Multi-device consent handling: New requirements for how consent signals
+      propagate when an authenticated user moves across devices, aligned with
+      CNIL multi-device guidance. CMPs must propagate TC string across device
+      sessions in a disclosed, user-facing manner.
+
+  (2) CMP UI requirements: Chapter V, Appendix B(B)(f) now mandates that CMPs
+      display standard explanation text + illustration alongside each Feature
+      in the consent layer.
+
+  (3) Special Feature 2 renamed: Previously "Use precise geolocation data and
+      actively scan device characteristics for identification," now renamed
+      "Identify devices based on information actively requested."
+
+KEY ID-PRIVACY ACTIONS
+
+Engineering (Abhishek):
+  1. After 2026-06-29 (comment close), diff GitHub PR #443 vs TCF v2.3 spec;
+     file sub-tasks under IDP-11488 -- 3 pts review + TBD -- start 2026-07-01
+  2. Implement multi-device consent sync API (authenticated user session
+     cross-device TC string propagation) -- 8 pts -- by 2026-09-15
+  3. Update Special Feature 2 label string everywhere in banner templates and
+     vendor-list display (config-driven string lookup) -- 2 pts -- by 2026-08-15
+  4. Add standard feature-explanation text + illustration slots to TCF consent
+     layer per Appendix B(B)(f) -- 3 pts -- by 2026-09-15
+  5. Update GVL polling for v2.4 GVL on launch -- 1 pt -- by 2026-10-01
+
+Product/Legal:
+  - Review finalised v5.0.b once comment period closes (2026-07-07)
+  - Customer release note 30 days before web deadline (~2026-09-15)
+
+CRITICAL DEPENDENCY: Do not begin TC String encoding changes until GitHub PR
+#443 is merged (post 2026-06-29 comment close).
+
+Confidence: MEDIUM (primary IAB Europe URL returned 403; content confirmed
+across ppc.land, thedpg.com, usercentrics, secureprivacy.ai)
+
+
+===============================================================
+ITEM 3 OF 5 -- LOW
+Alert ID: RW-2026-06-05-03
+Jurisdiction: South Korea
+Instrument: PIPA partial amendment (National Assembly, 2026-02-12)
+Issuing body: National Assembly / Personal Information Protection Commission
+Effective: ~2026-08-12 (T-minus ~68 days)
+Primary source: https://www.pipc.go.kr/eng/user/ltn/new/noticeDetail.do?bbsId=BBSMSTR_000000000001&nttId=2488
+===============================================================
+
+WHAT CHANGED
+
+South Korea's National Assembly passed a PIPA amendment on 12 February 2026,
+taking effect six months after promulgation (~12 August 2026). The headline
+change is a new maximum administrative fine of 10% of total annual revenue for
+the most severe violations (previously 3% of relevant turnover). The amendment
+also designates the CEO as the ultimate responsible person for data protection
+and expands "data breach" to include forgery, alteration, and destruction
+(previously only loss/theft/disclosure). Core consent requirements for cookies
+and behavioral tracking are NOT substantively changed.
+
+KEY ID-PRIVACY ACTIONS
+
+No platform code changes required.
+
+Product/Legal:
+  - Update KR jurisdiction risk register: 10% revenue fine ceiling effective
+    ~2026-08-12 -- by 2026-07-15
+  - Customer advisory for Korean-traffic customers re: elevated fine risk
+    and CEO accountability -- by 2026-07-15
+  - Update DPIA questionnaire: expanded breach notification scope for KR
+    -- by 2026-08-01
+
+Counsel should confirm exact promulgation date in Korean Official Gazette
+(exact effective date is ~2026-08-12 to 2026-08-19 pending gazette confirmation).
+
+Confidence: HIGH
+
+
+===============================================================
+ITEM 4 OF 5 -- LOW
+Alert ID: RW-2026-06-05-04
+Jurisdiction: New Zealand
+Instrument: Privacy Amendment Act 2025 -- IPP 3A (in force 2026-05-01)
+Issuing body: New Zealand Parliament / Office of the Privacy Commissioner
+Effective: 2026-05-01 (already in force; T-plus 35 days)
+Primary source: https://www.privacy.org.nz/tuhono-connect/statements-media-releases/privacy-amendment-act-passes/
+Primary source 2: https://www.justice.govt.nz/about/news-and-media/news/new-privacy-information-principle-in/
+===============================================================
+
+WHAT CHANGED
+
+A new Information Privacy Principle 3A (IPP 3A) came into force on 1 May 2026
+under the Privacy Amendment Act 2025. It requires agencies to notify individuals
+when their personal data is collected indirectly (from a third party), disclosing
+what was collected, why, who holds it, and the individual's access/correction
+rights. Applies only to information collected on or after 1 May 2026. Relevant
+where customer websites use third-party data enrichment, audience segmentation,
+or data broker integrations feeding into their consent or targeting stack.
+
+KEY ID-PRIVACY ACTIONS
+
+Engineering (Abhishek):
+  - Add IPP 3A notification flag to vendor/SDK governance module for NZ-
+    jurisdiction vendors supplying third-party personal data (metadata field,
+    no consent signal logic change) -- 1 pt -- by 2026-08-01
+
+Product/Legal:
+  - Update NZ jurisdiction documentation with IPP 3A description
+  - Update RoPA template: add "Indirect collection source" and "IPP 3A
+    notification provided (Y/N)" fields -- by 2026-07-15
+  - Include in APAC quarterly advisory for NZ customers -- by 2026-07-15
+
+Confidence: HIGH
+
+
+===============================================================
+ITEM 5 OF 5 -- LOW (HORIZON)
+Alert ID: RW-2026-06-05-05
+Jurisdiction: Australia
+Instrument: Privacy (Children's Online Privacy) Code 2026 -- EXPOSURE DRAFT
+Issuing body: Office of the Australian Information Commissioner (OAIC)
+Draft published: 2026-03-31
+Consultation closed: TODAY (2026-06-05)
+Statutory deadline for Code in force: NO LATER THAN 2026-12-10
+Primary source: https://www.oaic.gov.au/news/media-centre/oaic-releases-exposure-draft-of-the-childrens-online-privacy-code
+Primary source 2: https://ministers.ag.gov.au/media-centre/draft-childrens-online-privacy-code-released-31-03-2026
+===============================================================
+
+WHAT CHANGED
+
+OAIC released an exposure draft of the Privacy (Children's Online Privacy)
+Code 2026 on 31 March 2026. Once finalised (must be in force by 10 December
+2026), the Code will impose:
+
+  - Scope: Broad -- covers apps, games, websites, streaming, educational tools
+    likely accessed by under-18s (not only services targeting children)
+  - Age consent threshold: Children under 15 cannot provide valid consent;
+    parental/guardian consent required (from someone with "reasonably
+    confirmed" parental responsibility)
+  - Best-interests principle: Processing must be consistent with child's
+    best interests
+  - Prohibited: Behavioral profiling of children for marketing
+  - Mandatory PIAs for high-risk processing involving children
+
+URGENT NOTE: Consultation closes TODAY. If DataSafeguard or any customer
+wishes to submit comments, this is the final opportunity.
+
+KEY ID-PRIVACY ACTIONS (horizon -- Code not yet final)
+
+Engineering (Abhishek):
+  - Design spike: age-gate / parental-consent banner variant for AU
+    jurisdiction -- 3 pts (spike/design doc only) -- by 2026-08-01
+  - Design consent storage schema extension: parental_consent record type
+    -- 2 pts (design doc only) -- by 2026-08-01
+  NO BUILD until final Code is published.
+
+Product/Legal:
+  - IMMEDIATE: Check if DataSafeguard has a submission to OAIC today
+  - Horizon advisory to AU customers: Children's Code expected by Dec 2026
+    -- by 2026-08-01
+  - Monitor OAIC for final Code publication; re-trigger alert at HIGH or
+    MEDIUM severity once final Code is published
+
+Confidence: HIGH (exposure draft status confirmed; content confirmed by OAIC
+primary press release and multiple secondary sources)
+
+
+===============================================================
+HORIZON ITEMS (no alert this cycle)
+===============================================================
+
+- Japan APPI amendment: Cabinet approved 2026-04-07; pending Diet passage.
+  Third-party cookie "personally referable information" scope extension; AI
+  training consent exemption. Effective date 2027-2028 if enacted. Watch Diet.
+
+- India DPDP Phase II (consent managers): Effective 2026-11-13 (T-minus ~161
+  days). Only India-incorporated entities qualify as registered consent managers;
+  foreign CMP platforms excluded from acting as registered consent managers.
+  DataSafeguard counsel should clarify product positioning. See baseline.
+
+- UAE PDPL Executive Regulations (2026): Exact publication date unconfirmed;
+  recheck next Tier-2 cycle. DPIA obligations and child digital safety law
+  (Federal Decree-Law No. 26 of 2025) now active alongside PDPL.
+
+- IAB TCF v2.4 comment period (closes 2026-06-29): Final spec may differ
+  from draft; re-assess after GitHub PR #443 merges.
+
+
+===============================================================
+SCAN METADATA
+===============================================================
+
+Scan type:    Weekly Tier-2
+Scan date:    2026-06-05
+Lookback:     2026-05-10 to 2026-06-05
+Alerts:       5 (all LOW; bundled in this digest per operating rules)
+Jira epic:    IDP-11488
+Scan file:    regulation-watch/scan-2026-06-05.json
+Alert files:  regulation-watch/alerts/2026-06-05/RW-2026-06-05-01.md through -05.md
+
+DEDUPLICATION CHECK: All five items are new relative to alerts-emitted.json.
+Prior alert RW-2026-05-09-01 (FTC v. Kochava, HIGH, US federal) is not
+duplicated here.
+
+OPERATIONAL CAVEATS:
+- WebFetch returned HTTP 403 on ICO, IAB Europe, and multiple law firm URLs.
+  All content validated against multiple independent secondary sources.
+- RW-2026-06-05-02 (TCF v2.4): PENDING PRIMARY URL CONFIRMATION.
+  Recheck https://iabeurope.eu/cmp-vendor-notifications/ within 72 hours.
+- Australia Children's Online Privacy Code consultation closes today
+  (2026-06-05). Legal should confirm if a submission is required.
+
+---
+Privacy Regulation Intelligence Agent -- ID-PRIVACY(R) DataSafeguard
+This is a DRAFT email -- NOT YET SENT. Review and approve before sending.
