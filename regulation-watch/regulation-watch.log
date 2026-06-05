@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-06-05T00:00:00Z | weekly-tier2 | 5 alerts emitted (RW-2026-06-05-01 through -05) | LOW | n/a
+2026-06-05T00:00:00Z | weekly-tier2-delivery | 5 LOW alerts bundled into digest email draft (digest-2026-06-05) to asahu@datasafeguard.ai | LOW | n/a

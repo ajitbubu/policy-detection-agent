@@ -1,0 +1,188 @@
+{
+  "scanDate": "2026-06-05",
+  "scanType": "weekly-tier2",
+  "lookbackStart": "2026-05-10",
+  "lookbackEnd": "2026-06-05",
+  "tiersScanned": ["Tier 2"],
+  "sourcesAttempted": [
+    {
+      "source": "ICO (ico.org.uk) -- SAT guidance",
+      "status": "fetched-via-search",
+      "note": "Final Storage and Access Technologies guidance published 2026-04-29. WebFetch returned 403. Content confirmed via 5+ secondary sources (Bird & Bird, Womble Bond Dickinson, Measured Collective, Data Protection Network, Hunton). Alert RW-2026-06-05-01 written. This item was flagged as a reject from the 2026-05-09 Tier-1 scan (published outside the 7-day window); correctly surfaced in this Tier-2 weekly digest."
+    },
+    {
+      "source": "IAB Europe / IAB Tech Lab -- TCF v2.4 / Policy v5.0.b",
+      "status": "fetched-via-search",
+      "note": "TCF Policy v5.0.b announced 2026-05-29 by IAB Europe and IAB Tech Lab. Primary URL (iabeurope.eu) returned 403 to WebFetch. Confirmed via ppc.land (specialist IAB/TCF source), usercentrics, thedpg.com, and secureprivacy.ai. GitHub PR #443 reference is verifiable. Alert RW-2026-06-05-02 written. Labelled PENDING PRIMARY URL CONFIRMATION per operating rules; recommend direct IAB Europe CMP vendor notification check within 72 hours."
+    },
+    {
+      "source": "South Korea PIPC -- PIPA amendment",
+      "status": "fetched-via-search",
+      "note": "National Assembly passage 2026-02-12 confirmed by Hunton, Lee & Ko, Chambers, DataGuidance. PIPC English notice board URL included as primary source. Effective date ~2026-08-12. Alert RW-2026-06-05-03 written."
+    },
+    {
+      "source": "OAIC Australia -- Children's Online Privacy Code exposure draft",
+      "status": "fetched-via-search",
+      "note": "OAIC primary press release confirmed via search index. AG minister press release confirms 31 March 2026 publication and 10 December 2026 statutory deadline. Consultation closes today (2026-06-05). Alert RW-2026-06-05-05 written."
+    },
+    {
+      "source": "New Zealand OPC -- IPP 3A (Privacy Amendment Act 2025)",
+      "status": "fetched-via-search",
+      "note": "OPC primary press release and Ministry of Justice primary source confirmed via search. IPP 3A effective 2026-05-01. Alert RW-2026-06-05-04 written."
+    },
+    {
+      "source": "India MeitY / DPDP Board",
+      "status": "fetched-via-search",
+      "note": "DPDP Rules 2025 notified November 2025. Phase II (consent managers) effective November 2026. No new notification in scan window. Existing baseline entry covers this; no new alert. Monitoring continues."
+    },
+    {
+      "source": "Singapore PDPC",
+      "status": "fetched-via-search",
+      "note": "PDPC February 2026 NRIC authentication directive is out of scope (not cookies/consent/tracking). No new cookie or consent guidance in scan window. No alert."
+    },
+    {
+      "source": "Thailand PDPC",
+      "status": "fetched-via-search",
+      "note": "Draft PDPA amendment under consultation in late 2025 not yet enacted. No new cookie-specific guidance or enforcement in scan window. Monitoring continues."
+    },
+    {
+      "source": "Japan PPC -- APPI amendment",
+      "status": "fetched-via-search",
+      "note": "Cabinet approved amendment bill 2026-04-07; submitted to Diet. Not yet enacted. Expected effective date 2027-2028. Monitoring as Tier 2 watch item. No LOW-or-above alert at this stage; included in digest narrative as horizon item."
+    },
+    {
+      "source": "Brazil ANPD",
+      "status": "fetched-via-search",
+      "note": "No new resolution or binding guidance touching cookies/consent in scan window. ANPD has increased enforcement posture since 2024; standing watch. No alert this cycle."
+    },
+    {
+      "source": "Canada OPC / CAI Quebec -- Bill C-27 successor",
+      "status": "fetched-via-search",
+      "note": "Bill C-27 collapsed January 2025 on prorogation; not returning in prior form. New federal privacy statute expected in 2026 but not yet tabled or passed. Quebec Law 25 fully phased in; no new 2026-window enactment. No alert this cycle."
+    },
+    {
+      "source": "China CAC -- PIPL enforcement",
+      "status": "fetched-via-search",
+      "note": "No new PIPL regulation or cookie-specific guidance in scan window. Existing PIPL cookie consent obligations (prior explicit consent for tracking/profiling) unchanged. Monitoring continues."
+    },
+    {
+      "source": "UAE Data Office -- PDPL Executive Regulations",
+      "status": "fetched-via-search",
+      "note": "Executive Regulations issued in 2026 (exact date not confirmed in search results; sources say 2026 generally). DPIA requirements now active. Child digital safety law (Federal Decree-Law No. 26 of 2025) activating alongside PDPL. Both items pre-date the scan window or are not confirmed in-window. Flagging for follow-up primary source confirmation; not writing alert this cycle without confirmed publication date."
+    },
+    {
+      "source": "South Africa Information Regulator -- POPIA",
+      "status": "fetched-via-search",
+      "note": "Information Regulator 2025/26 Annual Performance Plan signals increased enforcement; no new binding instrument in scan window. Monitoring continues."
+    },
+    {
+      "source": "Australia Privacy Act general reforms",
+      "status": "fetched-via-search",
+      "note": "Substantially automated decision-making disclosure in privacy policies commences 2026-12-10; this is a documentation/policy change, not a cookies/consent/CMP change. Will surface in Tier 2 digest when closer to effective date. No separate alert this cycle."
+    }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-06-05-01",
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO final Storage and Access Technologies guidance (PECR / DUAA)",
+      "severity": "LOW",
+      "publishedDate": "2026-04-29",
+      "effectiveDate": "2026-04-29",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "ICO interpretive guidance finalising DUAA analytics cookie exemption; new 'simple means of objecting' UI requirement. Flagged as reject from 2026-05-09 Tier-1 scan for Tier-2 digest per operating rules."
+    },
+    {
+      "alertId": "RW-2026-06-05-02",
+      "jurisdiction": "EU/EEA (global CMP)",
+      "instrument": "IAB TCF Policy v5.0.b / TCF v2.4 (framework update)",
+      "severity": "LOW",
+      "publishedDate": "2026-05-29",
+      "effectiveDate": "2026-10-15",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-02.md",
+      "confidence": "MEDIUM",
+      "reasonForAlert": "IAB TCF framework update (Trigger #8: industry framework update requiring CMP code changes). Three policy changes: multi-device consent, CMP UI feature explanation text, Special Feature 2 rename. Web deadline mid-October 2026."
+    },
+    {
+      "alertId": "RW-2026-06-05-03",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA partial amendment (National Assembly, 2026-02-12)",
+      "severity": "LOW",
+      "publishedDate": "2026-02-12",
+      "effectiveDate": "2026-08-12",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-03.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Amendment to existing law (Trigger #2). 10% revenue fine ceiling; expanded breach scope. No new consent/cookie technical obligations, but elevated risk for customers with Korean traffic. ~68 days to effective date."
+    },
+    {
+      "alertId": "RW-2026-06-05-04",
+      "jurisdiction": "New Zealand",
+      "instrument": "Privacy Amendment Act 2025 -- IPP 3A (indirect collection notification)",
+      "severity": "LOW",
+      "publishedDate": "2025-09-24",
+      "effectiveDate": "2026-05-01",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-04.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "New law provision (Trigger #1) now in force. Indirect personal data collection notification obligation; affects vendor/SDK governance documentation. Included because effective date (2026-05-01) crossed in scan window."
+    },
+    {
+      "alertId": "RW-2026-06-05-05",
+      "jurisdiction": "Australia",
+      "instrument": "Privacy (Children's Online Privacy) Code 2026 -- exposure draft",
+      "severity": "LOW",
+      "publishedDate": "2026-03-31",
+      "effectiveDate": "2026-12-10",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-05.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Effective date within 12-month horizon. Horizon item: age-gating, parental consent for under-15s, broad scope to all consumer digital services. Consultation closes today."
+    }
+  ],
+  "candidatesConsideredButRejected": [
+    {
+      "item": "Japan APPI amendment (Cabinet approval 2026-04-07)",
+      "rejectionReason": "not-yet-enacted -- bill submitted to Diet but not passed. Effective date 2027-2028. No qualifying trigger event under operating rules. Included as horizon note in digest narrative only."
+    },
+    {
+      "item": "UAE PDPL Executive Regulations (2026 issuance)",
+      "rejectionReason": "exact-publication-date-unconfirmed -- secondary sources reference 2026 generally; unable to confirm specific publication date and content from primary source in this scan window. Will recheck next Tier-2 cycle with targeted search."
+    },
+    {
+      "item": "Canada federal privacy statute successor to Bill C-27",
+      "rejectionReason": "not-yet-tabled -- Minister confirmed Bill C-27 will not return in prior form; no replacement bill tabled as of scan date. Monitoring continues."
+    },
+    {
+      "item": "Australia Privacy Act -- automated decision-making disclosure (2026-12-10)",
+      "rejectionReason": "out-of-cookie-consent-scope-for-this-cycle -- this is a privacy-policy documentation requirement, not a cookies/consent/CMP change. Will surface when closer to effective date."
+    },
+    {
+      "item": "Singapore PDPC NRIC authentication directive (February 2026)",
+      "rejectionReason": "out-of-scope -- NRIC authentication for login is not a cookies/consent/CMP matter."
+    }
+  ],
+  "horizonItems": [
+    {
+      "item": "Japan APPI amendment (Diet passage expected 2026; effective 2027-2028)",
+      "note": "Third-party cookie / 'personally referable information' scope extension; AI training consent exemption. Monitor Diet calendar for passage."
+    },
+    {
+      "item": "UAE PDPL Executive Regulations (2026)",
+      "note": "Recheck primary source (UAE Data Office website) in next Tier-2 cycle to confirm publication date and specific consent/DPIA provisions."
+    },
+    {
+      "item": "India DPDP Phase II (consent managers, effective 2026-11-13)",
+      "note": "Only India-incorporated entities qualify as registered consent managers; foreign CMP platforms including OneTrust and DataSafeguard excluded from acting as registered consent managers in India. DataSafeguard counsel should clarify positioning. Existing baseline entry. T-minus ~161 days."
+    },
+    {
+      "item": "IAB TCF v2.4 public comment period (closes 2026-06-29)",
+      "note": "Final spec may differ from draft; re-assess once GitHub PR #443 is merged."
+    }
+  ],
+  "highestSeverity": "LOW",
+  "runDurationSeconds": null,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on ico.org.uk, iabeurope.eu, hunton.com, twobirds.com, zwillgen.com, measuredcollective.com, womblebonddickinson.com, syrenis.com, costello-advisory.com, bakermckenzie.com, oaic.gov.au, dpnetwork.org.uk, leenko.com, ppc.land, and privacy.org.nz. All alert content was validated against multiple independent secondary sources. Primary source URLs are cited from search index; counsel should click through to verify before externally-binding action.",
+    "RW-2026-06-05-02 (IAB TCF v2.4) is labelled MEDIUM confidence / PENDING PRIMARY URL CONFIRMATION per operating rules. Recheck IAB Europe CMP vendor notifications page (https://iabeurope.eu/cmp-vendor-notifications/) within 72 hours.",
+    "Australia Children's Online Privacy Code consultation closes 2026-06-05 (today). If DataSafeguard wishes to submit comments, this is the final window."
+  ]
+}

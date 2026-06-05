@@ -12,5 +12,70 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-01",
+    "jurisdiction": "United Kingdom",
+    "instrument": "ICO final Storage and Access Technologies guidance (PECR / DUAA)",
+    "publishedDate": "2026-04-29",
+    "severity": "LOW",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "digest-2026-06-05",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-02",
+    "jurisdiction": "EU/EEA (global CMP)",
+    "instrument": "IAB TCF Policy v5.0.b / TCF v2.4 framework update",
+    "publishedDate": "2026-05-29",
+    "severity": "LOW",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "digest-2026-06-05",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-02.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-03",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA partial amendment — 10% revenue fine ceiling",
+    "publishedDate": "2026-02-12",
+    "severity": "LOW",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "digest-2026-06-05",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-03.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-04",
+    "jurisdiction": "New Zealand",
+    "instrument": "Privacy Amendment Act 2025 — IPP 3A indirect collection notification",
+    "publishedDate": "2025-09-24",
+    "severity": "LOW",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "digest-2026-06-05",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-04.md"
+  },
+  {
+    "alertId": "RW-2026-06-05-05",
+    "jurisdiction": "Australia",
+    "instrument": "Privacy (Children's Online Privacy) Code 2026 — exposure draft",
+    "publishedDate": "2026-03-31",
+    "severity": "LOW",
+    "sentAt": "2026-06-05T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": "digest-2026-06-05",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "weekly-tier2",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-06-05/RW-2026-06-05-05.md"
   }
 ]
