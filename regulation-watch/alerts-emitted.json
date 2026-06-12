@@ -12,5 +12,20 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "DIGEST-2026-05-29-TIER2",
+    "jurisdiction": "MULTI (AU, KR, CN, BR, EU)",
+    "instrument": "Weekly Tier 2 digest — 7 LOW items: AU Privacy Act AML/CTF expansion; AU Children's Online Privacy Code draft; AU ADM transparency obligation; KR PIPA amendment; CN CSL/Certification Measures; BR ANPD enforcement priorities; EU Digital Omnibus Art. 88a/88b proposal",
+    "publishedDate": "2026-05-29",
+    "severity": "LOW",
+    "sentAt": "2026-05-29T00:00:00Z",
+    "scanType": "weekly-tier2",
+    "digestFile": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailDraftId": "r289738540188918482",
+    "jiraKey": null,
+    "prUrl": "https://github.com/ajitbubu/policy-detection-agent/pull/20",
+    "note": "Gmail draft created. digest-pending.md cleared."
   }
 ]

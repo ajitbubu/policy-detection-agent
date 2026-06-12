@@ -1,0 +1,148 @@
+{
+  "scanDate": "2026-05-29",
+  "scanType": "weekly-tier2",
+  "lookbackStart": "2026-05-09",
+  "lookbackEnd": "2026-05-29",
+  "tiersScanned": ["Tier 2"],
+  "sourcesAttempted": [
+    {
+      "source": "OAIC Australia (oaic.gov.au)",
+      "status": "fetched-via-search",
+      "note": "Three items surfaced: (1) AML/CTF small-business Privacy Act expansion effective 2026-07-01; (2) Children's Online Privacy Code exposure draft published 2026-03-31, consultation closes 2026-06-05, registration target 2026-12-10; (3) ADM transparency obligation effective 2026-12-10. All three classified LOW."
+    },
+    {
+      "source": "PIPC South Korea (pipc.go.kr)",
+      "status": "fetched-via-search",
+      "note": "PIPA amendment passed 2026-02-12, promulgated 2026-03-10, effective 2026-09-11. Raises fine ceiling to 10% of total revenue; CEO accountability; enhanced consent for combinable cookie identifiers. Classified LOW (no immediate technical banner change, but high-fine jurisdiction from Sept 2026)."
+    },
+    {
+      "source": "CAC China (cac.gov.cn)",
+      "status": "search-only-403-on-direct-fetch",
+      "note": "CSL amendment effective 2026-01-01 confirmed. Personal Information Outbound Certification Measures (Decree No. 20) and GB/T 46068-2025 standard effective 2026-03-01 confirmed. Both already effective. Classified LOW. SECONDARY label applied to primary URL."
+    },
+    {
+      "source": "ANPD Brazil (gov.br/anpd)",
+      "status": "search-only",
+      "note": "ANPD became independent February 2026; published 2026-2027 enforcement priorities targeting advertising/profiling. Five thematic investigations underway. No new cookie rule enacted; existing October 2022 guidance remains operative. Classified LOW (risk elevation notice)."
+    },
+    {
+      "source": "European Commission Digital Omnibus (commission.europa.eu)",
+      "status": "search-via-secondary-sources",
+      "note": "Proposal entered ordinary legislative procedure 2026-11-19. Proposed Art. 88a (consent default, 6-month refusal cooling-off, single-click refusal, exemption list) and Art. 88b (machine-readable signals). Not adopted. Classified LOW. Labelled SECONDARY pending primary confirmation of final proposal text URL."
+    },
+    {
+      "source": "PDPC Singapore (pdpc.gov.sg)",
+      "status": "fetched-via-search",
+      "note": "No new amendment or enforcement action touching cookies/consent in window. PDPA 2021 amendments fully in force; advisory guidelines revised May 2024 remain current. No qualifying item."
+    },
+    {
+      "source": "PDPA Thailand (pdpc.or.th)",
+      "status": "fetched-via-search",
+      "note": "Draft amendment bill in consultation (late 2025); no enacted text. PDPC enforcement action (iris scanning, Nov 2025) is pre-window. No new qualifying item in lookback window."
+    },
+    {
+      "source": "OPC Canada / Justice Canada",
+      "status": "fetched-via-search",
+      "note": "Bill C-27 confirmed dead (Parliament prorogued Jan 2025; Minister Solomon confirmed June 2025 it will not return). PIPEDA and Quebec Law 25 remain operative. No new federal legislative event in window."
+    },
+    {
+      "source": "APPI Japan (ppc.go.jp)",
+      "status": "fetched-via-search",
+      "note": "Draft APPI amendment estimated to be published 2025/tabled 2026, effective est. 2027. No enacted text in window. Telecommunications Business Act External Data Transmission Rule (June 2023) remains operative. No qualifying item."
+    },
+    {
+      "source": "UAE Data Office (dataoffice.ae)",
+      "status": "fetched-via-search",
+      "note": "PDPL Executive Regulations (2024) stable; no new amendment in window. No qualifying item."
+    },
+    {
+      "source": "Privacy Commissioner New Zealand (privacy.org.nz)",
+      "status": "fetched-via-search",
+      "note": "Privacy Act 2020 in force; no new amendment or guidance touching cookies/consent in window. No qualifying item."
+    },
+    {
+      "source": "EDPB (edpb.europa.eu)",
+      "status": "fetched-via-search",
+      "note": "Guidelines 01/2025 on Pseudonymisation still pending final publication (stakeholder event report 2026-02-18; listed in Work Programme 2026-2027). No final guidelines yet. No qualifying item this cycle."
+    },
+    {
+      "source": "ICO UK (ico.org.uk)",
+      "status": "fetched-via-search",
+      "note": "SAT guidance (published 2026-04-29) confirmed as HIGH severity. NOT included in this LOW digest per severity routing rules. Flagged to orchestrator for separate HIGH alert. Primary source confirmed: https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/04/final-storage-and-access-technologies-guidance-published/"
+    }
+  ],
+  "digestItemsWritten": [
+    {
+      "itemId": "T2-2026-05-29-01",
+      "jurisdiction": "Australia",
+      "instrument": "Privacy Act 1988 — AML/CTF small business expansion",
+      "severity": "LOW",
+      "nextMilestone": "2026-07-01",
+      "confidence": "HIGH"
+    },
+    {
+      "itemId": "T2-2026-05-29-02",
+      "jurisdiction": "Australia",
+      "instrument": "Privacy (Children's Online Privacy) Code 2026 — Exposure Draft",
+      "severity": "LOW",
+      "nextMilestone": "2026-06-05 (consultation closes); 2026-12-10 (registration target)",
+      "confidence": "HIGH"
+    },
+    {
+      "itemId": "T2-2026-05-29-03",
+      "jurisdiction": "Australia",
+      "instrument": "Privacy Act 1988 — ADM transparency obligation",
+      "severity": "LOW",
+      "nextMilestone": "2026-12-10",
+      "confidence": "HIGH"
+    },
+    {
+      "itemId": "T2-2026-05-29-04",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA Amendment — 10% turnover fines, CEO accountability",
+      "severity": "LOW",
+      "nextMilestone": "2026-09-11 (effective date)",
+      "confidence": "HIGH"
+    },
+    {
+      "itemId": "T2-2026-05-29-05",
+      "jurisdiction": "China (PRC)",
+      "instrument": "CSL Amendment + Personal Information Outbound Certification Measures",
+      "severity": "LOW",
+      "nextMilestone": "Both already effective (2026-01-01 and 2026-03-01)",
+      "confidence": "HIGH"
+    },
+    {
+      "itemId": "T2-2026-05-29-06",
+      "jurisdiction": "Brazil",
+      "instrument": "ANPD 2026-2027 Enforcement Priorities — Advertising/Profiling",
+      "severity": "LOW",
+      "nextMilestone": "Ongoing",
+      "confidence": "MEDIUM"
+    },
+    {
+      "itemId": "T2-2026-05-29-07",
+      "jurisdiction": "EU/EEA",
+      "instrument": "EU Digital Omnibus — Proposed GDPR Articles 88a and 88b",
+      "severity": "LOW",
+      "nextMilestone": "Ordinary legislative procedure — no date fixed",
+      "confidence": "HIGH for proposal; LOW for timeline"
+    }
+  ],
+  "escalationRecommendations": [
+    {
+      "item": "ICO UK Storage and Access Technologies (SAT) Guidance, published 2026-04-29",
+      "recommendation": "Issue as standalone HIGH alert. Five new consent exemption categories, sub-chapters on simple-means-of-objecting and multi-purpose SATs, DUAA PECR fine uplift to GBP 17.5M / 4% global turnover. Primary source confirmed: https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/04/final-storage-and-access-technologies-guidance-published/. Requires Consent Banner and Geo/Jurisdiction Routing code changes. Not included in this LOW digest per severity routing rules."
+    }
+  ],
+  "highestSeverity": "LOW",
+  "alertsEmittedFromThisScan": 0,
+  "digestFilePath": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md",
+  "runDurationSeconds": null,
+  "operationalCaveats": [
+    "WebFetch blocked (HTTP 403) on cac.gov.cn and gov.br/anpd; China and Brazil items rely on secondary-source corroboration. Labeled SECONDARY for primary URL where direct fetch unavailable.",
+    "European Commission Digital Omnibus primary URL pending confirmation — labeled SECONDARY.",
+    "ICO SAT guidance (2026-04-29) is a HIGH item excluded from this LOW digest. Orchestrator should action separately.",
+    "India DPDP Phase II (HIGH, T-minus ~168 days to 2026-11-13) is not a new item — already in baseline and alerts-emitted scope. Re-examine at next Tier 1 scan if MeitY issues new guidance."
+  ]
+}
