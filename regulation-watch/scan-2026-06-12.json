@@ -1,0 +1,91 @@
+{
+  "scanDate": "2026-06-12",
+  "tier": "tier2-weekly",
+  "sourcesScanned": [
+    "APAC: PIPL (China), PDPA (Singapore), PDPA (Thailand), Australia Privacy Act, NZ Privacy Act, Japan APPI, Korea PIPA",
+    "MENA & Africa: UAE PDPL, KSA PDPL, POPIA (South Africa), Nigeria NDPA/NDPR, Kenya DPA (no qualifying changes)",
+    "LatAm: Mexico LFPDPPP/FLPPDPP, Brazil LGPD/ANPD, Argentina, Chile, Colombia, Peru (partial — Mexico and Brazil triggered alerts)",
+    "Global cross-border: EU-US DPF, EU-Brazil adequacy, UK adequacy extension, SCC updates"
+  ],
+  "alertsEmitted": [
+    {
+      "alertId": "RW-2026-06-12-01",
+      "jurisdiction": "South Korea",
+      "severity": "HIGH",
+      "instrument": "PIPA Amendment — promulgated 2026-03-10, effective 2026-09-11",
+      "filePath": "regulation-watch/alerts/2026-06-12/RW-2026-06-12-01.md",
+      "summary": "PIPA rewritten: 10% turnover fine ceiling, mandatory privacy-policy disclosure of automatic-collection devices (cookies/SDKs), explicit opt-in required when cookie data is combinable with other data to identify individuals. Effective 2026-09-11 (T-91 days)."
+    },
+    {
+      "alertId": "RW-2026-06-12-02",
+      "jurisdiction": "India",
+      "severity": "HIGH",
+      "instrument": "DPDP Rules 2025 — Phase II Consent Manager provisions effective 2026-11-13",
+      "filePath": "regulation-watch/alerts/2026-06-12/RW-2026-06-12-02.md",
+      "summary": "India's DPDP Rules create a Consent Manager (CM) registration framework live 2026-11-13. Foreign CMPs cannot self-register; ID-PRIVACY must build CM interoperability API, multilingual banner support, 7-year consent retention for IN locale, and service-conditioning guard."
+    },
+    {
+      "alertId": "RW-2026-06-12-03",
+      "jurisdiction": "Brazil / EU",
+      "severity": "MEDIUM",
+      "instrument": "EU-Brazil Mutual Adequacy Decision — EC Decision & ANPD Resolution No. 32/2026 — effective 2026-01-27",
+      "filePath": "regulation-watch/alerts/2026-06-12/RW-2026-06-12-03.md",
+      "summary": "Mutual adequacy granted 2026-01-27: EU SCCs no longer required for EU-to-Brazil data transfers (and vice versa). Update adequacy country database in Admin UI, suppress SCC-required warning for Brazil, update TIA templates."
+    },
+    {
+      "alertId": "RW-2026-06-12-04",
+      "jurisdiction": "Australia",
+      "severity": "MEDIUM",
+      "instrument": "Privacy (Children's Online Privacy) Code 2026 — OAIC Exposure Draft — consultation closed 2026-06-05, final due by 2026-12-10",
+      "filePath": "regulation-watch/alerts/2026-06-12/RW-2026-06-12-04.md",
+      "summary": "Australia's OAIC released children's privacy code draft (effective by Dec 2026): parental consent required for under-15s, behavioral advertising banned for children without parental consent, age-assurance measures required. Requires AU-children banner flow, age-gate, consent storage extensions, new geo-routing branch."
+    },
+    {
+      "alertId": "RW-2026-06-12-05",
+      "jurisdiction": "Mexico",
+      "severity": "MEDIUM",
+      "instrument": "New Federal Law on Protection of Personal Data held by Private Parties (FLPPDPP) — effective 2025-03-21",
+      "filePath": "regulation-watch/alerts/2026-06-12/RW-2026-06-12-05.md",
+      "summary": "Mexico's 2010 LFPDPPP fully replaced effective 2025-03-21: tightened consent definition (unambiguous), INAI dissolved (SACG now enforces), criminal penalties introduced, Aviso de Privacidad must disclose tracking technologies. Catch-up alert — gap in MX ruleset and Admin UI labeling identified."
+    }
+  ],
+  "digestItems": [
+    {
+      "alertId": "RW-2026-06-12-06",
+      "jurisdiction": "Japan",
+      "severity": "LOW",
+      "instrument": "APPI Amendment Bill — Cabinet approved 2026-04-07, Diet pending",
+      "filePath": "regulation-watch/alerts/2026-06-12/RW-2026-06-12-06.md",
+      "summary": "Japan Cabinet approved APPI bill bringing cookie IDs under new 'contactable personally referable information' restrictions. Not yet enacted. Earliest effective date ~2028. Awareness only."
+    },
+    {
+      "alertId": "RW-2026-06-12-07",
+      "jurisdiction": "Australia",
+      "severity": "LOW",
+      "instrument": "Privacy and Other Legislation Amendment Act 2024 — 2026 provisions (small business expansion + automated decision-making transparency)",
+      "filePath": "regulation-watch/alerts/2026-06-12/RW-2026-06-12-07.md",
+      "summary": "Two 2026 effective-date provisions: 100,000 AML-designated small businesses enter Privacy Act scope (2026-07-01); automated decision-making disclosure in privacy policies required (2026-12-10). Minor template updates; no banner changes."
+    }
+  ],
+  "noQualifyingChanges": false,
+  "highestSeverity": "HIGH",
+  "noChangesJurisdictions": [
+    "China (PIPL) — no new material cookie/consent changes in scan window",
+    "Singapore (PDPA) — no new guidance or amendments in scan window",
+    "Thailand (PDPA) — active enforcement ongoing but no new regulatory instrument in window",
+    "New Zealand (Privacy Act) — no material change in window",
+    "UAE (PDPL) — executive regulations still pending; no finalized instrument",
+    "Saudi Arabia (KSA PDPL) — no material change in window",
+    "South Africa (POPIA) — enforcement maturation but no new regulatory instrument",
+    "Nigeria (NDPA/GAID) — GAID effective 2025-09-19 (outside 90-day window); CAR deadline extension minor administrative item",
+    "Argentina, Chile, Colombia, Peru — no material qualifying changes in window",
+    "EU-US Data Privacy Framework — no material change; DPF survives CJEU challenge; C-703/25 P appeal filed Oct 2025 but no ruling yet",
+    "UK adequacy extension — no change in window",
+    "SCC updates — no new EU SCC version issued"
+  ],
+  "notes": [
+    "Mexico alert (RW-2026-06-12-05) covers a law enacted 2025-03-20, outside the formal 90-day scan window, but included because it has never appeared in alerts-emitted.json and represents an ongoing compliance gap for MX-locale customers.",
+    "WebFetch was blocked on .gov.au, .gov.in, .go.kr, .gob.mx, and .europa.eu domains. All primary source citations are link-verified-by-reference via consistent secondary sources; direct URL verification pending allow-listing.",
+    "Thailand PDPA enforcement activity is significant (THB 21.5M fines in Aug 2025) but no new regulatory instrument was published in the scan window; existing requirements are unchanged. Customer advisory on enforcement intensity may be warranted separately."
+  ]
+}
