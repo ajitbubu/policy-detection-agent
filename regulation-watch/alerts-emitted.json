@@ -12,5 +12,46 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-19-01",
+    "jurisdiction": "Global (EEA / TCF-registered CMPs)",
+    "instrument": "IAB TCF Policy v5.0.b — CMP UI, multi-device consent, Special Feature 2 rename",
+    "publishedDate": "2026-05-29",
+    "severity": "HIGH",
+    "sentAt": "2026-06-19T04:30:00Z",
+    "jiraKey": "IDP-12463",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12463",
+    "emailDraftId": "r7442855818926122118",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-06-19/RW-2026-06-19-01.md"
+  },
+  {
+    "alertId": "RW-2026-06-19-02",
+    "jurisdiction": "India",
+    "instrument": "Digital Personal Data Protection Rules, 2025 — Rule 4 Consent Manager provisions",
+    "publishedDate": "2025-11-13",
+    "severity": "HIGH",
+    "sentAt": "2026-06-19T04:30:00Z",
+    "jiraKey": "IDP-12464",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12464",
+    "emailDraftId": "r5599826901761022325",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-06-19/RW-2026-06-19-02.md"
+  },
+  {
+    "alertId": "RW-2026-06-19-03",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA Amendment 2026 — 10% revenue penalty ceiling + CEO liability",
+    "publishedDate": "2026-03-10",
+    "severity": "MEDIUM",
+    "sentAt": "2026-06-19T04:30:00Z",
+    "jiraKey": null,
+    "emailDraftId": "r4988343337634290779",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-06-19/RW-2026-06-19-03.md"
   }
 ]
