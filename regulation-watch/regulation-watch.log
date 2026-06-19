@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-06-19T04:30:00Z | tier2-weekly | 3 alerts emitted (2 HIGH, 1 MEDIUM) + 6 LOW items to digest | HIGH | 590s
+2026-06-19T04:39:50Z | tier2-weekly-delivery | 2 Jira stories (IDP-12463, IDP-12464) + 3 alert drafts (r7442855818926122118, r5599826901761022325, r4988343337634290779) + weekly digest draft (r-5423879322461396172) | HIGH | n/a

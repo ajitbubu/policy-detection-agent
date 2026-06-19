@@ -1,0 +1,145 @@
+{
+  "scanDate": "2026-06-19",
+  "tier": "tier2-weekly",
+  "scanStartedAt": "2026-06-19T00:00:00Z",
+  "sourcesChecked": [
+    "APAC — China PIPL / Cybersecurity Law (China Briefing, DLA Piper, Bird & Bird)",
+    "APAC — Singapore PDPA (PDPC official, IAPP, Chambers 2026)",
+    "APAC — Thailand PDPA (Chambers 2026, ConsentStack, CookieInformation)",
+    "APAC — Australia Privacy Act reforms (MinterEllison, Norton Rose Fulbright, Ashurst, APH)",
+    "APAC — New Zealand Privacy Act 2020 (DLA Piper data-protection guide — no material change detected)",
+    "APAC — Japan APPI (Mori Hamada, Baker McKenzie, Fisher Phillips, IAPP, Legal500)",
+    "APAC — South Korea PIPA (Hunton, IAPP, DGC Briefings, DLA Piper)",
+    "MENA/Africa — UAE PDPL (CookieYes, Signzy, Multilaw — no material change detected)",
+    "MENA/Africa — KSA PDPL (secondary sources — no material change detected)",
+    "MENA/Africa — South Africa POPIA (Braintree, Baker McKenzie, LexAfrica)",
+    "MENA/Africa — Nigeria NDPA/NDPC (NDPC official, IAPP, ICLG 2026)",
+    "MENA/Africa — Kenya DPA (Clyde & Co, Huduma Global — no new primary guidance detected)",
+    "LatAm — Brazil LGPD/ANPD (FlexyConsent, Securiti, Zwillgen — existing enforcement, no new binding guidance)",
+    "LatAm — Mexico LFPDPPP (DLA Piper — no material change detected)",
+    "LatAm — Argentina PDPA (DLA Piper — no material change detected)",
+    "LatAm — Colombia, Chile, Peru (IAPP tracker — no material change detected)",
+    "Global — EU-US Data Privacy Framework (BCLP, Two Birds, Epstein Becker, Berkeley Tech Law Journal)",
+    "Global — Standard Contractual Clauses (European Commission — no new SCCs detected)",
+    "Global — IAB TCF updates (IAB Tech Lab, ppc.land, CaptainCompliance)",
+    "India DPDP Rules 2025 (MeitY/Gazette via Wikipedia, Hogan Lovells, Shardul Amarchand Mangaldas, S.S. Rana)"
+  ],
+  "dedupe_check": {
+    "prior_alerts_in_window": ["RW-2026-05-09-01"],
+    "duplicates_found": 0
+  },
+  "alertsEmitted": [
+    {
+      "alertId": "RW-2026-06-19-01",
+      "severity": "HIGH",
+      "jurisdiction": "Global (EEA / TCF-registered CMPs)",
+      "instrument": "IAB TCF Policy v5.0.b — CMP UI, multi-device consent, Special Feature 2",
+      "publishedDate": "2026-05-29",
+      "effectiveDate": "2026-10-15 (web); 2027-02-15 (app/CTV)",
+      "file": "regulation-watch/alerts/2026-06-19/RW-2026-06-19-01.md",
+      "primarySourceUrl": "https://iabtechlab.com/updates-to-tcf-to-support-policy-version-5-0-b-are-open-for-public-comment/",
+      "confidenceLevel": "MEDIUM-HIGH",
+      "sourceVerification": "link-verified-by-reference (HTTP 403 on primary domain)"
+    },
+    {
+      "alertId": "RW-2026-06-19-02",
+      "severity": "HIGH",
+      "jurisdiction": "India",
+      "instrument": "Digital Personal Data Protection Rules, 2025 — Rule 4 Consent Manager provisions (T-minus 147 days to Phase II effective date)",
+      "publishedDate": "2025-11-13",
+      "effectiveDate": "2026-11-13 (Phase II / Rule 4); 2027-05-13 (Phase III)",
+      "file": "regulation-watch/alerts/2026-06-19/RW-2026-06-19-02.md",
+      "primarySourceUrl": "https://www.dpdpa.com/DPDP_Rules_2025_English_only.pdf",
+      "confidenceLevel": "HIGH",
+      "sourceVerification": "link-verified-by-reference (HTTP 403 on primary PDF; confirmed by multiple law-firm secondary sources)"
+    },
+    {
+      "alertId": "RW-2026-06-19-03",
+      "severity": "MEDIUM",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA Amendment (National Assembly 2026-02-12; promulgated 2026-03-10) — 10% revenue penalty ceiling, CEO liability",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "file": "regulation-watch/alerts/2026-06-19/RW-2026-06-19-03.md",
+      "primarySourceUrl": "https://www.pipc.go.kr/",
+      "confidenceLevel": "HIGH",
+      "sourceVerification": "link-verified-by-reference (HTTP 403 on PIPC domain; confirmed by Hunton and IAPP)"
+    }
+  ],
+  "lowItemsAddedToDigest": 6,
+  "digestFile": "regulation-watch/digest-pending.md",
+  "lowItems": [
+    {
+      "alertId": "RW-2026-06-19-L01",
+      "jurisdiction": "Australia",
+      "instrument": "Privacy Act — Automated Decision-Making (APP 1.7)",
+      "effectiveDate": "2026-12-10"
+    },
+    {
+      "alertId": "RW-2026-06-19-L02",
+      "jurisdiction": "Japan",
+      "instrument": "APPI Amendment Bill (Diet pending)",
+      "effectiveDate": "~2028"
+    },
+    {
+      "alertId": "RW-2026-06-19-L03",
+      "jurisdiction": "Global (EU-US)",
+      "instrument": "DPF — CJEU Appeal C-703/25 P",
+      "effectiveDate": "pending"
+    },
+    {
+      "alertId": "RW-2026-06-19-L04",
+      "jurisdiction": "India",
+      "instrument": "DPDP Rules 2025 Phase III (DSR/Rights)",
+      "effectiveDate": "2027-05-13"
+    },
+    {
+      "alertId": "RW-2026-06-19-L05",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA — ISMS-P Mandatory Certification",
+      "effectiveDate": "2027-07-01"
+    },
+    {
+      "alertId": "RW-2026-06-19-L06",
+      "jurisdiction": "Thailand",
+      "instrument": "PDPA — Private Sector DPO Mandate (expected)",
+      "effectiveDate": "TBD 2026"
+    }
+  ],
+  "noChangeDetected": [
+    "China PIPL — no new binding guidance or enforcement order on cookies/consent since prior scan",
+    "Singapore PDPA — no new cookie-specific guidance; PDPC generative AI consultation (2026-06-02) is out of scope for this scan",
+    "New Zealand Privacy Act — no material change detected",
+    "UAE PDPL — implementing regulations not yet published; no change from prior baseline",
+    "KSA PDPL — no new cookie/consent guidance detected",
+    "South Africa POPIA — enforcement intensifying but no new binding cookie/consent ruling detected (existing opt-in requirement unchanged)",
+    "Nigeria NDPA/GAID — GAID effective 2025-09-19 covers cookie consent; already captured in baseline; no new guidance in this scan window",
+    "Kenya DPA — enforcement activity noted but no new cookie/consent binding guidance",
+    "Brazil LGPD/ANPD — ANPD in enforcement mode but no new binding cookie regulation published",
+    "Mexico LFPDPPP — no material reform detected",
+    "Argentina PDPA — no material reform detected",
+    "Colombia/Chile/Peru — no material change detected",
+    "EU-US SCCs — no new SCC version published",
+    "EU adequacy decisions — no new decisions affecting major jurisdictions"
+  ],
+  "highestSeverity": "HIGH",
+  "orchestratorInstructions": {
+    "criticalHighAlerts": ["RW-2026-06-19-01", "RW-2026-06-19-02"],
+    "mediumAlerts": ["RW-2026-06-19-03"],
+    "jiraRequired": ["RW-2026-06-19-01", "RW-2026-06-19-02"],
+    "emailRequired": ["RW-2026-06-19-01", "RW-2026-06-19-02", "RW-2026-06-19-03"],
+    "digestRequired": true,
+    "alertsEmittedJsonUpdate": {
+      "note": "Append RW-2026-06-19-01, RW-2026-06-19-02, RW-2026-06-19-03 to alerts-emitted.json",
+      "jiraEpic": "IDP-11488",
+      "jiraProject": "IDP",
+      "jiraLabels": ["privacy-regulation-watch", "UCM"],
+      "jiraCustomFields": {
+        "Customer": "DSG Internal (id: 10316)",
+        "Product": "UCM (id: 10039)"
+      },
+      "emailRecipient": "asahu@datasafeguard.ai"
+    },
+    "logEntry": "2026-06-19T00:00:00Z | tier2-weekly | 3 alerts emitted (2 HIGH, 1 MEDIUM) + 6 LOW to digest | HIGH | ~45min"
+  }
+}
