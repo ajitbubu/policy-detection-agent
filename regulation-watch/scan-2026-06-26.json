@@ -1,0 +1,57 @@
+{
+  "runDate": "2026-06-26",
+  "tier": "tier2-weekly",
+  "alertsEmitted": [
+    {
+      "alertId": "RW-2026-06-26-01",
+      "jurisdiction": "South Korea",
+      "instrument": "Amendment to the Personal Information Protection Act (PIPA) — March 2026 overhaul",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "severity": "HIGH",
+      "jiraKey": "IDP-12520",
+      "emailDraftId": "r-6951093924766864881",
+      "filePath": "regulation-watch/alerts/2026-06-26/RW-2026-06-26-01.md"
+    },
+    {
+      "alertId": "RW-2026-06-26-02",
+      "jurisdiction": "Australia",
+      "instrument": "Exposure Draft — Privacy (Children's Online Privacy) Code 2026 (COPC)",
+      "publishedDate": "2026-03-31",
+      "effectiveDate": "2026-12-10",
+      "severity": "HIGH",
+      "jiraKey": "IDP-12521",
+      "emailDraftId": "r4349640310321800542",
+      "filePath": "regulation-watch/alerts/2026-06-26/RW-2026-06-26-02.md"
+    },
+    {
+      "alertId": "RW-2026-06-26-03",
+      "jurisdiction": "Nigeria",
+      "instrument": "NDPA General Application and Implementation Directive (GAID) 2025 — Article 19 Cookie Provisions",
+      "publishedDate": "2025-03-20",
+      "effectiveDate": "2025-09-19",
+      "severity": "MEDIUM",
+      "jiraKey": null,
+      "emailDraftId": "r735927930507208759",
+      "filePath": "regulation-watch/alerts/2026-06-26/RW-2026-06-26-03.md"
+    },
+    {
+      "alertId": "RW-2026-06-26-04",
+      "jurisdiction": "Brazil",
+      "instrument": "ANPD Resolution CD/ANPD No. 32/2026 — EU-Brazil Mutual Adequacy Decision",
+      "publishedDate": "2026-01-26",
+      "effectiveDate": "2026-01-27",
+      "severity": "MEDIUM",
+      "jiraKey": null,
+      "emailDraftId": "r-4135422927066645467",
+      "filePath": "regulation-watch/alerts/2026-06-26/RW-2026-06-26-04.md"
+    }
+  ],
+  "lowItemsInDigest": 4,
+  "digestEmailDraftId": "r-8682071181694676281",
+  "digestRecipient": "asahu@datasafeguard.ai",
+  "highestSeverity": "HIGH",
+  "totalAlerts": 4,
+  "subagentDurationMs": 587860,
+  "notes": "WebFetch returned HTTP 403 for all domains this run (proxy restriction). All alerts carry 'link-verified-by-reference' caveat on primary source URLs. Four LOW items included in weekly digest: China PIPL cross-border certification measures; Japan APPI amendment bill (pre-enactment); EU-US DPF CJEU appeal C-703/25 P; Mexico new General Law on Personal Data Protection."
+}
