@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-06-26T15:14:00Z | tier2-weekly | 4 alerts emitted (2 HIGH, 2 MEDIUM) + 4 LOW items to digest | HIGH | 840s
+2026-06-26T23:35:00Z | tier2-weekly | 4 alerts emitted (HIGH: RW-2026-06-26-01 → IDP-12520, RW-2026-06-26-02 → IDP-12521; MEDIUM: RW-2026-06-26-03, RW-2026-06-26-04); 4 LOW items digested (draft r-8682071181694676281); 5 Gmail drafts total | HIGH | 598s
