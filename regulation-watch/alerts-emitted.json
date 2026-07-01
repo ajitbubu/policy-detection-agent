@@ -12,5 +12,36 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-01-01",
+    "jurisdiction": "EU/EEA + UK (TCF-participating markets)",
+    "instrument": "IAB TCF Policy v5.0.b amendments",
+    "publishedDate": "2026-05-29",
+    "severity": "HIGH",
+    "sentAt": "2026-07-01T11:11:04Z",
+    "jiraKey": "IDP-12578",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12578",
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailStatus": "BLOCKED — Gmail MCP connector exposed only apply_sensitive_message_label / apply_sensitive_thread_label this run; no draft/compose tool available. Needs manual send or connector fix + retry.",
+    "scanType": "tier3-monthly-horizon",
+    "sourceFile": "regulation-watch/alerts/2026-07-01/RW-2026-07-01-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-01-02",
+    "jurisdiction": "United States (MSPA states)",
+    "instrument": "IAB Fifth Amended MSPA + Technical Signaling Implementation Guidelines",
+    "publishedDate": "2026-03-04",
+    "severity": "MEDIUM",
+    "severityAsScanned": "HIGH",
+    "severityDowngradeReason": "Subagent flagged the core technical-impact claim (GPP field-level diff) as PENDING PRIMARY CONFIRMATION. Orchestrator attempted WebFetch/WebSearch verification against iabprivacy.com (403) and could not confirm the field diff, so downgraded to MEDIUM per the alert's own confidence guidance pending 72-hour recheck. No Jira story created for this item under the MEDIUM tier of the DELIVERY rubric.",
+    "sentAt": "2026-07-01T11:11:04Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailStatus": "BLOCKED — Gmail MCP connector exposed only apply_sensitive_message_label / apply_sensitive_thread_label this run; no draft/compose tool available. Needs manual send or connector fix + retry.",
+    "scanType": "tier3-monthly-horizon",
+    "sourceFile": "regulation-watch/alerts/2026-07-01/RW-2026-07-01-02.md"
   }
 ]
