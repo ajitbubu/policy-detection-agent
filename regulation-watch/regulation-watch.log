@@ -2,3 +2,6 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-07-01T11:08:31Z | tier3-monthly-horizon | 2 alerts emitted | HIGH | ~1400s
+2026-07-01T11:11:04Z | tier3-monthly-horizon-delivery | 1 alert delivered as HIGH (IDP-12578, email BLOCKED), 1 alert downgraded to MEDIUM at delivery (RW-2026-07-01-02, no Jira, email BLOCKED) | HIGH | n/a
+2026-07-01T11:11:04Z | tier3-monthly-horizon-delivery | Gmail MCP connector exposed no draft/compose tool this run (only apply_sensitive_message_label/apply_sensitive_thread_label) — horizon report and both alert emails NOT sent, needs manual delivery or connector fix | n/a | n/a
