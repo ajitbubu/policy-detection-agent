@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-07-03T00:00:00Z | tier2-weekly | 4 alerts emitted (2 HIGH, 2 MEDIUM) + 5 LOW items digested | HIGH | ~416s
+2026-07-03T00:00:00Z | tier2-weekly-delivery | Jira created for both HIGH items (IDP-12611 NZ, IDP-12612 KR) under IDP-11488. Gmail delivery BLOCKED this run - connector exposed no draft/send tool, only apply_sensitive_message_label/apply_sensitive_thread_label. No Gmail drafts created for 2 HIGH + 2 MEDIUM alerts or the weekly LOW digest; digest-pending.md left un-cleared pending manual send to asahu@datasafeguard.ai. | HIGH | n/a

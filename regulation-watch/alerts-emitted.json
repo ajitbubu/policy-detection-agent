@@ -12,5 +12,61 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-03-01",
+    "jurisdiction": "New Zealand",
+    "instrument": "Biometric Processing Privacy Code 2025 - grace-period deadline",
+    "publishedDate": "2025-11-03",
+    "severity": "HIGH",
+    "sentAt": "2026-07-03T00:00:00Z",
+    "jiraKey": "IDP-12611",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12611",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED - Gmail draft/send tool unavailable in this session",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-03/RW-2026-07-03-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-03-02",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA amendment (10% revenue fine ceiling, CEO liability) + draft Enforcement Decree",
+    "publishedDate": "2026-03-10",
+    "severity": "HIGH",
+    "sentAt": "2026-07-03T00:00:00Z",
+    "jiraKey": "IDP-12612",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12612",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED - Gmail draft/send tool unavailable in this session",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-03/RW-2026-07-03-02.md"
+  },
+  {
+    "alertId": "RW-2026-07-03-03",
+    "jurisdiction": "Chile",
+    "instrument": "Ley N 21.719 (new GDPR-aligned data protection law, creates APDP)",
+    "publishedDate": "2024-12-13",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-03T00:00:00Z",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED - Gmail draft/send tool unavailable in this session",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-03/RW-2026-07-03-03.md"
+  },
+  {
+    "alertId": "RW-2026-07-03-04",
+    "jurisdiction": "Global cross-border (EU-US)",
+    "instrument": "FISA Section 702 statutory lapse - contingency risk to EU-US DPF adequacy",
+    "publishedDate": "2026-06-15",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-03T00:00:00Z",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED - Gmail draft/send tool unavailable in this session",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-03/RW-2026-07-03-04.md"
   }
 ]
