@@ -1,0 +1,33 @@
+{
+  "scanType": "tier2-weekly",
+  "scanDate": "2026-07-03",
+  "lookbackWindow": {
+    "start": "2026-05-09",
+    "end": "2026-07-03",
+    "note": "First Tier-2 cycle; no prior Tier-2 scan-summary file existed to diff against, so the lookback window was widened to ~8 weeks back to the 2026-05-09 baseline rather than a strict 7-30 day window. Next Tier-2 run should use a normal 30-day window from 2026-07-03."
+  },
+  "sourcesChecked": [
+    "OAIC (Australia)", "PPC (Japan)", "PIPC (Korea)", "PDPC Singapore", "PDPC Thailand",
+    "CAC (China)", "UAE Data Office", "Information Regulator (South Africa)", "NDPC (Nigeria)",
+    "INAI/SABG (Mexico)", "AAIP (Argentina)", "Chile BCN/Ley Chile + APDP context",
+    "Colombia data protection reform (secondary trackers)", "Peru data protection law (secondary trackers)",
+    "NZ Office of the Privacy Commissioner", "European Commission DG JUST / EDPB (DPF review, SCCs)",
+    "Congress.gov (FISA Section 702 bill status)", "IAPP, FPF, OneTrust DataGuidance, law-firm trackers"
+  ],
+  "alertsWritten": [
+    {"alertId": "RW-2026-07-03-01", "jurisdiction": "New Zealand", "instrument": "Biometric Processing Privacy Code 2025 - grace-period deadline", "severity": "HIGH", "publishedDate": "2025-11-03", "effectiveDate": "2026-08-03", "jiraKey": "IDP-12611"},
+    {"alertId": "RW-2026-07-03-02", "jurisdiction": "South Korea", "instrument": "PIPA amendment (10% revenue fine ceiling, CEO liability) + draft Enforcement Decree", "severity": "HIGH", "publishedDate": "2026-03-10", "effectiveDate": "2026-09-11", "jiraKey": "IDP-12612"},
+    {"alertId": "RW-2026-07-03-03", "jurisdiction": "Chile", "instrument": "Ley N 21.719 (new GDPR-aligned data protection law, creates APDP)", "severity": "MEDIUM", "publishedDate": "2024-12-13", "effectiveDate": "2026-12-01"},
+    {"alertId": "RW-2026-07-03-04", "jurisdiction": "Global cross-border (EU-US)", "instrument": "FISA Section 702 statutory lapse - contingency risk to EU-US DPF adequacy", "severity": "MEDIUM", "publishedDate": "2026-06-12/2026-06-15", "effectiveDate": "N/A - watch item"}
+  ],
+  "lowItemsDigested": 5,
+  "deliveryStatus": {
+    "jira": "created for both HIGH items (IDP-12611, IDP-12612) under epic IDP-11488",
+    "gmail": "BLOCKED - the Gmail MCP connector exposed only apply_sensitive_message_label / apply_sensitive_thread_label tools in this session; no draft-creation or send capability was available. No Gmail drafts were created for the 2 HIGH, 2 MEDIUM alerts, or the weekly LOW digest. See regulation-watch/regulation-watch.log and digest-pending.md for pending manual delivery."
+  },
+  "operationalCaveats": [
+    "WebFetch was not attempted this run against pipc.go.kr, bcn.cl, privacy.org.nz, congress.gov, or edpb.europa.eu; all findings link-verified-by-reference via WebSearch, cross-corroborated across 3+ independent secondary sources per item.",
+    "China PIPL cross-border certification measures and Nigeria's GAID were reviewed but excluded - both fully in force with no new in-window development.",
+    "Singapore PDPC and Argentina AAIP checked; no material in-window change surfaced."
+  ]
+}
