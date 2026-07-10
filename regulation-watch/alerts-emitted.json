@@ -12,5 +12,49 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-10-01",
+    "jurisdiction": "China (PRC)",
+    "instrument": "CAC/SAMR supplementary national standards implementing PIPL Art. 38 cross-border certification pathway (GB/T 46068-2025 + supplementary standards)",
+    "publishedDate": "2025-10-14",
+    "severity": "HIGH",
+    "sentAt": "2026-07-10T00:00:00Z",
+    "jiraKey": "IDP-12649",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12649",
+    "emailDraftId": null,
+    "emailDraftStatus": "BLOCKED — Gmail MCP connector in this session exposes no draft/compose tool (only get_message + label tools). Draft not created; needs manual follow-up.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-10/RW-2026-07-10-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-10-02",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA amendment, Act No. 21445 (10% revenue fine ceiling, CEO accountability, ISMS-P mandate)",
+    "publishedDate": "2026-03-10",
+    "severity": "HIGH",
+    "sentAt": "2026-07-10T00:00:00Z",
+    "jiraKey": "IDP-12650",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12650",
+    "emailDraftId": null,
+    "emailDraftStatus": "BLOCKED — Gmail MCP connector in this session exposes no draft/compose tool (only get_message + label tools). Draft not created; needs manual follow-up.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-10/RW-2026-07-10-02.md"
+  },
+  {
+    "alertId": "RW-2026-07-10-03",
+    "jurisdiction": "Chile",
+    "instrument": "Law No. 21.719 — comprehensive data protection law; new APDP regulator",
+    "publishedDate": "2024-12-13",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-10T00:00:00Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailDraftStatus": "BLOCKED — Gmail MCP connector in this session exposes no draft/compose tool (only get_message + label tools). Draft not created; needs manual follow-up.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-10/RW-2026-07-10-03.md"
   }
 ]

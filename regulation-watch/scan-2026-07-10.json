@@ -1,0 +1,112 @@
+{
+  "scanDate": "2026-07-10",
+  "scanType": "tier2-weekly",
+  "lookbackWindow": "dedupe cutoff 2026-06-10 (30 days); substantive lookback broad given monthly Tier 2 cadence gap since activation",
+  "tiersScanned": ["Tier 2"],
+  "sourcesAttempted": [
+    { "source": "CAC / SAMR (China cross-border data transfer rules)", "status": "fetched-via-search; WebFetch 403 on samr.gov.cn", "note": "GB/T 46068-2025 + supplementary technical standards effective 2026-07-01 (9 days pre-scan) — in scope, written up as RW-2026-07-10-01" },
+    { "source": "OAIC (Australia Privacy Act reform)", "status": "fetched-via-search", "note": "AG signaled intent (Feb 2026) to progress Tranche 2; no bill introduced. Non-binding political statement — rejected as non-event per operating rule 3" },
+    { "source": "PDPC Singapore", "status": "fetched-via-search", "note": "Draft GenAI personal-data advisory guidelines; consultation closed 2026-07-01; not yet binding — rejected as alert, logged as LOW/lowSeverityItems" },
+    { "source": "PIPC / National Assembly (South Korea PIPA amendment)", "status": "fetched-via-search; WebFetch 403 on privacy.go.kr", "note": "Act No. 21445, promulgated 2026-03-10, effective 2026-09-11 — in scope, written up as RW-2026-07-10-02" },
+    { "source": "Korea Network Act amendment (companion instrument)", "status": "fetched-via-search", "note": "Promulgated 2026-03-31, effective 2026-10-01; could not confirm cookie/online-tracking-specific content this run (search returned AI-labeling/disinformation-focused amendments) — folded into RW-2026-07-10-02 as an unconfirmed dependency rather than issued as its own alert" },
+    { "source": "PPC Japan (APPI amendment)", "status": "fetched-via-search", "note": "Cabinet-approved bill (2026-04-07) submitted to Diet; extends obligations to cookie identifiers ('personally referable information'); not yet enacted, expected enforcement ~2028 — logged as LOW/lowSeverityItems" },
+    { "source": "PIPC Korea / PPC Japan / PDPC Thailand", "status": "fetched-via-search", "note": "no other in-window items surfaced" },
+    { "source": "SDAIA / NCC Istitlaa (Saudi Arabia PDPL Implementing Regs)", "status": "fetched-via-search", "note": "Final amendments still not published as of most recent secondary reporting (May 2026); consultation closed 2025-05-27. No new trigger this window — rejected as candidate" },
+    { "source": "UAE Data Office (PDPL Executive Regulations)", "status": "fetched-via-search", "note": "Conflicting/low-quality secondary sources (SEO guide pages) claim '2026' issuance but cite Cabinet Decision No. 33 of 2024 and No. 44 of 2022 — appears to be existing 2024 regulation re-badged by marketing content, not a new 2026 event. Rejected as candidate; flagged as a source-quality issue" },
+    { "source": "Information Regulator (South Africa, POPIA)", "status": "fetched-via-search (light)", "note": "no in-window action surfaced" },
+    { "source": "NDPC Nigeria (NDPA / GAID)", "status": "fetched-via-search", "note": "CAR filing deadline extended from 2026-03-31 to 2026-05-30 — deadline itself already passed before this scan window and is a compliance-administration deadline, not a new trigger; rejected as candidate" },
+    { "source": "ODPC Kenya", "status": "fetched-via-search", "note": "Data Protection (Amendment) Bill 2025 — Senate bill, not yet tabled for debate as of early 2026. Not enacted — logged as LOW/lowSeverityItems (forward radar only)" },
+    { "source": "Bahrain (Shura Council / Cybercrime Law amendment)", "status": "fetched-via-search", "note": "Proposal to add data-privacy article to Cybercrime Law; approved by Legislative & Legal Affairs Committee, not yet enacted as of May 2026 — logged as LOW/lowSeverityItems" },
+    { "source": "Qatar PDPPL (NCSA)", "status": "fetched-via-search", "note": "No 2026 amendment identified; regulator has shifted toward enforcement of existing 2016 law — no new trigger this window" },
+    { "source": "INAI-successor SABG (Mexico LFPDPPP)", "status": "fetched-via-search", "note": "Main reform already in force since March 2025; Jan 2026 stakeholder dialogue signals further legislation but nothing published — no new trigger this window" },
+    { "source": "AAIP (Argentina PDPA reform)", "status": "fetched-via-search", "note": "Three competing bills before Congress (incl. 644-S-2025, 1948-D-2025); none enacted as of May 2026 — logged as LOW/lowSeverityItems (forward radar only)" },
+    { "source": "Chile Congress / BCN LeyChile / future APDP", "status": "fetched-via-search", "note": "Law No. 21.719 (published 2024-12-13) enters full force 2026-12-01 — in scope given the 90/60/30/7-day and jurisdiction-buildout lead-time trigger, written up as RW-2026-07-10-03" },
+    { "source": "SIC Colombia (habeas data / cookies)", "status": "fetched-via-search (light)", "note": "No new in-window development beyond already-enacted Law 2489/2025 (children's digital environments) — no new trigger this window" },
+    { "source": "European Commission DG JUST / CJEU (EU-US DPF adequacy litigation)", "status": "fetched-via-search", "note": "Latombe appeal (Case C-703/25 P) remains pending at CJEU as of May 2026; no new ruling this window — not a new event, not logged (horizon-watch only, already implicitly covered by baseline)" },
+    { "source": "ICO (UK Extension to EU-US DPF)", "status": "fetched-via-search", "note": "ICO's restructured international-transfer guidance was published 2026-01-15 — outside the 30-day dedupe/recency window and not new this scan; not logged" }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-07-10-01",
+      "jurisdiction": "China (PRC)",
+      "instrument": "CAC/SAMR supplementary national standards for PIPL Art. 38 cross-border certification pathway (GB/T 46068-2025 + supplementary technical standards)",
+      "severity": "HIGH",
+      "publishedDate": "2025-10-14",
+      "effectiveDate": "2026-07-01",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-10/RW-2026-07-10-01.md",
+      "confidence": "MEDIUM"
+    },
+    {
+      "alertId": "RW-2026-07-10-02",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA amendment, Act No. 21445 (10% revenue fine ceiling, CEO accountability, ISMS-P mandate)",
+      "severity": "HIGH",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-10/RW-2026-07-10-02.md",
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "alertId": "RW-2026-07-10-03",
+      "jurisdiction": "Chile",
+      "instrument": "Law No. 21.719 (comprehensive data protection law; new APDP regulator)",
+      "severity": "MEDIUM",
+      "publishedDate": "2024-12-13",
+      "effectiveDate": "2026-12-01",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-10/RW-2026-07-10-03.md",
+      "confidence": "MEDIUM-HIGH"
+    }
+  ],
+  "lowSeverityItems": [
+    {
+      "jurisdiction": "Japan",
+      "instrument": "APPI amendment bill (Cabinet-approved 2026-04-07, submitted to Diet) — extends obligations to 'personally referable information' including cookie identifiers",
+      "description": "Not yet enacted. Would extend certain APPI-style obligations (per proposed Article 31-2) to information that is not 'personal information' per se but lets a holder directly contact/target an individual, explicitly including cookie identifiers, phone numbers, and emails without a name. Expected full enforcement ~April 2028 pending Diet passage and PPC implementing rules.",
+      "sourceUrl": "https://www.morihamada.com/en/insights/newsletters/138006",
+      "sourceType": "SECONDARY — pending primary confirmation (Diet has not yet passed the bill)",
+      "effectiveDateWindow": "not enacted; projected enforcement ~2028-04 if passed as proposed"
+    },
+    {
+      "jurisdiction": "Singapore",
+      "instrument": "PDPC draft Advisory Guidelines on personal data use in generative AI systems",
+      "description": "Public consultation opened 2026-06-02, closed 2026-07-01. Addresses the 'publicly available data' exception (relevant to web-scraped/publicly posted tracking-adjacent data) for GenAI training; not yet binding.",
+      "sourceUrl": "https://iapp.org/news/a/notes-from-the-asia-pacific-region-singapore-issues-draft-guidelines-on-personal-data-use-in-generative-ai",
+      "sourceType": "SECONDARY — pending primary confirmation; final guidelines not yet published by PDPC",
+      "effectiveDateWindow": "final guidelines timing unannounced; watch for publication in Q3–Q4 2026"
+    },
+    {
+      "jurisdiction": "Kenya",
+      "instrument": "Data Protection (Amendment) Bill, 2025",
+      "description": "Senate bill proposing expanded sensitive-data categories (political opinions, trade-union membership) aligning toward GDPR Art. 9. Not yet tabled for debate as of early 2026.",
+      "sourceUrl": "https://wamaeallen.com/summary-of-the-data-protection-amendment-bill-2025/",
+      "sourceType": "SECONDARY — pending primary confirmation; bill not enacted",
+      "effectiveDateWindow": "not enacted; no timeline confirmed"
+    },
+    {
+      "jurisdiction": "Bahrain",
+      "instrument": "Proposed amendment to Cybercrime Law adding a data-privacy-in-digital-communications article",
+      "description": "Proposed by Shura Council members in late 2025; approved by the Legislative and Legal Affairs Committee as of May 2026; not yet enacted.",
+      "sourceUrl": "https://www.recordinglaw.com/world-laws/world-data-privacy-laws/bahrain-data-privacy-laws/",
+      "sourceType": "SECONDARY — pending primary confirmation; not enacted",
+      "effectiveDateWindow": "not enacted; no timeline confirmed"
+    },
+    {
+      "jurisdiction": "Argentina",
+      "instrument": "Competing bills to replace Personal Data Protection Law 25.326 (incl. 644-S-2025, 1948-D-2025)",
+      "description": "Three bills pending in Congress seeking to modernize Argentina's data protection framework toward GDPR alignment; none enacted as of May 2026.",
+      "sourceUrl": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/argentina-personal-data-protection-bill-sent-to-congress",
+      "sourceType": "SECONDARY — pending primary confirmation; none enacted",
+      "effectiveDateWindow": "not enacted; no timeline confirmed"
+    }
+  ],
+  "duplicatesSkipped": 0,
+  "highestSeverity": "HIGH",
+  "runDurationEstimateSeconds": 900,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on samr.gov.cn and privacy.go.kr this run, consistent with the standing operational caveat for official .gov-equivalent domains documented in CLAUDE.md. All China and Korea facts in RW-2026-07-10-01 and RW-2026-07-10-02 are link-verified-by-reference and corroborated across multiple independent secondary sources (China Briefing, IAPP, Arnold & Porter, Hunton, Yulchon, Acclime Korea) but NOT independently confirmed against primary gazette/regulator text. Recommend legal review + a 72-hour recheck before these are treated as fully verified.",
+    "Chile's BCN LeyChile primary source (bcn.cl) was cited but not fetch-tested this run; recommend the orchestrator or next scan attempt a direct fetch to upgrade RW-2026-07-10-03's confidence from MEDIUM-HIGH to HIGH.",
+    "UAE PDPL 'Executive Regulations 2026' secondary sources were found to be low-quality/SEO content conflating a 2024 Cabinet Decision with a fictitious '2026 issuance' — no alert or digest entry was created for this; flagging as a source-quality risk if this domain pattern (marketing-blog SEO content citing stale regulations as 'new for 2026') recurs in future scans.",
+    "Korea's companion Network Act amendment (effective 2026-10-01) could not be confirmed as touching cookies/online tracking specifically in this run — it was NOT issued as its own alert per operating rule 4 (cite primary sources or label unconfirmed); flagged as a dependency in RW-2026-07-10-02 for a follow-up check within 72 hours.",
+    "No Jira or Gmail tools were available in this run — alert files and this scan summary are the complete output; delivery (Jira story creation, Gmail drafts, alerts-emitted.json update, regulation-watch.log append) is the orchestrator's responsibility per the DELIVERY role boundary."
+  ]
+}
