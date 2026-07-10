@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-07-10T00:00:00Z | tier2-weekly | 3 alerts emitted (2 HIGH, 1 MEDIUM) + 5 LOW items | HIGH | ~900s
+2026-07-10T00:00:00Z | tier2-weekly-delivery | Jira created for both HIGH alerts (IDP-12649 China, IDP-12650 South Korea). Gmail drafts NOT created — Gmail MCP connector this session exposes no draft/compose tool (only get_message + sensitive-label tools), so RW-2026-07-10-01/02/03 email delivery and the LOW-item weekly digest are BLOCKED pending a session with full Gmail tool access. digest-pending.md left populated (not cleared) since the digest was not actually sent. | HIGH | n/a
