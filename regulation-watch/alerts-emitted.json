@@ -12,5 +12,33 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-14-01",
+    "jurisdiction": "Global cross-border (EU/EEA + UK + US) — EU-US Data Privacy Framework",
+    "instrument": "Trump v. Slaughter, 609 U.S. ___ (2026) — SCOTUS ruling threatening EU-US DPF adequacy",
+    "publishedDate": "2026-06-29",
+    "severity": "HIGH",
+    "sentAt": "2026-07-14T05:59:56Z",
+    "jiraKey": "IDP-12663",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12663",
+    "emailDraftId": "r118814986414348482",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-14/RW-2026-07-14-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-14-02",
+    "jurisdiction": "Chile",
+    "instrument": "Law 21.719 — new comprehensive Data Protection Law / APDP",
+    "publishedDate": "2024-12-13",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-14T05:59:56Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": "r7509166546461918679",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-14/RW-2026-07-14-02.md"
   }
 ]
