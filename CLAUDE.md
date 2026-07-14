@@ -107,3 +107,4 @@ From the operating prompt's SELF-CHECK section — the orchestrator must verify 
 ## Session history
 
 - 2026-05-09 — Initial activation; baseline state-of-the-world produced (top 10 in-window items through 2027-05-09); first daily Tier 1 scan emitted 1 HIGH alert (RW-2026-05-09-01, FTC v. Kochava sensitive-location order) → Jira `IDP-11489`, Gmail draft `r-8257231129572050191`.
+- 2026-07-14 — First weekly Tier 2 scan: 1 HIGH alert (RW-2026-07-14-01, SCOTUS *Trump v. Slaughter* threatening EU-US DPF adequacy) → Jira `IDP-12663`, Gmail draft `r118814986414348482`; 1 MEDIUM alert (RW-2026-07-14-02, Chile Law 21.719) → Gmail draft `r7509166546461918679`, no Jira; 7 LOW items → consolidated digest Gmail draft `r-5718038244074039136`, `digest-pending.md` cleared.
