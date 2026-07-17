@@ -1,0 +1,61 @@
+{
+  "scanDate": "2026-07-17",
+  "scanType": "tier2-weekly",
+  "runNote": "Standing Monday weekly Tier 2 + digest scan, run slightly late (per orchestrator instruction, treated as the 2026-07-17 Mon run). First Tier 2 scan since agent activation (2026-05-09) per alerts-emitted.json history.",
+  "sourcesScanned": [
+    "APAC: China PIPL/CAC, Singapore PDPC, Thailand PDPC, Australia OAIC/Privacy Act reform, New Zealand Privacy Act, Japan APPI/PPC, Korea PIPA/PIPC",
+    "MENA & Africa: UAE PDPL, Saudi Arabia PDPL/SDAIA, Bahrain PDPL, Qatar PDPL, South Africa POPIA/Information Regulator, Nigeria NDPA/NDPC, Kenya DPA/ODPC",
+    "LatAm: Mexico LFPDPPP/former INAI function, Argentina PDPA/AAIP, Chile Law 21.719, Colombia, Peru",
+    "Global cross-border: EU-US Data Privacy Framework, UK Extension to DPF, EU Standard Contractual Clauses, adequacy decisions, UK ICO international transfer guidance"
+  ],
+  "webFetchCaveat": "WebFetch returned HTTP 403 on every primary-source and several secondary-source domains attempted this run (cac.gov.cn, bcn.cl, yulchon.com, hunton.com, china-briefing.com). All findings in this scan rely on WebSearch result summaries cross-checked across multiple independent secondary sources and are labeled SECONDARY — PENDING PRIMARY CONFIRMATION / link-verified-by-reference per operating rules. Recommend allow-listing or an authenticated fetch path before treating these as final for customer-facing communication.",
+  "alertsEmitted": [
+    {
+      "alertId": "RW-2026-07-17-01",
+      "severity": "HIGH",
+      "jurisdiction": "China (PRC)",
+      "instrument": "CAC Measures for Certification of Cross-Border Transfer of Personal Information + supplementary national standards (effective 2026-07-01)",
+      "sourceFile": "regulation-watch/alerts/2026-07-17/RW-2026-07-17-01.md",
+      "confidence": "MEDIUM"
+    },
+    {
+      "alertId": "RW-2026-07-17-02",
+      "severity": "HIGH",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA Amendment, Act No. 21445 (10% revenue fine ceiling, CEO accountability)",
+      "sourceFile": "regulation-watch/alerts/2026-07-17/RW-2026-07-17-02.md",
+      "confidence": "MEDIUM"
+    },
+    {
+      "alertId": "RW-2026-07-17-03",
+      "severity": "MEDIUM",
+      "jurisdiction": "Chile",
+      "instrument": "Ley 21.719 (comprehensive data protection reform, full effect 2026-12-01)",
+      "sourceFile": "regulation-watch/alerts/2026-07-17/RW-2026-07-17-03.md",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "lowItemsRolledIntoDigest": 13,
+  "digestFile": "regulation-watch/digest-pending.md",
+  "dedupeSkips": [],
+  "dedupeWindowChecked": "regulation-watch/alerts-emitted.json (30-day window); only prior entry is RW-2026-05-09-01 (US FTC v. Kochava, unrelated jurisdiction/instrument) — no overlap found",
+  "itemsReviewedButNotAlerted": [
+    {
+      "topic": "Japan APPI amendment bill",
+      "reason": "Not yet enacted (Cabinet-approved bill submitted to Diet 2026-04-07); would be LOW even if passed given ~2028 effective horizon",
+      "digestEntry": 1
+    },
+    {
+      "topic": "UAE PDPL Executive Regulations 2026",
+      "reason": "Conflicting secondary sources; could not corroborate a genuine new 2026 regulatory action distinct from the already-in-force Cabinet Decision No. 33 of 2024. Not alerted or added as a confirmed LOW item — flagged for follow-up only.",
+      "digestEntry": 9
+    },
+    {
+      "topic": "Nigeria NDPC GAID 2025",
+      "reason": "Already operational since 2025-09-19; CAR filing deadline already passed (2026-05-30). Not a new trigger this cycle.",
+      "digestEntry": 7
+    }
+  ],
+  "runDurationMinutes": 23,
+  "notes": "Orchestrator (main Claude Code session) must handle: Jira story creation under IDP-11488 for both HIGH alerts, Gmail drafts for all three alerts (HIGH x2, MEDIUM x1) to asahu@datasafeguard.ai, and MEDIUM does not get a Jira story per delivery rubric. LOW items are NOT individually delivered — they wait for the Monday weekly digest email per routines.md. Orchestrator must also append all three alerts to alerts-emitted.json and append a summary line to regulation-watch.log."
+}

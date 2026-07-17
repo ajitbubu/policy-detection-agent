@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-07-17T15:14:53Z | tier2-weekly | 3 alerts emitted (2 HIGH, 1 MEDIUM), 13 LOW items digested | HIGH | 23m
+2026-07-17T15:14:53Z | tier2-weekly-delivery | PARTIAL: Jira created for both HIGH (IDP-12673 China, IDP-12674 South Korea). Gmail drafts NOT created — Gmail MCP connector exposed no draft/send tool this session (only get_message + sensitive-label tools loaded). Weekly LOW digest (13 items) also undelivered; digest-pending.md NOT cleared pending manual send. | HIGH | n/a
