@@ -12,5 +12,52 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-17-01",
+    "jurisdiction": "China (PRC)",
+    "instrument": "CAC Measures for Certification of Cross-Border Transfer of Personal Information + supplementary national standards",
+    "publishedDate": "2025-10",
+    "severity": "HIGH",
+    "sentAt": "2026-07-17T15:14:53Z",
+    "jiraKey": "IDP-12673",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12673",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — Gmail MCP connector exposed no draft/send tool this run (only get_message + label tools loaded); email not sent. Needs manual send or re-run once tool access is restored.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "confidence": "MEDIUM — SECONDARY, pending primary CAC gazette confirmation",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-17/RW-2026-07-17-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-17-02",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA Amendment, Act No. 21445 (10% revenue fine ceiling, CEO accountability)",
+    "publishedDate": "2026-03-10",
+    "severity": "HIGH",
+    "sentAt": "2026-07-17T15:14:53Z",
+    "jiraKey": "IDP-12674",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12674",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — Gmail MCP connector exposed no draft/send tool this run (only get_message + label tools loaded); email not sent. Needs manual send or re-run once tool access is restored.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "confidence": "MEDIUM — SECONDARY, pending primary law.go.kr gazette confirmation",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-17/RW-2026-07-17-02.md"
+  },
+  {
+    "alertId": "RW-2026-07-17-03",
+    "jurisdiction": "Chile",
+    "instrument": "Ley 21.719 comprehensive data protection reform (full effect 2026-12-01)",
+    "publishedDate": "2024-08-26",
+    "severity": "MEDIUM",
+    "sentAt": null,
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — MEDIUM severity gets email-only delivery per rubric; Gmail MCP connector exposed no draft/send tool this run. Not yet delivered.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "confidence": "MEDIUM — SECONDARY, pending primary BCN Ley Chile confirmation",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-17/RW-2026-07-17-03.md"
   }
 ]
