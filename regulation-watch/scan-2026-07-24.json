@@ -1,0 +1,76 @@
+{
+  "scanType": "tier2-weekly",
+  "runDate": "2026-07-24",
+  "tier2SourcesChecked": [
+    "OAIC (Australia) - via secondary trackers, Privacy Act Tranche 2 status",
+    "PPC (Japan) - via secondary trackers, APPI amendment bill status",
+    "PIPC (Korea) - via secondary trackers, PIPA amendment",
+    "PDPC (Singapore) - via secondary trackers, PDPA/cookie guidance (no material change found)",
+    "PDPC (Thailand) - via secondary trackers, PDPA amendment status + March 2026 consultation",
+    "CAC (China) - via secondary trackers, cross-border certification measures",
+    "Office of the Privacy Commissioner (NZ) - via secondary trackers, Privacy Amendment Act 2025 / IPP 3A",
+    "UAE Data Office - via secondary trackers, PDPL Executive Regulations (inconclusive/conflicting secondary reporting, no alert issued)",
+    "Information Regulator (South Africa) - via secondary trackers, POPIA (no new item this cycle, prior amendment from April 2025)",
+    "NDPC (Nigeria) - via secondary trackers, NDPA/GAID compliance audit returns",
+    "ODPC Kenya - via secondary trackers, Data Protection Amendment Bill 2025 (not enacted)",
+    "INAI/SABG (Mexico) - via secondary trackers, LFPDPPP 2025 reform implementing regulations status",
+    "AAIP (Argentina) - via secondary trackers, PDPA reform bills (not enacted)",
+    "Chile - Ley 21.719 / new Agencia de Proteccion de Datos Personales",
+    "European Commission DG JUST - via secondary trackers, EU-Brazil mutual adequacy decision, SCC update status, EU-US DPF status",
+    "IAPP, FPF, OneTrust DataGuidance, Baker McKenzie, Mayer Brown, White & Case, Hunton, Kennedys, Recording Law, and other law-firm/tracker secondary sources used as radar throughout"
+  ],
+  "alertCountsBySeverity": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 4,
+    "LOW": 9
+  },
+  "newAlerts": [
+    {
+      "alertId": "RW-2026-07-24-01",
+      "jurisdiction": "Chile",
+      "instrument": "Law 21.719 (new comprehensive data protection law)",
+      "severity": "HIGH",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-24/RW-2026-07-24-01.md"
+    },
+    {
+      "alertId": "RW-2026-07-24-02",
+      "jurisdiction": "EU/EEA - Brazil (mutual)",
+      "instrument": "EU Implementing Decision (EU) 2026/179 + ANPD Resolution CD/ANPD No. 32 (mutual adequacy decision)",
+      "severity": "MEDIUM",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-24/RW-2026-07-24-02.md"
+    },
+    {
+      "alertId": "RW-2026-07-24-03",
+      "jurisdiction": "China (PRC)",
+      "instrument": "Measures for Certification of Cross-Border Transfer of Personal Information",
+      "severity": "MEDIUM",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-24/RW-2026-07-24-03.md"
+    },
+    {
+      "alertId": "RW-2026-07-24-04",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA / Enforcement Decree / Network Act amendment (CEO liability, 10% revenue fine ceiling)",
+      "severity": "MEDIUM",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-24/RW-2026-07-24-04.md"
+    },
+    {
+      "alertId": "RW-2026-07-24-05",
+      "jurisdiction": "New Zealand",
+      "instrument": "Privacy Amendment Act 2025 - IPP 3A (indirect collection notification)",
+      "severity": "MEDIUM",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-24/RW-2026-07-24-05.md"
+    }
+  ],
+  "lowItemsAppendedToDigest": 9,
+  "digestPendingFile": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md",
+  "itemsConsideredButNotAlerted": [
+    "UAE PDPL Executive Regulations - secondary sources gave conflicting dates (Nov 2023 vs. vague '2026') for the same Cabinet Decision 111/2023; treated as likely recycled/SEO content rather than a genuine new 2026 event; not alerted, only the already-known 2027-01-01 full-compliance deadline is worth tracking (not included in digest as it predates this scan window and risks being a stale repeat)",
+    "South Africa POPIA regulation amendments - dated April 2025, outside this scan's freshness window, not a new item",
+    "UK DUAA international-transfer 'not materially lower' test - same instrument already captured in the 2026-05-09 baseline (item #3); ICO guidance update (2026-01-15) predates this scan and the baseline, not new",
+    "Saudi Arabia (KSA) PDPL, Bahrain PDPL, Qatar PDPL - no material new development found this cycle",
+    "Colombia, Peru - reform activity referenced only in general terms by secondary sources with no specific enacted instrument or date identified this cycle"
+  ],
+  "selfCheckNotes": "All 5 full alerts identify at least one ID-PRIVACY subsystem and at least one concrete engineering/product action. Primary source URLs are cited for every alert but WebFetch was blocked (HTTP 403 pattern per known operational caveat) on every official domain attempted this run (bcn.cl, eur-lex.europa.eu, cac.gov.cn, pipc.go.kr, legislation.govt.nz) - all primary citations are labeled link-verified-by-reference and should be confirmed by direct fetch once domains are allow-listed. No alert in this batch duplicates the single existing entry in alerts-emitted.json (RW-2026-05-09-01, US FTC v. Kochava, unrelated jurisdiction/instrument).",
+  "runDurationMinutes": 22
+}

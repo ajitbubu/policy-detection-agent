@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-07-24T00:00:00Z | tier2-weekly | 5 alerts emitted (1 HIGH, 4 MEDIUM) + 9 LOW appended to digest-pending.md | HIGH | 1320s
+2026-07-24T00:00:00Z | tier2-weekly-delivery | 1 Jira story created (IDP-12734, RW-2026-07-24-01, Chile HIGH); Gmail drafts NOT created for 5 alerts + weekly LOW digest — Gmail MCP connector exposed only get_message/apply_sensitive_message_label/apply_sensitive_thread_label this run, no draft/send capability; digest-pending.md left uncleared pending manual send or connector fix | HIGH | n/a
