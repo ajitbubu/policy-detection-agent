@@ -12,5 +12,72 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-24-01",
+    "jurisdiction": "Chile",
+    "instrument": "Law 21.719 — new comprehensive data protection law (opt-in cookie regime)",
+    "publishedDate": "2024-12-13",
+    "severity": "HIGH",
+    "sentAt": "2026-07-24T00:00:00Z",
+    "jiraKey": "IDP-12734",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12734",
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailStatus": "NOT_CREATED — Gmail MCP connector exposed only get_message/apply_sensitive_message_label/apply_sensitive_thread_label this run; no draft/send tool available",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-24/RW-2026-07-24-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-24-02",
+    "jurisdiction": "EU/EEA - Brazil (mutual)",
+    "instrument": "EU Implementing Decision (EU) 2026/179 + ANPD Resolution CD/ANPD No. 32 (mutual adequacy)",
+    "publishedDate": "2026-01-26",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-24T00:00:00Z",
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailStatus": "NOT_CREATED — Gmail MCP connector exposed only get_message/apply_sensitive_message_label/apply_sensitive_thread_label this run; no draft/send tool available",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-24/RW-2026-07-24-02.md"
+  },
+  {
+    "alertId": "RW-2026-07-24-03",
+    "jurisdiction": "China (PRC)",
+    "instrument": "Measures for Certification of Cross-Border Transfer of Personal Information",
+    "publishedDate": "2025-10-14",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-24T00:00:00Z",
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailStatus": "NOT_CREATED — Gmail MCP connector exposed only get_message/apply_sensitive_message_label/apply_sensitive_thread_label this run; no draft/send tool available",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-24/RW-2026-07-24-03.md"
+  },
+  {
+    "alertId": "RW-2026-07-24-04",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA / Enforcement Decree / Network Act amendment (10% revenue fine ceiling, CEO liability)",
+    "publishedDate": "2026-03-10",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-24T00:00:00Z",
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailStatus": "NOT_CREATED — Gmail MCP connector exposed only get_message/apply_sensitive_message_label/apply_sensitive_thread_label this run; no draft/send tool available",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-24/RW-2026-07-24-04.md"
+  },
+  {
+    "alertId": "RW-2026-07-24-05",
+    "jurisdiction": "New Zealand",
+    "instrument": "Privacy Amendment Act 2025 — IPP 3A (indirect collection notification)",
+    "publishedDate": "2025",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-24T00:00:00Z",
+    "emailDraftId": null,
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "emailStatus": "NOT_CREATED — Gmail MCP connector exposed only get_message/apply_sensitive_message_label/apply_sensitive_thread_label this run; no draft/send tool available",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-24/RW-2026-07-24-05.md"
   }
 ]
