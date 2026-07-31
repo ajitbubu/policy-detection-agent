@@ -1,0 +1,106 @@
+{
+  "scanDate": "2026-07-31",
+  "scanType": "weekly-tier2",
+  "lookbackStart": "2026-05-09",
+  "lookbackEnd": "2026-07-31",
+  "lookbackNote": "Weekly Tier-2 cadence per routines.md targets roughly a 30-day window; extended lookback to 2026-05-09 (baseline/last-known scan date) used for candidate discovery since no prior Tier-2 scan-*.json exists in this repo to bound the window tighter. Only items with a fresh trigger event (publication, effective-date-window crossing, or binding guidance dated within the last ~30 days) were emitted as alerts.",
+  "tiersScanned": ["Tier 2"],
+  "sourcesAttempted": [
+    { "source": "OAIC (Australia)", "status": "fetched-via-search", "note": "Tranche 2 of Privacy Act reform remains a Government commitment, no Bill introduced, no commencement date. Not a trigger event. Children's Online Privacy Code registration deadline (2026-12-10) noted but has not newly crossed a 90/60/30/7-day threshold this week; deferred to a future scan." },
+    { "source": "Office of the Privacy Commissioner (NZ)", "status": "fetched-via-search", "note": "no in-window item surfaced" },
+    { "source": "PPC (Japan)", "status": "fetched-via-search", "note": "APPI amendment bill Cabinet-approved 2026-04-07, submitted to Diet — not yet enacted, does not meet trigger threshold (Trigger #1 requires enactment/signing/publication). Logged to digest-pending.md as a horizon/awareness item because it explicitly covers cookie IDs and device identifiers under a new consent-required category." },
+    { "source": "PIPC (Korea)", "status": "fetched-via-search", "note": "PIPA Amendment Act 21445 (promulgated 2026-03-10, effective 2026-09-11) — effective date now within the 31-90-day window from scan date, triggering Trigger #7. Written up as RW-2026-07-31-02 (HIGH). WebFetch on pipc.go.kr not attempted (standing .gov-domain 403 caveat); corroborated via 4 independent secondary sources including a Korea-market law firm." },
+    { "source": "PDPC Singapore", "status": "fetched-via-search", "note": "no new binding guidance in window; Advisory Guidelines for Selected Topics last revised 2024-05-23, outside window" },
+    { "source": "PDPC Thailand", "status": "fetched-via-search", "note": "PDPC public consultation on cookie/consent guidelines closed 2026-03-23; draft guidelines expected ~8 months later (outside window, not yet published). Not a trigger event; watch item for a future scan." },
+    { "source": "CAC / TC260 (China)", "status": "fetched-via-search", "note": "GB/T 46903-2025 Personal Information Protection Compliance Audit Requirements, effective 2026-07-01, operationalizing the binding 2025-05-01 CAC Audit Measures with explicit consent-mechanism-adequacy audit scope. Written up as RW-2026-07-31-01 (MEDIUM). WebFetch on cac.gov.cn returned HTTP 403; corroborated via secrss.com plus 3 English-language law-firm trackers (KWM, Bird & Bird, Law.asia). Also surfaced: sector-specific 'Automotive Data Cross-Border Transfer Guidelines (2026 edition)' effective 2026-07-01 — narrow applicability, logged to digest-pending.md as LOW." },
+    { "source": "UAE Data Office", "status": "fetched-via-search", "note": "no in-window executive regulation or binding cookie guidance surfaced; PDPL Executive Regulations (Cabinet Decision 111/2023) remain the operative framework" },
+    { "source": "SDAIA / NDMO (Saudi Arabia)", "status": "fetched-via-search", "note": "Proposed PDPL Implementing Regulation amendments remain in public-consultation/proposed status (consultation closed 2025-05-27); no final adoption confirmed in window. Not a trigger event." },
+    { "source": "Information Regulator (South Africa)", "status": "fetched-via-search", "note": "no new binding cookie guidance in window; POPIA cookie-consent practice (12-month consent validity, accept-all/reject-all parity) unchanged from prior baseline understanding" },
+    { "source": "NDPC (Nigeria)", "status": "fetched-via-search", "note": "GAID 2025 (operational since 2025-09-19) remains the operative cookie-banner framework; only in-window item is a compliance-audit-return filing deadline extension (2026-03-31 to 2026-05-30), which is a procedural filing-date change, not a consent-mechanic change, and is now past. Not written up." },
+    { "source": "ODPC Kenya", "status": "fetched-via-search", "note": "no in-window enforcement or guidance on cookies/consent surfaced; EU adequacy dialogue ongoing but non-binding" },
+    { "source": "NCA (Qatar) / PDPL (Bahrain)", "status": "fetched-via-search", "note": "no in-window enforcement or guidance surfaced in either jurisdiction" },
+    { "source": "INAI-successor / Secretariat of Anti-Corruption and Good Governance (Mexico)", "status": "fetched-via-search", "note": "implementing regulations for the March 2025 LFPDPPP recast still not published as of this scan; no in-window development" },
+    { "source": "AAIP (Argentina) / Habeas Data (Colombia) / Peru", "status": "fetched-via-search", "note": "Peru Legislative Decree 1700 (amends Cybercrime Law re: unlawful personal-data-database dealing) published 2026-01-24 — outside the ~30-day lookback window and does not touch cookie/consent-banner mechanics (criminal offense for illegal data trafficking, not a consent requirement). Not written up. No in-window Colombia or Argentina item surfaced." },
+    { "source": "European Commission DG JUST — SCC modules", "status": "fetched-via-search", "note": "Article 3(2) SCC module (for transfers to non-EEA controllers/processors already directly subject to GDPR) remains unadopted as of this scan; no formal implementing decision published. Not a trigger event." },
+    { "source": "EU-US Data Privacy Framework / CJEU appeal (Case C-703/25 P)", "status": "fetched-via-search", "note": "EDPB first-review report (2026-03-12) is outside the lookback window. A secondary blog claimed a 'US Supreme Court ruling on 2026-07-02' affecting DPF underlying safeguards (FISA Section 702 / PCLOB) — investigated directly and could NOT corroborate any such SCOTUS ruling via independent search (FISA 702 developments found were a failed House reauthorization vote and a FISC one-year certification, not a Supreme Court ruling). REJECTED as an unverifiable/likely-inaccurate single-source claim; not written up. Recommend flagging for a 72-hour recheck only if a second independent source surfaces." },
+    { "source": "ICO (UK) — UK Extension to EU-US DPF", "status": "fetched-via-search", "note": "ICO guidance update published 2026-07-30 clarifying UK adequacy for the US is independent of the EU's adequacy finding ('this has always been the case') — clarificatory of existing behavior, meets LOW-severity criteria per rubric. Logged to digest-pending.md, not written up as a standalone MEDIUM+ alert." }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-07-31-01",
+      "jurisdiction": "China",
+      "instrument": "GB/T 46903-2025 Personal Information Protection Compliance Audit Requirements (national standard operationalizing the binding CAC Audit Measures)",
+      "severity": "MEDIUM",
+      "publishedDate": "2025 (standard); underlying Measures 2025-02-14",
+      "effectiveDate": "2026-07-01",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-31/RW-2026-07-31-01.md",
+      "confidence": "MEDIUM",
+      "reasonForAlert": "New implementing standard (Trigger #3) crossing effective date within the lookback window; explicit audit scope covering consent-mechanism adequacy raises evidentiary bar for Consent Storage & Proof and Audit/Logging subsystems for China-scale tenants."
+    },
+    {
+      "alertId": "RW-2026-07-31-02",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA Amendment Act No. 21445 (10% revenue fine tier, CEO accountability, ISMS-P mandate)",
+      "severity": "HIGH",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-07-31/RW-2026-07-31-02.md",
+      "confidence": "MEDIUM-HIGH",
+      "reasonForAlert": "Effective date (2026-09-11) now within the 31-90-day window (Trigger #7); dramatically raised penalty ceiling (3% to 10% of revenue) and CEO personal accountability materially raise the cost of any KR consent-evidence gap, even though the amendment itself does not introduce new consent-capture mechanics."
+    }
+  ],
+  "lowSeverityDigestItems": [
+    {
+      "jurisdiction": "United Kingdom",
+      "instrument": "ICO guidance clarification — UK Extension to EU-US DPF independence from EU adequacy finding",
+      "publishedDate": "2026-07-30",
+      "reasonForLow": "Clarifies existing behavior already implemented ('this has always been the case'); no mechanics change."
+    },
+    {
+      "jurisdiction": "Japan",
+      "instrument": "APPI amendment bill (Cabinet-approved 2026-04-07, not yet enacted) — new 'personally referable information' category explicitly including cookie IDs",
+      "publishedDate": "2026-04-07",
+      "reasonForLow": "Not yet enacted (Trigger #1 requires enactment/signing/publication); horizon/awareness item only."
+    },
+    {
+      "jurisdiction": "China",
+      "instrument": "Automotive Data Cross-Border Transfer Guidelines (2026 edition)",
+      "publishedDate": "2026 (effective 2026-07-01)",
+      "reasonForLow": "Sector-specific (automotive), narrow applicability to DataSafeguard's customer base."
+    }
+  ],
+  "candidatesConsideredButRejected": [
+    {
+      "item": "Australia Privacy Act Tranche 2 reforms",
+      "rejectionReason": "no-bill-introduced — remains a Government commitment; no legislative text, no commencement date. Does not meet any trigger event."
+    },
+    {
+      "item": "Alleged 2026-07-02 US Supreme Court ruling on FISA Section 702 / PCLOB affecting EU-US DPF underlying safeguards",
+      "rejectionReason": "unverifiable-single-source-claim — a secondary blog (europeanmartech.eu) asserted this; independent search found no corroborating primary or secondary source, and found contradicting evidence of a failed House FISA reauthorization vote and an FISC one-year certification instead of a Supreme Court ruling. Not alerted to avoid false-alarm noise; flagged for recheck only if a second independent source appears."
+    },
+    {
+      "item": "Peru Legislative Decree 1700 (Cybercrime Law amendment re: unlawful personal-data-database dealing)",
+      "rejectionReason": "outside-lookback-window-and-non-consent-mechanic — published 2026-01-24, ~6 months before scan date; criminalizes illegal data trafficking rather than altering cookie/consent-banner requirements."
+    },
+    {
+      "item": "Saudi Arabia SDAIA proposed PDPL Implementing Regulation amendments",
+      "rejectionReason": "still-in-consultation — public consultation closed 2025-05-27; no final adoption confirmed."
+    },
+    {
+      "item": "Nigeria NDPC compliance-audit-return (CAR) filing deadline extension (2026-03-31 to 2026-05-30)",
+      "rejectionReason": "procedural-filing-date-only — does not alter cookie-consent-banner requirements under the GAID 2025 framework, and the extended deadline has already passed."
+    },
+    {
+      "item": "EU Article 3(2) SCC module (transfers to non-EEA controllers/processors directly subject to GDPR)",
+      "rejectionReason": "not-yet-adopted — remains undrafted/unadopted by the European Commission as of this scan."
+    }
+  ],
+  "highestSeverity": "HIGH",
+  "runDurationSeconds": null,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 on cac.gov.cn and secrss.com in this run, consistent with the standing operational caveat for official/government-adjacent domains; China items in this scan are link-verified-by-reference and corroborated via multiple independent secondary sources but not directly retrieved from a primary document.",
+    "WebFetch returned HTTP 403 on ico.org.uk in this run; the UK item is corroborated via search-indexed summaries and a law-firm tracker (Kennedys Law) rather than the ICO page itself.",
+    "No PIPC (Korea), MeitY-equivalent, or other primary government source was directly fetched this run; all Tier-2 findings rely on WebSearch plus secondary-source corroboration per the documented 403 caveat. Recommend prioritizing an allow-list review for cac.gov.cn, pipc.go.kr, and ico.org.uk given repeated relevance to Tier-1/Tier-2 alerts.",
+    "This is the first Tier-2 scan run in this repository (no prior scan-*.json covering Tier 2 exists to bound the lookback window); lookback was extended back to the 2026-05-09 baseline/activation date for candidate discovery, but only items with a genuinely fresh trigger (recent publication or a freshly-crossed effective-date threshold) were emitted as alerts, to avoid re-alerting on items that would have been caught by an earlier (non-existent) prior run."
+  ]
+}

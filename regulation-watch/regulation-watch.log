@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-07-31T00:00:00Z | tier2-weekly | 2 alerts emitted (RW-2026-07-31-01 MEDIUM, RW-2026-07-31-02 HIGH) + 3 LOW digest items | HIGH | 425s
+2026-07-31T00:00:00Z | tier2-weekly-delivery | PARTIAL: Jira IDP-12840 created for RW-2026-07-31-02 (HIGH). Gmail delivery for RW-2026-07-31-02, RW-2026-07-31-01 (MEDIUM), and the weekly LOW digest BLOCKED — this session's Gmail MCP connector exposes only update_draft/get_message/label tools, no create_draft/search capability. digest-pending.md left uncleared pending manual draft creation or connector fix. | HIGH | n/a
