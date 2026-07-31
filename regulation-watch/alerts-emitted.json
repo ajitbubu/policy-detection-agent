@@ -12,5 +12,35 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-31-01",
+    "jurisdiction": "China",
+    "instrument": "GB/T 46903-2025 Personal Information Protection Compliance Audit Requirements",
+    "publishedDate": "2025 (standard); underlying Measures 2025-02-14",
+    "severity": "MEDIUM",
+    "sentAt": "2026-07-31T00:00:00Z",
+    "jiraKey": null,
+    "jiraUrl": null,
+    "emailDraftId": null,
+    "emailDeliveryStatus": "BLOCKED — no Gmail create-draft tool available in this session's MCP connector (only update_draft, get_message, and label tools present). Per DELIVERY rubric MEDIUM requires email-only; not yet delivered.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-31/RW-2026-07-31-01.md"
+  },
+  {
+    "alertId": "RW-2026-07-31-02",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA Amendment Act No. 21445",
+    "publishedDate": "2026-03-10",
+    "severity": "HIGH",
+    "sentAt": "2026-07-31T00:00:00Z",
+    "jiraKey": "IDP-12840",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12840",
+    "emailDraftId": null,
+    "emailDeliveryStatus": "BLOCKED — no Gmail create-draft tool available in this session's MCP connector (only update_draft, get_message, and label tools present). Jira story created; email side of DELIVERY not yet fulfilled.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-07-31/RW-2026-07-31-02.md"
   }
 ]
