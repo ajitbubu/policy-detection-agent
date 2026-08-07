@@ -1,0 +1,90 @@
+{
+  "scanType": "tier2-weekly",
+  "timestamp": "2026-08-07T15:26:01Z",
+  "sourcesChecked": [
+    "APAC: OAIC (Australia) — Privacy Act reform tranche status",
+    "APAC: PPC (Japan) — APPI amendment bill status",
+    "APAC: PIPC (Korea) — PIPA amendment",
+    "APAC: PDPC (Singapore) — Advisory Guidelines / cookies",
+    "APAC: PDPC (Thailand) — PDPA amendment status",
+    "APAC: CAC (China) — PIPL cross-border certification measures",
+    "MENA: UAE Data Office — PDPL Executive Regulations",
+    "MENA: KSA SDAIA/NDMO — PDPL enforcement",
+    "MENA: Bahrain, Qatar DPAs — general scan",
+    "Africa: Information Regulator (South Africa) — POPIA enforcement",
+    "Africa: NDPC (Nigeria) — NDPA/GAID",
+    "Africa: ODPC (Kenya) — DPA",
+    "LatAm: INAI/Ministry (Mexico) — LFPDPPP reform",
+    "LatAm: AAIP (Argentina) — PDPA reform",
+    "LatAm: Chile — Law 21.719 entry-into-force status",
+    "LatAm: Colombia, Peru — reform status",
+    "Global cross-border: EU-US DPF adequacy status (EDPB, EU General Court/CJEU Latombe appeal)",
+    "Global cross-border: UK Extension to EU-US DPF (ICO guidance)",
+    "Global cross-border: SCC updates / adequacy decisions",
+    "Secondary radar: IAPP, DataGuidance, Kennedys, Freshfields, McDermott, Hunton, Lexology, Acclime, Recording Law"
+  ],
+  "triggerEventsFound": 3,
+  "alertsEmitted": [
+    {
+      "alertId": "RW-2026-08-07-01",
+      "jurisdiction": "Republic of Korea (South Korea)",
+      "instrument": "PIPA Amendment, Act No. 21445 (10% revenue fine ceiling, CEO personal liability, breach-notification reform)",
+      "severity": "HIGH",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-08-07/RW-2026-08-07-01.md"
+    },
+    {
+      "alertId": "RW-2026-08-07-02",
+      "jurisdiction": "United Kingdom (UK/EU cross-border transfer mechanism)",
+      "instrument": "ICO updated international-transfers guidance — UK adequacy for US confirmed independent of EU adequacy for US",
+      "severity": "MEDIUM",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-08-07/RW-2026-08-07-02.md"
+    }
+  ],
+  "lowItemsAppendedToDigest": [
+    {
+      "jurisdiction": "EU/EEA + United States (cross-border)",
+      "instrument": "EDPB letter to European Commission requesting DPF adequacy review post Trump v. Slaughter",
+      "date": "2026-07-31",
+      "digestFile": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "jurisdiction": "Japan",
+      "instrument": "APPI amendment bill (Cabinet-approved 2026-04-07, submitted to Diet)",
+      "reason": "Non-binding — bill not yet enacted/passed by the Diet. Per operating rules, do not notify on non-binding legislative pipeline items. Watch-list only; revisit if/when passed."
+    },
+    {
+      "jurisdiction": "Thailand",
+      "instrument": "PDPA amendment draft + PDPC public consultation on guidelines (opened March 2026)",
+      "reason": "Non-binding — no amendment enacted as of this run; consultation in progress. Does not meet trigger-event bar."
+    },
+    {
+      "jurisdiction": "Chile",
+      "instrument": "Law 21.719 (new PDPL) staged entry into force, December 2026",
+      "reason": "Already enacted Dec 2024 and already tracked; effective date is ~115+ days out and has not yet crossed the 90-day trigger threshold this week. No new development found. Revisit at T-90 (~early September 2026)."
+    },
+    {
+      "jurisdiction": "China",
+      "instrument": "CAC/SAMR Measures on Certification for Cross-Border Transfer of Personal Information",
+      "reason": "Effective date (2026-01-01) already passed before this alert system's history; no new development found this week. Historical, not a fresh trigger."
+    },
+    {
+      "jurisdiction": "Mexico",
+      "instrument": "LFPDPPP 2025 reform — implementing regulations",
+      "reason": "Implementing regulations still not published as of this run; no new development this week beyond the already-known pending status. Not a fresh trigger."
+    },
+    {
+      "jurisdiction": "Nigeria",
+      "instrument": "NDPC General Application and Implementation Directive (GAID) 2025",
+      "reason": "Already operational since 2025-09-19; no new development found this week. Historical."
+    },
+    {
+      "jurisdiction": "Australia",
+      "instrument": "Privacy Act reform Tranche 2",
+      "reason": "No Tranche 2 bill has been introduced or passed as of this run (Attorney-General statement only, Feb 2026 Senate estimates). Non-binding; does not meet trigger-event bar."
+    }
+  ],
+  "selfCheckNotes": "WebFetch experienced a broad egress block this run extending beyond the documented .gov/.gov.uk/.europa.eu/iabeurope.eu caveat to law-firm and news-tracker domains as well (hunton.com, edpb.europa.eu, iapp.org, dataguidance.com, ppc.land, recordinglaw.com all blocked). All findings in this run are therefore WebSearch-derived secondary-source corroboration only, labeled SECONDARY / link-verified-by-reference per operating rules. Both full alerts and the digest item are corroborated across 5+ independent secondary sources each. Recommend allow-listing or re-attempting primary-source fetch within 72 hours per operating rules.",
+  "durationSeconds": 900
+}
