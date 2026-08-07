@@ -12,5 +12,34 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-07-01",
+    "jurisdiction": "Republic of Korea (South Korea)",
+    "instrument": "PIPA Amendment, Act No. 21445 (10% revenue fine ceiling, CEO personal liability, breach-notification reform)",
+    "publishedDate": "2026-03-10",
+    "severity": "HIGH",
+    "sentAt": "2026-08-07T15:45:00Z",
+    "jiraKey": "IDP-12950",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-12950",
+    "emailDraftId": null,
+    "emailStatus": "PENDING — Gmail MCP connector for this session exposes only update_draft/get_message/apply_sensitive_*_label; no create_draft or list_drafts tool is available, so no new draft could be created. Retry once a draft-creation tool is connected.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-08-07/RW-2026-08-07-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-07-02",
+    "jurisdiction": "United Kingdom (UK/EU cross-border transfer mechanism)",
+    "instrument": "ICO updated international-transfers guidance — UK adequacy for US confirmed independent of EU adequacy for US",
+    "publishedDate": "2026-07-30",
+    "severity": "MEDIUM",
+    "sentAt": null,
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailStatus": "PENDING — Gmail MCP connector for this session exposes only update_draft/get_message/apply_sensitive_*_label; no create_draft or list_drafts tool is available, so no new draft could be created. Retry once a draft-creation tool is connected.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-08-07/RW-2026-08-07-02.md"
   }
 ]

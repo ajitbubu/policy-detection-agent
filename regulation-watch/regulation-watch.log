@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-08-07T15:26:01Z | tier2-weekly | 2 alerts emitted | HIGH | 900s
+2026-08-07T15:45:00Z | tier2-weekly-delivery | 1 of 2 alerts partially delivered (IDP-12950 created for RW-2026-08-07-01; no Gmail draft for either alert or weekly LOW digest — Gmail MCP connector for this session lacks create_draft/list_drafts, only update_draft/get_message/apply_sensitive_*_label available) | HIGH | n/a
