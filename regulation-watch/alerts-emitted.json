@@ -12,5 +12,63 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-14-01",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA Amendment (법률 제21445호) — 10% revenue fine ceiling, CEO/CPO accountability",
+    "publishedDate": "2026-03-10",
+    "severity": "HIGH",
+    "sentAt": "2026-08-14T15:59:51Z",
+    "jiraKey": "IDP-13241",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13241",
+    "emailDraftId": null,
+    "emailStatus": "PENDING — Gmail MCP connector for this session exposes no create-draft tool (only update_draft/send_message/reply/forward); per do-not-auto-send rule, no email was sent. Needs manual draft or a create_draft-capable connector.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-14-02",
+    "jurisdiction": "EU/EEA <-> United States",
+    "instrument": "EDPB letter requesting EC review of EU-U.S. DPF adequacy (Trump v. Slaughter)",
+    "publishedDate": "2026-07-31",
+    "severity": "HIGH",
+    "sentAt": "2026-08-14T15:59:51Z",
+    "jiraKey": "IDP-13242",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13242",
+    "emailDraftId": null,
+    "emailStatus": "PENDING — Gmail MCP connector for this session exposes no create-draft tool (only update_draft/send_message/reply/forward); per do-not-auto-send rule, no email was sent. Needs manual draft or a create_draft-capable connector.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-02.md"
+  },
+  {
+    "alertId": "RW-2026-08-14-03",
+    "jurisdiction": "China (PRC)",
+    "instrument": "PIPL Cross-Border Transfer Certification Measures (CAC/SAMR, three-pathway framework)",
+    "publishedDate": "2025-10-17",
+    "severity": "MEDIUM",
+    "sentAt": "2026-08-14T15:59:51Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailStatus": "PENDING — Gmail MCP connector for this session exposes no create-draft tool (only update_draft/send_message/reply/forward); per do-not-auto-send rule, no email was sent. Needs manual draft or a create_draft-capable connector.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-03.md"
+  },
+  {
+    "alertId": "RW-2026-08-14-04",
+    "jurisdiction": "Chile",
+    "instrument": "Ley N° 21.719 — new comprehensive data protection law and Agencia de Protección de Datos Personales",
+    "publishedDate": "2024-12-13",
+    "severity": "MEDIUM",
+    "sentAt": "2026-08-14T15:59:51Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailStatus": "PENDING — Gmail MCP connector for this session exposes no create-draft tool (only update_draft/send_message/reply/forward); per do-not-auto-send rule, no email was sent. Needs manual draft or a create_draft-capable connector.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-04.md"
   }
 ]

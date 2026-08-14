@@ -1,0 +1,120 @@
+{
+  "scanDate": "2026-08-14",
+  "scanType": "tier2-weekly",
+  "runBy": "privacy-regulation-watcher (subagent role, executed inline this session)",
+  "lookbackWindow": "~30 days, extended per instructions for genuinely new/pending items regardless of age (first-ever Tier 2 run, no prior scan-*.json baseline for Tier 2)",
+  "sourcesScanned": [
+    {"region": "APAC", "topic": "Australia Privacy Act reforms / OAIC Children's Online Privacy Code", "method": "WebSearch (oaic.gov.au and law-firm trackers; direct WebFetch not attempted due to known 403 pattern on .gov.au)", "result": "found"},
+    {"region": "APAC", "topic": "China PIPL cross-border transfer rules (CAC)", "method": "WebSearch incl. cac.gov.cn indexed pages", "result": "found"},
+    {"region": "APAC", "topic": "South Korea PIPC / PIPA amendment", "method": "WebSearch incl. pipc.go.kr and law.go.kr indexed pages", "result": "found"},
+    {"region": "APAC", "topic": "Singapore PDPC cookies/tracking guidance", "method": "WebSearch", "result": "no new trigger event (guidance unchanged since 2024-05-23 revision)"},
+    {"region": "APAC", "topic": "Thailand PDPA enforcement", "method": "WebSearch", "result": "no discrete new binding trigger identified; ongoing enforcement trend only, not actionable as single alert"},
+    {"region": "APAC", "topic": "Japan APPI reform", "method": "WebSearch", "result": "found — LOW, added to digest"},
+    {"region": "APAC", "topic": "Australia Privacy Act Tranche 2 / Children's Online Privacy Code", "method": "WebSearch", "result": "found — LOW, added to digest (x2 items)"},
+    {"region": "MENA & Africa", "topic": "UAE PDPL Executive Regulations", "method": "WebSearch", "result": "found — LOW, added to digest (still unpublished)"},
+    {"region": "MENA & Africa", "topic": "KSA PDPL / SDAIA enforcement", "method": "WebSearch", "result": "no new binding instrument this cycle; general enforcement activity only"},
+    {"region": "MENA & Africa", "topic": "Bahrain / Qatar PDPL", "method": "WebSearch", "result": "no qualifying trigger event found"},
+    {"region": "MENA & Africa", "topic": "POPIA South Africa / Information Regulator", "method": "WebSearch", "result": "no new binding guidance this cycle; general active-enforcement posture only"},
+    {"region": "MENA & Africa", "topic": "Nigeria NDPC / NDPA / GAID", "method": "WebSearch", "result": "no new item this cycle (GAID effective 2025-09-19, outside window, already implied prior)"},
+    {"region": "LatAm", "topic": "Mexico LFPDPPP reform status", "method": "WebSearch", "result": "found — LOW, added to digest (implementing regs still pending)"},
+    {"region": "LatAm", "topic": "Chile Ley 21.719", "method": "WebSearch incl. bcn.cl-indexed pages", "result": "found"},
+    {"region": "LatAm", "topic": "Colombia / Peru reforms", "method": "WebSearch", "result": "no specific qualifying trigger event identified this cycle (general reform-adjacent commentary only, not concrete)"},
+    {"region": "Global cross-border", "topic": "EU-US Data Privacy Framework / Trump v. Slaughter / EDPB letter", "method": "WebSearch incl. edpb.europa.eu-indexed pages", "result": "found"},
+    {"region": "Global cross-border", "topic": "UK adequacy decision status", "method": "WebSearch", "result": "no new trigger — already renewed 2025-12-19 through 2031-12-27, outside this scan's window, no new development"},
+    {"region": "Global cross-border", "topic": "SCC updates / new adequacy decisions", "method": "WebSearch", "result": "no new trigger this cycle; noted Brazil adequacy (Jan 2026) and new GDPR-subject-importer SCC module (not yet formally adopted as of May 2026) as background, neither new enough or concrete enough this cycle to alert"}
+  ],
+  "webFetchFailures": [
+    "law.go.kr (Korea National Law Information Center) — not directly fetched, relied on WebSearch snippet indexing per known 403 pattern on official domains",
+    "cac.gov.cn (China Cyberspace Administration) — not directly fetched, relied on WebSearch snippet indexing",
+    "edpb.europa.eu — not directly fetched, relied on WebSearch snippet indexing (consistent with documented 403 caveat)",
+    "bcn.cl / leychile.cl (Chile official legislative text) — not directly fetched, relied on WebSearch snippet indexing",
+    "oaic.gov.au — not directly fetched, relied on WebSearch snippet indexing",
+    "uaedataoffice.gov.ae — not queried directly; no primary confirmation attempted this cycle"
+  ],
+  "itemsProduced": [
+    {
+      "type": "alert",
+      "alertId": "RW-2026-08-14-01",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA Amendment (법률 제21445호) — fine ceiling to 10% revenue, CEO/CPO accountability, broadened breach-notification scope",
+      "severity": "HIGH",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "file": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-01.md",
+      "oneLineSummary": "Korea PIPA amendment raises fine ceiling to 10% of revenue and adds CEO/CPO accountability and broadened breach-notification scope covering consent-record tampering, effective 2026-09-11 (T-28 days)."
+    },
+    {
+      "type": "alert",
+      "alertId": "RW-2026-08-14-02",
+      "jurisdiction": "EU/EEA <-> United States",
+      "instrument": "EDPB letter requesting European Commission review of EU-U.S. Data Privacy Framework adequacy, following Trump v. Slaughter (SCOTUS)",
+      "severity": "HIGH",
+      "publishedDate": "2026-07-31",
+      "effectiveDate": "N/A — review request, DPF currently remains valid",
+      "file": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-02.md",
+      "oneLineSummary": "EDPB formally asked the European Commission to review whether SCOTUS's Trump v. Slaughter ruling (ending FTC independence) undermines the EU-U.S. DPF adequacy decision; DPF remains valid today but cross-border transfer readiness (SCC fallback) should be verified."
+    },
+    {
+      "type": "alert",
+      "alertId": "RW-2026-08-14-03",
+      "jurisdiction": "China (PRC)",
+      "instrument": "PIPL Cross-Border Transfer Certification Measures (三种路径框架完成) — CAC/SAMR",
+      "severity": "MEDIUM",
+      "publishedDate": "2025-10-17",
+      "effectiveDate": "2026-01-01 (Certification Measures); 2026-07-01 (supplementary standards) — both already in effect",
+      "file": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-03.md",
+      "oneLineSummary": "China's PIPL cross-border transfer framework now offers a third pathway (third-party certification, effective already since Jan/Jul 2026) alongside SCCs and Security Assessment; recommend adding as a selectable transfer mechanism in CN-jurisdiction tenant config."
+    },
+    {
+      "type": "alert",
+      "alertId": "RW-2026-08-14-04",
+      "jurisdiction": "Chile",
+      "instrument": "Ley N° 21.719 — new comprehensive data protection law and creation of Agencia de Protección de Datos Personales",
+      "severity": "MEDIUM",
+      "publishedDate": "2024-12-13",
+      "effectiveDate": "2026-12-01",
+      "file": "regulation-watch/alerts/2026-08-14/RW-2026-08-14-04.md",
+      "oneLineSummary": "Chile's GDPR-modeled Ley 21.719 takes effect 2026-12-01 (T-109 days), creating a new DPA and GDPR-style consent/DSR framework; ID-PRIVACY needs a dedicated Chile jurisdiction ruleset and DSR support, though cookie-specific secondary regulation is still pending."
+    },
+    {
+      "type": "digest-entry",
+      "jurisdiction": "Australia",
+      "instrument": "OAIC Children's Online Privacy Code (exposure draft)",
+      "severity": "LOW",
+      "oneLineSummary": "Exposure-draft consultation closed 2026-06-05; must be finalized/registered by 2026-12-10 but text and commencement date not yet final."
+    },
+    {
+      "type": "digest-entry",
+      "jurisdiction": "Australia",
+      "instrument": "Privacy Act Reform Tranche 2 (proposed)",
+      "severity": "LOW",
+      "oneLineSummary": "Proposed redefinition of personal information to include cookie IDs/device identifiers and opt-in consent mandate; not yet introduced as a Bill."
+    },
+    {
+      "type": "digest-entry",
+      "jurisdiction": "Japan",
+      "instrument": "APPI amendment (promulgated 2026-07-17)",
+      "severity": "LOW",
+      "oneLineSummary": "New AI/statistical-processing consent exemption and child consent-age protections (under 16); comes into force within 2 years, exact date TBD."
+    },
+    {
+      "type": "digest-entry",
+      "jurisdiction": "UAE",
+      "instrument": "PDPL Executive Regulations (still unpublished)",
+      "severity": "LOW",
+      "oneLineSummary": "Implementing regulations remain unpublished; full compliance deadline 2027-01-01 approaching but nothing actionable yet."
+    },
+    {
+      "type": "digest-entry",
+      "jurisdiction": "Mexico",
+      "instrument": "LFPDPPP implementing regulations (post-INAI dissolution)",
+      "severity": "LOW",
+      "oneLineSummary": "SABG held stakeholder forums January 2026; no published regulations yet."
+    }
+  ],
+  "totalItemsFound": 9,
+  "totalAlertsWritten": 4,
+  "totalDigestEntriesAppended": 5,
+  "duplicatesSkipped": 0,
+  "notes": "No duplicates against alerts-emitted.json (only prior entry is RW-2026-05-09-01, FTC v. Kochava, unrelated jurisdiction/instrument). Orchestrator still needs to: create Jira stories for the two HIGH alerts (RW-2026-08-14-01, RW-2026-08-14-02) under IDP-11488, draft Gmail alerts for all four alerts (HIGH x2 + MEDIUM x2 per DELIVERY rubric), update alerts-emitted.json, and append regulation-watch.log. Flagging RW-2026-08-14-02 (EDPB/DPF) as fast-moving — recommend the orchestrator consider folding EU-US DPF monitoring into the next Tier 1 daily cadence rather than waiting for the next Tier 2 cycle, given the active, unresolved nature of the European Commission's review."
+}
