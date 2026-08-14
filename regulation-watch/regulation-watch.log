@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-08-14T15:59:51Z | tier2-weekly | 4 alerts emitted (2 HIGH, 2 MEDIUM) + 5 LOW digest entries | HIGH | ~431s (subagent scan)
+2026-08-14T15:59:51Z | tier2-weekly-delivery | 2 Jira stories created (IDP-13241, IDP-13242); 0 Gmail drafts created — Gmail MCP connector this run has no create-draft tool (update_draft/send_message/reply/forward only); email delivery for 2 HIGH + 2 MEDIUM alerts and the 5-item LOW digest is PENDING; digest-pending.md left uncleared | HIGH | n/a
