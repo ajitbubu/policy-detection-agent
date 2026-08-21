@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-08-21T15:22:38Z | tier2-weekly | 2 alerts emitted | CRITICAL | ~35m
+2026-08-21T15:45:00Z | tier2-weekly-delivery | 1 Jira story created (IDP-13428, CRITICAL, South Korea) | CRITICAL | n/a — email drafts and LOW digest BLOCKED: no Gmail draft-creation tool available in this session's connector (only update_draft/send_message/reply/forward, no create_draft/list_drafts). digest-pending.md left uncleared (3 LOW items pending). Chile MEDIUM item (RW-2026-08-21-02) has no email delivered.
