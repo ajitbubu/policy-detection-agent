@@ -1,0 +1,41 @@
+{
+  "scanType": "tier2-weekly",
+  "date": "2026-08-21",
+  "tiersScanned": ["Tier 2"],
+  "sourcesAttempted": [
+    { "source": "Australia OAIC / Attorney-General's Dept (Privacy Act reform tranche 2)", "status": "fetched-via-search", "note": "No Tranche 2 bill introduced; Attorney-General statement only (non-binding, excluded per Operating Rule 3)." },
+    { "source": "China CAC / SAMR (PIPL cross-border transfer)", "status": "fetched-via-search", "note": "Certification Measures effective 2026-01-01 found; already in force, additive/voluntary pathway; rolled into LOW digest." },
+    { "source": "South Korea PIPC (PIPA amendment)", "status": "fetched-via-search; WebFetch on pipc.go.kr BLOCKED (egress proxy)", "note": "Material amendment found: 10% revenue fine ceiling, CEO/CPO accountability, accelerated breach notification. Effective 2026-09-11 (T-21). Written up as RW-2026-08-21-01, CRITICAL." },
+    { "source": "Singapore PDPC (PDPA cookies)", "status": "fetched-via-search", "note": "No new guidance or amendment in window; existing Advisory Guidelines (rev. 2024-05-23) remain current. No trigger." },
+    { "source": "Thailand PDPC", "status": "fetched-via-search", "note": "Active enforcement (THB 21.5M in fines YTD) but no new binding rule/guidance published in window. No trigger." },
+    { "source": "Japan PPC (APPI amendment)", "status": "fetched-via-search", "note": "Bill passed Diet 2026-07-10, promulgated 2026-07-17; commencement not fixed (up to July 2028). LOW — added to digest-pending.md." },
+    { "source": "New Zealand OPC / NZ Legislation (Privacy Amendment Act 2025)", "status": "fetched-via-search", "note": "Part 1 (IPP 3A) effective 2026-05-01, already passed; notice-layer only, not cookie-specific. LOW — added to digest-pending.md." },
+    { "source": "UAE PDPL Executive Regulations", "status": "fetched-via-search", "note": "No update in window; Cabinet Decision No. 33 of 2024 remains current framework. No trigger." },
+    { "source": "Saudi Arabia SDAIA (PDPL Implementing Regulations)", "status": "fetched-via-search", "note": "Third public consultation on amendments closed 2025-05-27; no finalized amendment published in window. Pre-rulemaking, excluded per Operating Rule 3." },
+    { "source": "South Africa Information Regulator (POPIA)", "status": "fetched-via-search", "note": "Enforcement-posture shift (functional compliance checks) noted but no new binding guidance document identified in window. No trigger." },
+    { "source": "Nigeria NDPC", "status": "fetched-via-search", "note": "2026-06-26 Guidance Notice on DPO CPD assessment found; DPO professional-development scope, not cookies/consent/CMP. Out of material scope, excluded." },
+    { "source": "Kenya Data Protection Commissioner", "status": "fetched-via-search", "note": "No update surfaced in window." },
+    { "source": "Bahrain PDPL / Qatar PDPPL", "status": "fetched-via-search", "note": "No 2026 amendment or new guidance surfaced for either jurisdiction." },
+    { "source": "Mexico SABG (LFPDPPP)", "status": "fetched-via-search", "note": "2025 LFPDPPP overhaul already in force; 2026-01-28 SABG forum discussing further modernization is pre-rulemaking discussion, not a binding change. Excluded per Operating Rule 3." },
+    { "source": "Argentina AAPI / Congress (PDPA reform)", "status": "fetched-via-search", "note": "Bill No. 3397-D-2026 introduced to Chamber of Deputies 2026-07-16; early-stage legislative process, not enacted. Excluded — no binding change yet." },
+    { "source": "Chile APDP / Diario Oficial (Law 21.719)", "status": "fetched-via-search; WebFetch not attempted on gob.cl domains (standing 403/egress-block pattern)", "note": "New comprehensive law reaching full effect ~2026-12-01/13 (source discrepancy flagged). Written up as RW-2026-08-21-02, MEDIUM." },
+    { "source": "Colombia SIC / Peru", "status": "fetched-via-search", "note": "No 2026 reform enactment surfaced for either jurisdiction; Colombia reform remains aspirational per secondary sources." },
+    { "source": "EU-US Data Privacy Framework / European Commission adequacy", "status": "fetched-via-search", "note": "EDPB Chair sent a letter (2026-07-31) to Commissioner McGrath requesting review of FTC independence post Trump v. Slaughter (US Supreme Court, 2026-06-29); non-binding advocacy letter, not a regulatory act. Excluded per Operating Rule 3 (not a trigger event) — flagged as an operational watch item, not a digest entry, since nothing has formally changed yet." },
+    { "source": "UK ICO (UK Extension to EU-US DPF)", "status": "fetched-via-search", "note": "2026-07-30 ICO page update clarifying UK/EU adequacy independence; a webpage clarification, not new binding guidance. No trigger." },
+    { "source": "European Commission (new SCCs for Art. 3(2) importers)", "status": "fetched-via-search", "note": "Still undeveloped/unadopted as of scan date; no Official Journal publication. No trigger." }
+  ],
+  "itemsFound": 5,
+  "alertsWritten": ["RW-2026-08-21-01", "RW-2026-08-21-02"],
+  "lowDigestItemsAdded": 3,
+  "highestSeverity": "CRITICAL",
+  "candidatesConsideredButRejected": [
+    { "item": "Australia Privacy Act Tranche 2", "reason": "government commitment / Senate-estimates statement only, no bill introduced — non-binding, Operating Rule 3" },
+    { "item": "Saudi PDPL Implementing Regulations amendments", "reason": "public consultation closed but no finalized text published — pre-rulemaking" },
+    { "item": "Mexico further LFPDPPP modernization", "reason": "stakeholder forum discussion only, no bill or rule text" },
+    { "item": "Argentina Bill No. 3397-D-2026", "reason": "just introduced to Congress 2026-07-16, early-stage legislative process, not enacted" },
+    { "item": "EDPB Chair letter on EU-US DPF / FTC independence (2026-07-31)", "reason": "non-binding advocacy letter to the Commission, not a regulatory act; does not meet any of the 9 trigger-event categories" },
+    { "item": "UK ICO webpage clarification on UK Extension independence (2026-07-30)", "reason": "clarifying webpage text, not new binding guidance" },
+    { "item": "Nigeria NDPC DPO CPD Guidance Notice (2026-06-26)", "reason": "material scope is DPO professional development, not cookies/consent/tracking/CMP" }
+  ],
+  "durationNote": "Approx. 25 WebSearch calls + 2 WebFetch attempts across Tier 2 APAC / MENA-Africa / LatAm / cross-border sub-scopes; run completed in a single continuous session."
+}

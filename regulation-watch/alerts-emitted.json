@@ -12,5 +12,34 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-21-01",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA 2026 amendment (10% revenue fine ceiling, CEO/CPO accountability, accelerated breach notification)",
+    "publishedDate": "2026-03-10",
+    "severity": "CRITICAL",
+    "sentAt": "2026-08-21T15:45:00Z",
+    "jiraKey": "IDP-13428",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13428",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — no Gmail draft-creation tool available in this session (only update_draft/send_message/reply/forward)",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-21/RW-2026-08-21-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-21-02",
+    "jurisdiction": "Chile",
+    "instrument": "Law No. 21.719 — comprehensive data protection reform, full effect date",
+    "publishedDate": "2024-12-13",
+    "severity": "MEDIUM",
+    "sentAt": "2026-08-21T15:45:00Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — no Gmail draft-creation tool available in this session (only update_draft/send_message/reply/forward)",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-21/RW-2026-08-21-02.md"
   }
 ]
