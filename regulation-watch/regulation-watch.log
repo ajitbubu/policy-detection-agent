@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-08-28T00:00:00Z | tier2-weekly | 3 alerts emitted, 8 LOW items to digest-pending | CRITICAL | 363s
+2026-08-28T00:00:00Z | tier2-weekly-delivery | 3 Jira stories created (IDP-13558 CRITICAL, IDP-13559 HIGH, IDP-13560 HIGH); 0 Gmail drafts created — BLOCKED: Gmail MCP connector exposes no draft-creation tool this session (only update_draft, which requires an existing draft ID); weekly LOW digest NOT drafted for the same reason, digest-pending.md left intact (not cleared) | CRITICAL | n/a

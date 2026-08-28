@@ -12,5 +12,50 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-28-01",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA amendment — 10% total-revenue fine ceiling + CEO accountability",
+    "publishedDate": "2026-02-12",
+    "severity": "CRITICAL",
+    "sentAt": "2026-08-28T00:00:00Z",
+    "jiraKey": "IDP-13558",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13558",
+    "emailDraftId": null,
+    "emailDraftStatus": "NOT_CREATED - Gmail MCP connector exposes no draft-creation tool in this session (only update_draft, which requires an existing draft ID)",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-28/RW-2026-08-28-01.md"
+  },
+  {
+    "alertId": "RW-2026-08-28-02",
+    "jurisdiction": "China (PRC)",
+    "instrument": "CAC/SAMR Measures for Certification of Cross-Border Transfer of Personal Information",
+    "publishedDate": "2025-10-14",
+    "severity": "HIGH",
+    "sentAt": "2026-08-28T00:00:00Z",
+    "jiraKey": "IDP-13559",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13559",
+    "emailDraftId": null,
+    "emailDraftStatus": "NOT_CREATED - Gmail MCP connector exposes no draft-creation tool in this session (only update_draft, which requires an existing draft ID)",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-28/RW-2026-08-28-02.md"
+  },
+  {
+    "alertId": "RW-2026-08-28-03",
+    "jurisdiction": "Chile",
+    "instrument": "Law No. 21.719 — new comprehensive Personal Data Protection Law",
+    "publishedDate": "2024-12-13",
+    "severity": "HIGH",
+    "sentAt": "2026-08-28T00:00:00Z",
+    "jiraKey": "IDP-13560",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13560",
+    "emailDraftId": null,
+    "emailDraftStatus": "NOT_CREATED - Gmail MCP connector exposes no draft-creation tool in this session (only update_draft, which requires an existing draft ID)",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-08-28/RW-2026-08-28-03.md"
   }
 ]
