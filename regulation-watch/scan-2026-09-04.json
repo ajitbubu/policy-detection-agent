@@ -1,0 +1,57 @@
+{
+  "scanDate": "2026-09-04",
+  "scanType": "tier2-weekly",
+  "tiersScanned": ["Tier 2 — APAC", "Tier 2 — MENA & Africa", "Tier 2 — LatAm", "Tier 2 — Global cross-border"],
+  "dedupeWindow": { "start": "2026-08-05", "end": "2026-09-04" },
+  "dedupeNote": "regulation-watch/alerts-emitted.json on main was stale (only the 2026-05-09 entry) because the 4 prior weekly Tier-2 runs (2026-08-07, 2026-08-14, 2026-08-21, 2026-08-28) were committed to draft PRs (#38-#41) that were never merged. This scan's dedupe check was performed against a manually reconciled list built from those 4 branches' alerts-emitted.json files, supplied to the subagent directly, rather than relying on the stale file on disk. The reconciled union is now written into this branch's alerts-emitted.json.",
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-09-04-01",
+      "jurisdiction": "Republic of Korea (South Korea)",
+      "instrument": "PIPA amendment, Act No. 21445 — corrigendum, effective date confirmed 2026-09-11 (T-7)",
+      "severity": "CRITICAL",
+      "publishedDate": "2026-03-10",
+      "filePath": "regulation-watch/alerts/2026-09-04/RW-2026-09-04-01.md",
+      "confidence": "HIGH on date/content, MEDIUM on Enforcement Decree finalization",
+      "corrigendumOf": "IDP-13558 (2026-08-28) — commented, not re-ticketed; this item already has 4 duplicate Jira stories (IDP-12950, IDP-13241, IDP-13428, IDP-13558) from the unmerged-branch dedupe gap"
+    },
+    {
+      "alertId": "RW-2026-09-04-02",
+      "jurisdiction": "Chile",
+      "instrument": "Bill amending Law No. 21.719 to postpone entry into force by 1 year + expand APDP Council 3->5",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-09-01",
+      "filePath": "regulation-watch/alerts/2026-09-04/RW-2026-09-04-02.md",
+      "confidence": "MEDIUM",
+      "corrigendumOf": "IDP-13560 (2026-08-28) — commented, severity reassessed HIGH->MEDIUM, no new story"
+    },
+    {
+      "alertId": "RW-2026-09-04-03",
+      "jurisdiction": "Australia (Commonwealth)",
+      "instrument": "Exposure draft — Privacy Amendment (Personal Data Protection) Bill 2026 (\"Tranche 2\")",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-08-31",
+      "filePath": "regulation-watch/alerts/2026-09-04/RW-2026-09-04-03.md",
+      "confidence": "MEDIUM",
+      "corrigendumOf": null
+    }
+  ],
+  "suppressedAsDuplicates": [
+    { "jurisdiction": "China (PRC)", "instrument": "CAC/SAMR cross-border PI transfer certification measures", "duplicateOf": "IDP-13559 (2026-08-28)", "reason": "No new material fact found this run" },
+    { "jurisdiction": "EU/US", "instrument": "EDPB letter to EC re DPF adequacy review (Trump v. Slaughter)", "duplicateOf": "IDP-13242 (2026-08-14)", "reason": "Commission has not responded or acted; no escalation trigger met" },
+    { "jurisdiction": "UK", "instrument": "ICO international transfers guidance", "duplicateOf": "emailed only 2026-08-07, no Jira", "reason": "No new development found this run" }
+  ],
+  "lowItemsAppendedToDigest": [
+    { "id": "LOW-1", "jurisdiction": "Colombia", "instrument": "Bill to modernize Law 1581 of 2012" },
+    { "id": "LOW-2", "jurisdiction": "Japan", "instrument": "APPI amendment Law No. 56 (Article 31-2, cookie-ID-relevant)" },
+    { "id": "LOW-3", "jurisdiction": "UAE", "instrument": "AI and Data Authority consolidates PDPL enforcement" },
+    { "id": "LOW-4", "jurisdiction": "Thailand", "instrument": "PDPC guideline-package public consultation (6 priority areas)" }
+  ],
+  "delivery": {
+    "jira": "2 corrigendum comments added (IDP-13558, IDP-13560); 0 new stories opened — avoided a 5th and 4th duplicate respectively",
+    "gmail": "BLOCKED — Gmail MCP connector exposes no create-draft tool in this session (only update_draft [requires existing draft ID], send_message/reply/forward [send immediately], read/label/trash). 5th consecutive weekly run with zero email delivery.",
+    "digestPending": "left uncleared (4 new LOW items) — same Gmail blocker"
+  },
+  "envCaveatsApplied": ["WebFetch egress-blocked on law.go.kr, pipc.go.kr, senado.cl-class domains; affected claims labeled SECONDARY — pending primary confirmation"],
+  "scanDurationMinutes": 22
+}

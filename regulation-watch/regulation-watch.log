@@ -2,3 +2,8 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-08-07T15:45:00Z | tier2-weekly | 2 alerts emitted (reconciled from unmerged PR #38) | HIGH | n/a
+2026-08-14T15:59:51Z | tier2-weekly | 4 alerts emitted (reconciled from unmerged PR #39) | HIGH | n/a
+2026-08-21T15:45:00Z | tier2-weekly | 2 alerts emitted (reconciled from unmerged PR #40) | CRITICAL | n/a
+2026-08-28T00:00:00Z | tier2-weekly | 3 alerts emitted (reconciled from unmerged PR #41) | CRITICAL | n/a
+2026-09-04T15:35:00Z | tier2-weekly | 3 alerts emitted (1 CRITICAL corrigendum, 2 MEDIUM corrigendum/new); 4 LOW items to digest-pending.md; South Korea PIPA + Chile 21.719 items commented as corrigenda on existing IDP-13558/IDP-13560 (no new Jira story — avoided 5th/4th duplicate); Gmail draft delivery BLOCKED again (no create-draft tool in connector) — alerts-emitted.json reconciled against 4 unmerged sibling branches (PRs #38-#41) covering the 30-day dedupe window | CRITICAL | ~22min
