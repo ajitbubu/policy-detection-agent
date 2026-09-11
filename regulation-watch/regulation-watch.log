@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-09-11T15:13:38Z | tier2-weekly | 4 alerts emitted | HIGH | 401s
+2026-09-11T15:30:00Z | tier2-weekly-delivery | 3 HIGH alerts delivered to Jira (IDP-13788 KR, IDP-13789 CL, IDP-13790 PE); Gmail drafts BLOCKED — no create_draft/list_drafts tool in this session's Gmail connector; RW-2026-09-11-04 (Colombia, MEDIUM) downgraded to LOW digest after re-verification found no corroborating primary or secondary source; digest-pending.md NOT cleared — weekly digest could not be drafted to Gmail this run, 9 LOW items remain pending | HIGH | n/a
