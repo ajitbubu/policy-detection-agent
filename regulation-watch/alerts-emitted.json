@@ -12,5 +12,50 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-09-11-01",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA Amendment (Act No. 21445) — 10% revenue fine ceiling, CEO accountability",
+    "publishedDate": "2026-03-10",
+    "severity": "HIGH",
+    "sentAt": "2026-09-11T15:30:00Z",
+    "jiraKey": "IDP-13788",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13788",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — this session's Gmail connector exposes no create_draft/list_drafts tool; full alert text is in the Jira description, needs a manual Gmail draft",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-09-11/RW-2026-09-11-01.md"
+  },
+  {
+    "alertId": "RW-2026-09-11-02",
+    "jurisdiction": "Chile",
+    "instrument": "Ley 21.719 — comprehensive data protection reform, pre-ticked cookie box prohibition",
+    "publishedDate": "2024-12-13",
+    "severity": "HIGH",
+    "sentAt": "2026-09-11T15:30:00Z",
+    "jiraKey": "IDP-13789",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13789",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — this session's Gmail connector exposes no create_draft/list_drafts tool; full alert text is in the Jira description, needs a manual Gmail draft",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-09-11/RW-2026-09-11-02.md"
+  },
+  {
+    "alertId": "RW-2026-09-11-03",
+    "jurisdiction": "Peru",
+    "instrument": "DPO mandate, Supreme Decree No. 016-2024-JUS — medium-tier deadline 2026-11-30",
+    "publishedDate": "2024-11-30",
+    "severity": "HIGH",
+    "sentAt": "2026-09-11T15:30:00Z",
+    "jiraKey": "IDP-13790",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13790",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — this session's Gmail connector exposes no create_draft/list_drafts tool; full alert text is in the Jira description, needs a manual Gmail draft",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-09-11/RW-2026-09-11-03.md"
   }
 ]
