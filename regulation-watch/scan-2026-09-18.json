@@ -1,0 +1,97 @@
+{
+  "scanDate": "2026-09-18",
+  "scanType": "tier2-weekly",
+  "lookbackNote": "First standing Tier 2 scan since platform baseline (2026-05-09), which was Tier-1/global-framework focused only. Effective lookback window for this run spans 2026-05-09 to 2026-09-18 for Tier 2 jurisdictions (APAC, MENA & Africa, LatAm, global cross-border transfer mechanisms), since no prior Tier 2 scan exists to bound a tighter weekly window. Going forward, standing weekly Tier 2 cadence should use a ~7-day lookback per the operating prompt.",
+  "tiersScanned": ["Tier 2"],
+  "regionsScanned": ["APAC", "MENA & Africa", "LatAm", "Global cross-border transfer mechanisms"],
+  "sourcesAttempted": [
+    { "source": "OAIC (oaic.gov.au)", "status": "fetched-via-search", "note": "Tranche 2 exposure draft (2026-08-31, consultation closed 2026-09-18) -> LOW digest item #1. Children's Online Privacy Code registration deadline 2026-12-10 -> RW-2026-09-18-03 (HIGH). WebFetch on oaic.gov.au returned 403." },
+    { "source": "Office of the Privacy Commissioner (NZ, privacy.org.nz)", "status": "not scanned this run", "note": "Deprioritized in favor of higher-signal candidates surfaced elsewhere; no NZ item found via general search sweep. Recommend direct source check next cycle." },
+    { "source": "PPC Japan (ppc.go.jp)", "status": "fetched-via-search", "note": "APPI amendment bill, Cabinet-approved 2026-04-07, submitted to Diet, not yet passed; full enforcement ~2028 -> LOW digest item #3." },
+    { "source": "PIPC Korea (pipc.go.kr)", "status": "fetched-via-search", "note": "PIPA amendment passed 2026-03-10, effective 2026-09-11 (T-7, crossed within last week) -> RW-2026-09-18-04 (MEDIUM). No new cookie-specific mandate identified tied to this date; governance/fine-ceiling change. WebFetch on pipc.go.kr returned 403." },
+    { "source": "PDPC Singapore (pdpc.gov.sg)", "status": "fetched-via-search", "note": "No new dated event in window; existing deemed-consent cookie framework (Advisory Guidelines, revised May 2024) unchanged. Not logged (no delta)." },
+    { "source": "PDPC Thailand (pdpc.or.th)", "status": "fetched-via-search", "note": "Draft guidelines expected ~Nov 2026 following March 2026 consultation close -> LOW digest item #4. Existing cookie rules already assumed covered per gap-analysis." },
+    { "source": "CAC China (cac.gov.cn)", "status": "fetched-via-search", "note": "Certification Measures (eff. 2026-01-01) + second-wave technical standards (eff. 2026-07-01) + CAC Q&A (2026-07-24) -> RW-2026-09-18-02 (HIGH). Both effective dates predate this first Tier 2 scan cycle; flagged as backlog/catch-up. WebFetch on cac.gov.cn returned 403." },
+    { "source": "UAE Data Office (uaedataoffice.gov.ae) / UAE Legislation portal", "status": "fetched-via-search, inconclusive", "note": "Multiple secondary/SEO sources assert PDPL Executive Regulations 'issued in 2026' but no confirmable Cabinet Resolution number or gazette date located -> LOW digest item #6, flagged SECONDARY pending primary confirmation, recommend dedicated follow-up next cycle." },
+    { "source": "KSA SDAIA/NDMO (sdaia.gov.sa)", "status": "not scanned this run", "note": "No candidate surfaced in general sweep; recommend direct source check next cycle." },
+    { "source": "Information Regulator South Africa (inforegulator.org.za)", "status": "fetched-via-search, inconclusive", "note": "Commentary on 'functional compliance' enforcement posture referencing a 2026-09-01 secondary article (polity.org.za, WebFetch blocked/egress-blocked) but no specific binding guidance document or citable primary source identified -> LOW digest item #7, explicitly flagged as borderline non-event, not a confirmed trigger." },
+    { "source": "NDPC Nigeria (ndpc.gov.ng)", "status": "fetched-via-search", "note": "No new in-window item; 2025 Compliance Audit Return deadline extension (to 2026-05-30) is pre-window and already stale. Not logged." },
+    { "source": "ODPC Kenya (odpc.go.ke)", "status": "not scanned this run", "note": "No candidate surfaced in general sweep; recommend direct source check next cycle." },
+    { "source": "INAI-successor / SABG (Mexico)", "status": "fetched-via-search", "note": "LFPDPPP implementing regulations still not published as of early 2026; SABG stakeholder dialogues began January 2026 -> LOW digest item #5." },
+    { "source": "AAIP Argentina", "status": "fetched-via-search", "note": "No dated in-window item surfaced; general regional-convergence commentary only. Not logged." },
+    { "source": "Chile (BCN LeyChile / Ley 21.719)", "status": "fetched-via-search", "note": "Law 21.719 full entry into force + APDP stand-up on 2026-12-01 (T-74 days) -> RW-2026-09-18-01 (HIGH). WebFetch on bcn.cl not attempted this run (time-boxed); corroborated across 4 secondary sources." },
+    { "source": "European Commission DG JUST / adequacy decisions", "status": "fetched-via-search", "note": "EU-Brazil mutual adequacy (2026-01-27), UK adequacy renewal (Jan 2026), Korea periodic adequacy review confirmed (2026-07-23) — all pre-window / predate or are contemporaneous with platform baseline and represent no new required action (status-quo confirmations). Not logged as alerts; noted as already-covered/no-delta." },
+    { "source": "EU-US Data Privacy Framework litigation risk (noyb, EDPB, CJEU commentary)", "status": "fetched-via-search", "note": "No binding change; ongoing litigation/oversight risk (noyb letter 2026-06-30; expected CJEU opinion late 2026/early 2027) -> LOW digest item #2, flagged as highest-priority watch item for weekly (not monthly) re-check going forward." },
+    { "source": "ICO (UK-US data bridge / international transfer guidance)", "status": "fetched-via-search", "note": "ICO updated international transfer guidance 2026-01-15 and clarified UK/EU adequacy independence 2026-07-30 — both pre-window, status-quo clarifications, no new action required. Not logged." }
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-09-18-01",
+      "jurisdiction": "Chile",
+      "instrument": "Law 21.719 (comprehensive data protection reform; creates APDP)",
+      "severity": "HIGH",
+      "publishedDate": "2024-12-13",
+      "effectiveDate": "2026-12-01",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-09-18/RW-2026-09-18-01.md",
+      "confidence": "HIGH",
+      "reasonForAlert": "Full regime replacement effective in 74 days (crosses 90-day trigger window); general consent/purpose-limitation principles sweep in cookies/tracking; new independent regulator (APDP) with real sanctioning power."
+    },
+    {
+      "alertId": "RW-2026-09-18-02",
+      "jurisdiction": "China (PRC)",
+      "instrument": "CAC/SAMR Measures for Certification of Cross-Border Transfer of Personal Information + second-wave technical standards (PIPL cross-border framework)",
+      "severity": "HIGH",
+      "publishedDate": "2025-10-14",
+      "effectiveDate": "2026-01-01 / 2026-07-01",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-09-18/RW-2026-09-18-02.md",
+      "confidence": "MEDIUM-HIGH",
+      "reasonForAlert": "Completes the three-pathway PIPL cross-border transfer framework; affects any customer exporting China-collected identifiers/tracking data; already in force, live enforcement exposure. First surfaced this cycle (gap since baseline)."
+    },
+    {
+      "alertId": "RW-2026-09-18-03",
+      "jurisdiction": "Australia",
+      "instrument": "Children's Online Privacy Code (statutory code under Privacy Act 1988)",
+      "severity": "HIGH",
+      "publishedDate": "2026-05 (exposure draft)",
+      "effectiveDate": "2026-12-10 (registration deadline)",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-09-18/RW-2026-09-18-03.md",
+      "confidence": "MEDIUM",
+      "reasonForAlert": "Fixed statutory registration deadline in 83 days; broad scope test ('likely accessed by children') affects many consumer-facing customers; requires default-off tracking behavior for in-scope services. Final registered text not yet published, so engineering deltas are provisional."
+    },
+    {
+      "alertId": "RW-2026-09-18-04",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA amendment (revenue-based fines, CEO/board accountability, mandatory ISMS-P)",
+      "severity": "MEDIUM",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "filePath": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-09-18/RW-2026-09-18-04.md",
+      "confidence": "MEDIUM",
+      "reasonForAlert": "Effective date crossed within the last 7 days (trigger #7); materially raises fine ceiling and governance obligations for KR-exposed customers, though no new CMP-technical delta identified this pass (documentation/audit-evidence impact only)."
+    }
+  ],
+  "digestItemsAdded": [
+    { "jurisdiction": "Australia", "instrument": "Privacy Amendment (Personal Data Protection) Bill 2026, Tranche 2 exposure draft", "reason": "consultation-stage only, no fixed effective date" },
+    { "jurisdiction": "EU/EEA + US (global)", "instrument": "EU-US Data Privacy Framework adequacy litigation risk", "reason": "no binding change yet; pure watch item, highest-priority for next weekly re-check" },
+    { "jurisdiction": "Japan", "instrument": "APPI amendment bill (Diet, not yet passed)", "reason": "bill stage, ~2028 enforcement horizon" },
+    { "jurisdiction": "Thailand", "instrument": "PDPC draft cookie/direct-marketing guidelines (forthcoming ~Nov 2026)", "reason": "draft stage, existing rules already assumed covered" },
+    { "jurisdiction": "Mexico", "instrument": "LFPDPPP implementing regulations (not yet published)", "reason": "awaiting implementing text" },
+    { "jurisdiction": "United Arab Emirates", "instrument": "PDPL Executive Regulations status", "reason": "unconfirmed / insufficient primary source this pass" },
+    { "jurisdiction": "South Africa", "instrument": "Information Regulator 'functional compliance' enforcement posture", "reason": "no confirmable specific binding guidance document located; borderline non-event" }
+  ],
+  "candidatesConsideredButRejected": [
+    { "item": "EU-Brazil mutual adequacy decision (2026-01-27)", "rejectionReason": "pre-window, predates baseline; status-quo/no new action required" },
+    { "item": "UK adequacy renewal by European Commission (Jan 2026)", "rejectionReason": "pre-window; status-quo confirmation, no delta" },
+    { "item": "EU-Korea adequacy periodic review confirmed (2026-07-23)", "rejectionReason": "confirms existing adequacy, no change; not a trigger event" },
+    { "item": "ICO UK-US data bridge guidance update (2026-01-15) and clarification (2026-07-30)", "rejectionReason": "pre-window clarifications of existing mechanism, no new obligation" },
+    { "item": "Singapore PDPC cookie/consent framework", "rejectionReason": "no new dated event; existing Advisory Guidelines (revised May 2024) unchanged" },
+    { "item": "Nigeria NDPC 2025 Compliance Audit Return deadline extension", "rejectionReason": "pre-window and procedural, not a cookie/consent rule change" }
+  ],
+  "highestSeverity": "HIGH",
+  "runDurationSeconds": 640,
+  "operationalCaveats": [
+    "WebFetch returned HTTP 403 or EGRESS_BLOCKED on every official regulator domain and several secondary law-firm/news domains attempted this run (oaic.gov.au, pipc.go.kr, cac.gov.cn, polity.org.za, chambers.com, iapp.org, hunton.com). All primary-source URLs in this run's alerts are link-verified-by-reference via WebSearch and cross-corroborated across multiple independent secondary sources, not independently fetched. Recommend allow-listing at minimum oaic.gov.au, pipc.go.kr, and bcn.cl given the HIGH-severity items resting on those sources.",
+    "This is the first standing Tier 2 scan since platform baseline (2026-05-09). Several items surfaced (China cross-border pathways, effective 2026-01-01/2026-07-01; Korea PIPA, effective 2026-09-11) have effective dates that already passed before this scan cycle existed. These are legitimately new to DataSafeguard's tracking (confirmed absent from baseline-state-of-the-world.md and gap-analysis.md) and are therefore alerted as catch-up/backlog items rather than forward-looking warnings — flagged explicitly in each alert's TIMELINE section.",
+    "UAE PDPL Executive Regulations status and South Africa Information Regulator enforcement posture could not be confirmed against a specific, dated, citable primary or credible secondary source this pass; both were downgraded to LOW-digest watch items rather than alerted, per the operating rules against alerting on unconfirmed/opinion-adjacent content. Recommend dedicated primary-source verification next cycle."
+  ]
+}
