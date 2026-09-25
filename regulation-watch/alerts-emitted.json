@@ -12,5 +12,49 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-09-25-01",
+    "jurisdiction": "South Korea",
+    "instrument": "PIPA / Enforcement Decree amendment — cookie opt-in standard, 10% revenue fine cap",
+    "publishedDate": "2026-03-10",
+    "severity": "CRITICAL",
+    "sentAt": "2026-09-25T15:45:00Z",
+    "jiraKey": "IDP-13898",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13898",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — Gmail MCP toolset this run had no create_draft/list_drafts tool (only update_draft against an existing ID, send_message, reply, forward); no live email sent as substitute. Needs manual draft or a create_draft-capable Gmail connector.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-09-25/RW-2026-09-25-01.md"
+  },
+  {
+    "alertId": "RW-2026-09-25-02",
+    "jurisdiction": "Chile",
+    "instrument": "Ley 21.719 full entry into force — new APDP regulator, consent parity + revoke",
+    "publishedDate": "2024-12-13",
+    "severity": "HIGH",
+    "sentAt": "2026-09-25T15:45:00Z",
+    "jiraKey": "IDP-13899",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-13899",
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — Gmail MCP toolset this run had no create_draft/list_drafts tool (only update_draft against an existing ID, send_message, reply, forward); no live email sent as substitute. Needs manual draft or a create_draft-capable Gmail connector.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-09-25/RW-2026-09-25-02.md"
+  },
+  {
+    "alertId": "RW-2026-09-25-03",
+    "jurisdiction": "Peru",
+    "instrument": "DS 016-2024-JUS phased DPO deadline (medium companies)",
+    "publishedDate": "2024-11-30",
+    "severity": "MEDIUM",
+    "sentAt": "2026-09-25T15:45:00Z",
+    "jiraKey": null,
+    "emailDraftId": null,
+    "emailStatus": "BLOCKED — Gmail MCP toolset this run had no create_draft/list_drafts tool; MEDIUM severity gets email-only delivery per DELIVERY rubric, so this alert has no delivery yet. Needs manual draft or a create_draft-capable Gmail connector.",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-09-25/RW-2026-09-25-03.md"
   }
 ]

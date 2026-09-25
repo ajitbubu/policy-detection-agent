@@ -1,0 +1,66 @@
+{
+  "scanDate": "2026-09-25",
+  "scanType": "weekly-tier2",
+  "tiersScanned": ["Tier 2"],
+  "dedupeCheck": {
+    "priorEntries": 1,
+    "duplicatesSkipped": 0
+  },
+  "scopeCovered": [
+    "APAC: China PIPL, Australia Privacy Act reforms, Japan APPI, Korea PIPA, Singapore PDPA, Thailand PDPA",
+    "MENA & Africa: UAE PDPL, KSA PDPL, Bahrain PDPL, Qatar PDPL, South Africa POPIA, Nigeria NDPR/NDPA, Kenya DPA",
+    "LatAm: Mexico LFPDPPP, Argentina, Chile, Colombia, Peru",
+    "Global cross-border: EU-US DPF, UK Extension, SCCs, adequacy decisions"
+  ],
+  "alertsWritten": [
+    {
+      "alertId": "RW-2026-09-25-01",
+      "jurisdiction": "South Korea",
+      "instrument": "PIPA / Enforcement Decree amendment — cookie opt-in standard, 10% revenue fine cap",
+      "severity": "CRITICAL",
+      "publishedDate": "2026-03-10",
+      "effectiveDate": "2026-09-11",
+      "filePath": "regulation-watch/alerts/2026-09-25/RW-2026-09-25-01.md",
+      "confidence": "MEDIUM-HIGH",
+      "note": "Primary source pipc.go.kr blocked by egress proxy (consistent with documented .gov WebFetch-403 caveat, extended to a Korean government domain); corroborated by two independent secondary sources."
+    },
+    {
+      "alertId": "RW-2026-09-25-02",
+      "jurisdiction": "Chile",
+      "instrument": "Ley 21.719 full entry into force",
+      "severity": "HIGH",
+      "publishedDate": "2024-12-13",
+      "effectiveDate": "2026-12-01",
+      "filePath": "regulation-watch/alerts/2026-09-25/RW-2026-09-25-02.md",
+      "confidence": "HIGH on dates/headline requirements, MEDIUM on implementing detail",
+      "note": "Primary source bcn.cl blocked by egress proxy this run."
+    },
+    {
+      "alertId": "RW-2026-09-25-03",
+      "jurisdiction": "Peru",
+      "instrument": "DS 016-2024-JUS phased DPO deadline (medium companies)",
+      "severity": "MEDIUM",
+      "publishedDate": "2024-11-30",
+      "effectiveDate": "2026-11-30",
+      "filePath": "regulation-watch/alerts/2026-09-25/RW-2026-09-25-03.md",
+      "confidence": "HIGH",
+      "note": "Deliberately calibrated MEDIUM rather than date-bracket HIGH — controller-side DPO/documentation obligation only, no required platform-behavior change, per Operating Rule #8 (severity reflects impact, not just timing)."
+    }
+  ],
+  "lowItemsAddedToDigest": 4,
+  "delivery": {
+    "jira": {
+      "RW-2026-09-25-01": "IDP-13898",
+      "RW-2026-09-25-02": "IDP-13899",
+      "RW-2026-09-25-03": null
+    },
+    "gmail": {
+      "status": "BLOCKED",
+      "reason": "The Gmail MCP toolset available this run exposed only update_draft (requires an existing draft ID), get_draft, delete_draft, send_message, reply, forward, update_message_labels, and spam/trash operations — no create_draft or list_drafts tool. There was no way to create a brand-new draft from scratch. Per the routine's explicit instruction to draft (not send), no live email was sent as a workaround.",
+      "affected": ["RW-2026-09-25-01", "RW-2026-09-25-02", "RW-2026-09-25-03", "weekly-LOW-digest"],
+      "digestPendingCleared": false,
+      "recommendedFix": "Reconnect/upgrade the Gmail connector for this Routine so it exposes a create_draft (or equivalent compose) tool, or have a human draft these 3 alert emails + the weekly digest manually from the alert files and digest-pending.md, then clear digest-pending.md."
+    }
+  },
+  "durationSeconds": 780
+}
