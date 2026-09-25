@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-09-25T15:20:00Z | tier2-weekly | 3 alerts emitted (CRITICAL 1, HIGH 1, MEDIUM 1) + 4 LOW items appended to digest-pending.md | CRITICAL | ~780s
+2026-09-25T15:45:00Z | tier2-weekly-delivery | Jira delivered for 2/2 eligible alerts (IDP-13898 CRITICAL South Korea, IDP-13899 HIGH Chile); Gmail draft delivery BLOCKED for all 3 alerts + weekly LOW digest — connected Gmail MCP toolset has no create_draft/list_drafts capability this run (only update_draft against an existing ID, send_message, reply, forward). Did not send live email as a substitute for a draft. digest-pending.md left uncleared pending manual drafting. See alerts-emitted.json emailStatus field. | CRITICAL | n/a
