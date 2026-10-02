@@ -1,0 +1,12 @@
+{
+  "scanDate": "2026-10-02",
+  "scanType": "tier2-weekly",
+  "lookback": "2026-09-25 to 2026-10-02 plus newly material",
+  "alertsEmitted": [
+    {"alertId":"RW-2026-10-02-01","severity":"MEDIUM","jurisdiction":"US-CA","instrument":"AB 566 California Opt Me Out Act (browser OOPS duty, effective 2027-01-01)","publishedDate":"2025-10-08","file":"/home/user/policy-detection-agent/regulation-watch/alerts/2026-10-02/RW-2026-10-02-01.md"},
+    {"alertId":"RW-2026-10-02-02","severity":"MEDIUM","jurisdiction":"IN","instrument":"DPDP Rules 2025 Phase II (Consent Manager registration, effective 2026-11-13)","publishedDate":"2025-11-13","file":"/home/user/policy-detection-agent/regulation-watch/alerts/2026-10-02/RW-2026-10-02-02.md"}
+  ],
+  "digestItems": 5,
+  "highestSeverity": "MEDIUM",
+  "caveats": ["WebFetch egress-blocked on all tested domains; all items SECONDARY, pending primary confirmation", "No genuinely new binding primary-source events found in 2026-09-25..10-02 window", "Search summaries contained inconsistencies (e.g. a SHEIN fine attributed to Sept 2026; that was CNIL Sept 2025) so excluded"]
+}
