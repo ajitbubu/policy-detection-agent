@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-10-02T15:10:00Z | tier2-weekly | 2 alerts emitted (RW-2026-10-02-01, -02) | MEDIUM | n/a
+2026-10-02T15:12:00Z | tier2-weekly-delivery | NOT DELIVERED: Gmail MCP exposes no create_draft tool (only send_message, which would auto-send); alerts + digest left pending, digest-pending.md retained, alerts-emitted.json not updated | MEDIUM | n/a
