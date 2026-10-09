@@ -2,3 +2,5 @@
 2026-05-09T18:19:27Z | initial-activation | 0 alerts emitted | n/a | 473s
 2026-05-09T18:36:18Z | tier1-daily | 1 alerts emitted | HIGH | 248s
 2026-05-09T18:48:37Z | tier1-daily-delivery | 1 alert delivered (IDP-11489 + draft r-8257231129572050191) | HIGH | n/a
+2026-10-09T15:15:00Z | tier2-weekly | 1 alerts emitted (RW-2026-10-09-01) + 2 LOW digest items | HIGH | ~100s
+2026-10-09T15:15:00Z | tier2-weekly-delivery | Jira IDP-14118 created; Gmail drafts NOT created (no create-draft tool); digest saved to digests/2026-10-09-weekly-digest.md | HIGH | n/a

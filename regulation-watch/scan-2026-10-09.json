@@ -1,0 +1,37 @@
+{
+  "scanDate": "2026-10-09",
+  "tier": "tier2-weekly",
+  "alerts": [
+    {
+      "alertId": "RW-2026-10-09-01",
+      "severity": "HIGH",
+      "jurisdiction": "Chile",
+      "instrument": "Law 21.719 (data protection) - effective 2026-12-01, postponement bill pending",
+      "file": "/home/user/policy-detection-agent/regulation-watch/alerts/2026-10-09/RW-2026-10-09-01.md",
+      "title": "[HIGH] CL - Law 21.719 effective 2026-12-01 (T-53), deferral bill pending"
+    }
+  ],
+  "digestItems": [
+    {
+      "jurisdiction": "Australia",
+      "instrument": "Privacy Amendment (Personal Data Protection) Bill 2026 - tranche 2 exposure draft",
+      "publishedDate": "2026-08-31",
+      "effectiveDate": "TBD (government aims to legislate by 2026-12; not law)",
+      "primarySource": "SECONDARY - pending primary confirmation (AGD consultation page not verified); https://www.cbp.com.au/insights/publications/privacy-amendment-(personal-data-protection)-bill-2026-exposure-draft-released-for-second-tranche-o",
+      "summary": "Draft would legislate consent (voluntary, informed, current, specific, unambiguous), treat precise geolocation as sensitive, and require consent for disclosure for money/direct marketing. Consultation closed 2026-09-18. Cookie/pixel impact is vendor interpretation only.",
+      "idPrivacySubsystem": "Consent Banner; Geo/Jurisdiction Routing; Vendor/SDK Governance",
+      "suggestedAction": "Watch for bill introduction; scope AU opt-in ruleset only if enacted. Note ADM transparency commencement reported 2026-12-10 (not consent layer)."
+    },
+    {
+      "jurisdiction": "Japan",
+      "instrument": "Act No. 56 of 2026 amending APPI",
+      "publishedDate": "2026-07-17",
+      "effectiveDate": "TBD (reported within 2 years of promulgation, by Cabinet Order)",
+      "primarySource": "SECONDARY - pending primary confirmation; https://www.aoshearman.com/en/insights/ao-shearman-on-data/amendments-to-the-act-on-the-protection-of-personal-information-promulgated",
+      "summary": "APPI amendments promulgated after Diet passage 2026-07-10. Cookie-relevant 'personally referable information' consent-on-transfer concept already exists; changes to it not confirmed.",
+      "idPrivacySubsystem": "Consent Banner; Vendor/SDK Governance; Documentation/RoPA",
+      "suggestedAction": "Obtain official text and PPC Cabinet Order timeline; confirm whether JP ruleset needs change."
+    }
+  ],
+  "notes": "WebFetch failed with DNS errors (getaddrinfo ENOTFOUND) for bcn.cl, carey.cl, araya.cl, so no primary source was verified; all items are secondary, link-verified-by-reference only. Dedupe: only RW-2026-05-09-01 exists, no conflicts. Checked with no qualifying event: EU-US DPF (Latombe appeal C-703/25 P pending, Microsoft intervention June 2026, no hearing/AG date found); SCC/adequacy (nothing new found); Korea/Thailand/Singapore (only unverified vendor claims); MENA/Africa (Nigeria GAID 2025 already in force; Kenya ODPC PET consultation closed 2026-08-17, not consent-related; no UAE/KSA/SA cookie instruments found); Mexico/Brazil/Colombia/Argentina (nothing new found). Recheck Chile primary text and postponement bill by 2026-10-12. Search coverage was limited (standard mode, vendor-heavy results), so absence of findings is not confirmation of no change."
+}

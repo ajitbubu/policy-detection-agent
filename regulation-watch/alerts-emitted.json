@@ -2,7 +2,7 @@
   {
     "alertId": "RW-2026-05-09-01",
     "jurisdiction": "United States (federal)",
-    "instrument": "FTC v. Kochava stipulated order — sensitive-location data",
+    "instrument": "FTC v. Kochava stipulated order \u2014 sensitive-location data",
     "publishedDate": "2026-05-04",
     "severity": "HIGH",
     "sentAt": "2026-05-09T18:48:37Z",
@@ -12,5 +12,20 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-10-09-01",
+    "jurisdiction": "Chile",
+    "instrument": "Law 21.719 (data protection) \u2014 effective 2026-12-01, postponement bill pending",
+    "publishedDate": "2024-12-13",
+    "severity": "HIGH",
+    "sentAt": "2026-10-09T15:15:00Z",
+    "jiraKey": "IDP-14118",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-14118",
+    "emailDraftId": null,
+    "emailNote": "Gmail connector had no create-draft tool; email not drafted",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "sourceFile": "regulation-watch/alerts/2026-10-09/RW-2026-10-09-01.md"
   }
 ]
