@@ -1,0 +1,9 @@
+{
+  "scanDate": "2026-10-16",
+  "tier": "tier2-weekly",
+  "alertsEmitted": [],
+  "highestSeverity": null,
+  "lowDigestItems": ["EU Digital Omnibus Council mandate (unconfirmed vote)", "Australia Privacy Act Tranche 2 exposure draft", "Japan APPI amendment (unverified cookie scope)", "EU-US DPF Latombe appeal C-703/25 P pending", "Tier 1 referrals: CA AB 566 (2027-01-01), LA/OK/VT laws (2027-01-01), AL (2027-05-01)"],
+  "caveats": "WebFetch failed (DNS) so no primary-source verification; all findings secondary.",
+  "digestFile": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md"
+}
