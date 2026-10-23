@@ -1,0 +1,15 @@
+{
+  "scanDate": "2026-10-23",
+  "tier": "tier2-weekly",
+  "alertsEmitted": [],
+  "highestSeverity": null,
+  "digestItemsAppended": 8,
+  "digestFile": "/home/user/policy-detection-agent/regulation-watch/digest-pending.md",
+  "dedupe": "alerts-emitted.json checked; only RW-2026-05-09-01 (>30 days old); no overlap",
+  "logLine": "2026-10-23 | tier2-weekly | 0 | none | no qualifying changes detected",
+  "digestHighlights": ["JP APPI amendment (promulgated 2026-07-17)", "AU tranche 2 exposure draft", "EU Digital Omnibus Council position pending", "CJEU C-703/25 P DPF appeal pending", "TH PDPC draft guidelines", "NZ IPP3A in force 2026-05-01"],
+  "caveats": [
+    "All findings SECONDARY - pending primary confirmation; WebSearch only, WebFetch of pwc.com failed (DNS) and official .gov/.europa.eu domains are known 403.",
+    "Thin coverage for MENA/Africa, Korea, Singapore, China, LatAm; no results, not confirmed absence."
+  ]
+}
