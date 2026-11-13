@@ -1,0 +1,31 @@
+{
+  "scanDate": "2026-11-13",
+  "tier": "tier2-weekly",
+  "windowStart": "2026-11-06",
+  "alertsEmitted": 0,
+  "highestSeverity": null,
+  "alertFiles": [],
+  "dedupeChecked": "alerts-emitted.json (1 entry, RW-2026-05-09-01, outside 30d window and unrelated); 2026-11-06 LOW items not repeated (EU Council mandate, AU Tranche 2, OAIC pixel, JP APPI) - no new delta found except EP status noted below",
+  "verificationCaveat": "All findings SECONDARY - pending primary confirmation. WebFetch failed with DNS/allow-list errors for www.clydeco.com and www.akingump.com; primary regulator sites (europa.eu, sdaia.gov.sa, cac.gov.cn, pdpc.or.th) were not fetched. Search-result snippets only.",
+  "searchesRun": 18,
+  "lowItems": [
+    {"title": "SDAIA draft amendments to PDPL Implementing Regulations (marketing consent, opt-out, consent evidence retention)", "jurisdiction": "SA", "date": "2026-10-06 (consultation closed 2026-11-05)", "sourceUrl": "https://www.akingump.com/en/insights/alerts/saudi-data-and-ai-authority-proposes-amendments-to-implementing-regulations-of-the-pdpl-10-key-proposed-changes", "status": "SECONDARY - pending primary confirmation; draft only", "action": "Add KSA ruleset stub in Geo routing; confirm consent-evidence fields in Consent Storage."},
+    {"title": "EU Digital Omnibus: Parliament has no position on cookie strand; ITRE (Salla) reportedly targeting committee vote before Feb 2027; conflicting reports on Council treatment of Art 88a", "jurisdiction": "EU", "date": "2026-11 (undated)", "sourceUrl": "https://ppc.land/eu-council-agrees-4-month-cookie-re-ask-wait-for-digital-omnibus-talks/", "status": "SECONDARY - pending primary confirmation; delta to 2026-11-06 item", "action": "Keep re-ask interval and browser-signal handling as tenant-config toggles; recheck EP Legislative Observatory."},
+    {"title": "EDPB Binding Decision 1/2026 (BE SA / VRT cookie banner complaint) - procedural", "jurisdiction": "EU", "date": "2026-07-14 (adopted 2026-05-28)", "sourceUrl": "https://www.edpb.europa.eu/system/files/2026-07/edpb_bindingdecision_202601_be_sa_vrt_redacted_en.pdf", "status": "SECONDARY - pending primary confirmation; outside scan window, first seen now", "action": "Ensure Audit/Logging can export banner state history and consent proof per tenant."},
+    {"title": "Thailand PDPC draft guidance series (lawful bases, marketing) in consultation", "jurisdiction": "TH", "date": "2026-07-07", "sourceUrl": "https://www.tilleke.com/insights/thailand-opens-public-consultation-on-new-pdpa-guidelines/26/", "status": "SECONDARY - pending primary confirmation; no final cookie guideline", "action": "Verify TH banner defaults and Thai-language notice; watch for final guidelines."}
+  ],
+  "noEvent": [
+    "EU-US DPF: Latombe C-703/25 P still pending; Microsoft intervened (June 2026 report); no hearing date, AG opinion or judgment found",
+    "China CAC: large-scale PI processor draft rules (consultation closed 2026-09-07) not found finalized; small-processor simplified measures reportedly effective 2026-09-01 (secondary); cross-border three-pathway regime in force; no consent/cookie-specific change",
+    "New Zealand OPC: IPP3A in force 2026-05-01; BPPC amendments earlier in 2026; nothing new in window",
+    "UAE: PDPL executive regulations still reported unissued; new Federal Authority for AI and Data announced 2026-06-14",
+    "Nigeria NDPC: GAID effective 2025-09-19, enforcement/audit activity continuing; no new instrument in window",
+    "Kenya ODPC: July 2026 guidance notes (DPO, AI, policies), cross-border guidance reported Sept 2026; none cookie-specific",
+    "South Africa IR: enforcement notices/fines (security compromise, PAIA); not consent/cookie",
+    "SCC: reported Commission initiative on an SCC module for importers directly subject to GDPR; undated, no 2026 draft text found",
+    "Adequacy: UK renewed 2025-12-19; Brazil adopted 2026-01-26; nothing new in window",
+    "Singapore PDPC GenAI guidelines (2026-07-20); Korea PIPC, Japan PPC: no cookie-relevant change found"
+  ],
+  "coverageGaps": "No primary-source verification for any item. China CAC, Thai PDPC, SDAIA, NDPC, ODPC and IR sites not directly checked; Korea, Mexico/LatAm only lightly covered (not re-searched this week). SCC search returned only 2020/2021 material.",
+  "recommendation": "Allow-list *.europa.eu, sdaia.gov.sa, cac.gov.cn, pdpc.or.th, inforegulator.org.za and law-firm hosts (akingump.com, clydeco.com) so primary text can be verified."
+}
