@@ -1,6 +1,6 @@
 # Digest pending (LOW items awaiting Monday digest)
 
-_NOT cleared 2026-11-13: Gmail draft could not be created (no create_draft tool). Content staged in digests/2026-11-13.md._
+_NOT cleared 2026-11-13 or 2026-11-20: Gmail draft could not be created (no create_draft tool in Gmail connector). Content staged in digests/2026-11-13.md and digests/2026-11-20.md._
 
 
 ## Week of 2026-11-13 (Tier 2 scan) - all SECONDARY - pending primary confirmation (europa.eu / sdaia.gov.sa / pdpc.or.th not fetchable; law-firm hosts also blocked)
@@ -9,3 +9,8 @@ _NOT cleared 2026-11-13: Gmail draft could not be created (no create_draft tool)
 - **EU** | 2026-11 (undated, single-source) | Digital Omnibus: European Parliament has no adopted position on cookie/GDPR strand; ITRE (rapporteur Aura Salla) reportedly targets committee vote before Feb 2027; Council reports conflict on whether Art 88a survives | https://ppc.land/eu-council-agrees-4-month-cookie-re-ask-wait-for-digital-omnibus-talks/ | SECONDARY - pending primary confirmation (EP Legislative Observatory not checked) | Action: keep re-ask interval and browser-signal handling as tenant-config toggles (default off); recheck Observatory next week.
 - **EU** | adopted 2026-05-28, published 2026-07-14 (first seen this scan; outside window) | EDPB Binding Decision 1/2026 (BE SA / VRT cookie-banner complaint): Belgian DPA must hear NOYB complaint on merits; procedural, no change to consent rules | https://www.edpb.europa.eu/system/files/2026-07/edpb_bindingdecision_202601_be_sa_vrt_redacted_en.pdf | SECONDARY - pending primary confirmation (PDF surfaced in search, not fetched) | Action: ensure Audit/Logging can export banner state history and consent proof per tenant to support DPA merits investigations.
 - **TH** | 2026-07-07 | PDPC draft guidance series (lawful bases, marketing) out for consultation; no final cookie guideline found; PDPC reportedly runs automated site crawler for cookie-consent checks | https://www.tilleke.com/insights/thailand-opens-public-consultation-on-new-pdpa-guidelines/26/ | SECONDARY - pending primary confirmation | Action: verify TH banner defaults to opt-in for non-essential cookies and has Thai-language notice; watch for final guidelines.
+
+## Week of 2026-11-20 (Tier 2 scan) - SECONDARY - pending primary confirmation (cnil.fr ENOTFOUND; no primary hosts fetched)
+
+- **EU-FR** | CNIL page 2026-10-29 (decision reportedly 2026-10-22; outside window, first seen now) | CNIL EUR 7M fine on Fnac Darty entities for cookies on website and mobile app | https://cnil.fr/en/node/169095 | SECONDARY - pending primary confirmation | Action: Tier 1 to assess alert eligibility (possible mobile-app SDK consent precedent -> Vendor/SDK Governance gating).
+- Carry-over rechecks (Digital Omnibus, SDAIA, EDPB BD 1/2026, TH PDPC, AU Tranche 2, OAIC pixels, JP APPI, DPF Latombe): no material delta. AU Tranche 2 bill may be introduced before end-2026 - check Parliament bills DB next week.
