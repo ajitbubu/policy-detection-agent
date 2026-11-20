@@ -1,0 +1,50 @@
+{
+  "scanDate": "2026-11-06",
+  "tier": "tier2-weekly",
+  "alertsEmitted": 0,
+  "highestSeverity": null,
+  "alertFiles": [],
+  "dedupeChecked": "alerts-emitted.json (1 entry, RW-2026-05-09-01, outside 30d window and unrelated)",
+  "verificationCaveat": "WebFetch failed (DNS not resolvable: data.consilium.europa.eu, www.cbp.com.au). All findings are SECONDARY - pending primary confirmation. Hosts need allow-listing.",
+  "lowItems": [
+    {
+      "title": "Privacy Amendment (Personal Data Protection) Bill 2026 - exposure draft (Tranche 2), consent for disclosure for direct marketing, ad cookies/pixels",
+      "jurisdiction": "AU",
+      "date": "2026-08-31",
+      "sourceUrl": "https://www.cbp.com.au/insights/publications/privacy-amendment-(personal-data-protection)-bill-2026-exposure-draft-released-for-second-tranche-o",
+      "status": "SECONDARY - pending primary confirmation (AGD page not verified); exposure draft only, not enacted",
+      "action": "Track bill introduction; scope an AU ruleset with opt-in for ad cookies/pixel disclosure in Geo routing and tenant config."
+    },
+    {
+      "title": "OAIC position: cookie banners do not constitute valid consent for tracking pixels",
+      "jurisdiction": "AU",
+      "date": "2026-06",
+      "sourceUrl": "https://privacymatters.dlapiper.com/2026/06/australia-pixel-perfect-the-regulator-addresses-use-of-tracking-pixels/",
+      "status": "SECONDARY - pending primary confirmation (OAIC source not located)",
+      "action": "Confirm OAIC text; assess whether Vendor/SDK governance should gate pixel tags separately from cookies for AU tenants."
+    },
+    {
+      "title": "Japan APPI amendment (Act No. 56 of 2026) passed 2026-07-10, promulgated 2026-07-17; effective by Cabinet Order within 2 years",
+      "jurisdiction": "JP",
+      "date": "2026-07-17",
+      "sourceUrl": "https://www.pwc.com/jp/en/knowledge/news/legal-20260827-6.html",
+      "status": "SECONDARY - pending primary confirmation (PPC/Kanpo); effective date not fixed; cookie-ID treatment unclear",
+      "action": "Verify cookie/online-identifier provisions against PPC text; revisit when Cabinet Order sets effective date."
+    },
+    {
+      "title": "EU Digital Omnibus: Council negotiating mandate (21 Oct 2026) amending GDPR/ePrivacy cookie rules incl. browser signals and consent re-ask period",
+      "jurisdiction": "EU",
+      "date": "2026-10-21",
+      "sourceUrl": "https://data.consilium.europa.eu/doc/document/ST-10729-2026-INIT/en/pdf",
+      "status": "SECONDARY - pending primary confirmation (Council doc ST-10729-2026 not fetchable); negotiating position only, not law; sources conflict on placement (ePrivacy 5(3) vs GDPR Art 88a) and browser-signal obligation",
+      "action": "Read Council doc ST-10729-2026; model re-ask interval (reported 4 months) and browser-signal handling as tenant-config toggles ahead of trilogue; Parliament position pending."
+    }
+  ],
+  "noEvent": [
+    "EU-US DPF: Latombe appeal C-703/25 P pending at CJEU; no ruling or AG opinion found",
+    "Singapore PDPC, Korea PIPC: no qualifying change found",
+    "LatAm (Mexico LFPDPPP in force since 2025-03-21; Chile, Colombia, Argentina): no new qualifying event found"
+  ],
+  "coverageGaps": "Not scanned in depth: China CAC, Thailand, NZ, MENA/Africa regulators, SCC updates. Search was limited to five queries.",
+  "recommendation": "Allow-list *.europa.eu, *.gov.au, *.gov and similar so primary sources can be verified."
+}

@@ -1,0 +1,31 @@
+{
+  "scanDate": "2026-11-20",
+  "tier": "tier2-weekly",
+  "windowStart": "2026-11-13",
+  "alertsEmitted": 0,
+  "highestSeverity": null,
+  "alertFiles": [],
+  "dedupeChecked": "alerts-emitted.json (1 entry, RW-2026-05-09-01, outside 30d window, unrelated); digest-pending.md, digests/2026-11-06.md, digests/2026-11-13.md, scan-2026-11-13.json read. Carry-over items not repeated unless delta noted.",
+  "verificationCaveat": "All findings SECONDARY - pending primary confirmation. WebFetch of cnil.fr failed (ENOTFOUND, host not in session allow-list). No primary regulator page fetched; findings rest on search-result snippets only.",
+  "searchesRun": 10,
+  "lowItems": [
+    {"title": "CNIL fine EUR 7M against Fnac Darty entities for cookies on website and mobile app (decision reportedly 2026-10-22)", "jurisdiction": "EU-FR", "date": "2026-10-29 (outside scan window; first seen now; Tier 1 source, not in prior digests)", "sourceUrl": "https://cnil.fr/en/node/169095", "status": "SECONDARY - pending primary confirmation (search snippet only; cnil.fr page not fetchable); violation details not read", "action": "Daily Tier 1 owner to confirm whether a MEDIUM/HIGH alert is warranted (mobile-app SDK consent gating, Vendor/SDK Governance); not alerted here since details are unread and CNIL fines are Tier 1 scope."}
+  ],
+  "carryOverRechecks": [
+    {"item": "EU Digital Omnibus (EP ITRE / Council, Art 88a)", "delta": "No new delta. Council mandate 2026-10-21 (no Parliament position yet; trilogue cannot start before it). Sources still conflict on Art 88a: ppc.land says retained; pasqualepillitteri.it and a Council working document snippet say dropped and moved back to ePrivacy 5(3). Browser-signal Art 88b reportedly removed in Council compromise of 2026-06-18. ITRE vote timing not confirmed. European Council reportedly wants omnibus files agreed by end 2026 (unverified).", "sourceUrl": "https://data.consilium.europa.eu/doc/document/ST-9773-2026-REV-1/en/pdf", "status": "SECONDARY - pending primary confirmation (Council PDF not fetched)"},
+    {"item": "SDAIA PDPL Implementing Regulations amendments", "delta": "No delta. Still draft; consultation closed 2026-11-05; no final approval found. Snippets add other draft points (20-business-day response to SDAIA requests, unanswered DSRs deemed rejected after 30 days, possible in-Kingdom storage requirement); not cookie-specific, but storage requirement is worth a human read.", "sourceUrl": "https://www.clydeco.com/en/insights/2026/10/sdaia-publishes-draft-amendments-to-the-pdpl", "status": "SECONDARY - pending primary confirmation"},
+    {"item": "EDPB Binding Decision 1/2026", "delta": "No delta. EDPB 124th plenary scheduled 2026-11-10; outcomes not found. Work programme lists Consent-or-Pay guidelines (no adoption date). Draft Guidelines 04/2026 on fines: consultation closed 2026-11-13 (not consent-specific).", "sourceUrl": "https://www.edpb.europa.eu/our-work-tools/plenary-meetings/124th-plenary-meeting_nb", "status": "SECONDARY - pending primary confirmation"},
+    {"item": "Thai PDPC guidelines", "delta": "No delta. Only draft guidance (2026-07-07); no final cookie guideline found.", "sourceUrl": "https://www.tilleke.com/insights/thailand-opens-public-consultation-on-new-pdpa-guidelines/26/", "status": "SECONDARY - pending primary confirmation"},
+    {"item": "AU Privacy Act Tranche 2", "delta": "No delta. Exposure draft 2026-08-31; Government intends to introduce before end of 2026, but no introduction found. One result (InnovationAus, undated snippet) suggests reforms entering parliament; not verified, check Parliament bills database next week. No commencement date.", "sourceUrl": "https://www.hsfkramer.com/insights/2026-09/the-draft-tranche-2-privacy-act-reforms-whats-there-whats-new-and-whats-missing", "status": "SECONDARY - pending primary confirmation"},
+    {"item": "OAIC tracking pixels", "delta": "No new delta in window. Background firmed up: OAIC determinations Monash IVF [2026] AICmr 40 and Medmate [2026] AICmr 41 (2026-06-11) held cookie banners not valid consent/notice for pixels (APP 3.3, 5, 7.1); report 2026-06-24. OAIC press-release URLs found but not fetched.", "sourceUrl": "https://www.oaic.gov.au/news/media-centre/privacy-commissioner-finds-privacy-breaches-in-third-party-tracking-pixel-investigation", "status": "SECONDARY - pending primary confirmation (URL from search results, not fetched)"},
+    {"item": "JP APPI amendment", "delta": "No delta. Act No. 56 of 2026 passed 2026-07-10, promulgated 2026-07-17; effective by Cabinet Order within 2 years (by July 2028); Cabinet Order/PPC rules pending. Cookie-ID coverage under 'personal related information' comes from a vendor page only.", "sourceUrl": "https://www.pwc.com/jp/en/knowledge/news/legal-news/legal-20260827-6.html", "status": "SECONDARY - pending primary confirmation"},
+    {"item": "EU-US DPF Latombe C-703/25 P", "delta": "No delta. Appeal lodged 2025-10-31 (OJ C/2025/6610); no hearing date, AG opinion or judgment found.", "sourceUrl": "https://eur-lex.europa.eu/eli/C/2025/6610/oj/eng", "status": "Notice of appeal is a primary-source listing seen in search results, not fetched; status claim is SECONDARY - pending primary confirmation (curia.europa.eu not checked)"}
+  ],
+  "noEvent": [
+    "No new law, binding guidance, or appellate ruling touching cookies/consent found in Tier 2 jurisdictions within 2026-11-13 to 2026-11-20.",
+    "Digital Omnibus, SDAIA, EDPB, Thai PDPC, AU Tranche 2, OAIC, JP APPI, DPF Latombe: rechecked, no material change (see carryOverRechecks).",
+    "Nothing found on ANPD, DPDP, or Canada in one broad search (Tier 1; not Tier 2 scope, not searched by name)."
+  ],
+  "coverageGaps": "No primary-source verification for any item. cnil.fr not resolvable (needs allow-listing); europa.eu, sdaia.gov.sa, pdpc.or.th, oaic.gov.au, law-firm hosts not fetched. Not searched this week: China CAC, NZ, UAE, Nigeria, Kenya, South Africa, Korea, LatAm, SCC (nothing carried over for these). Search coverage was 10 queries only.",
+  "recommendation": "Allow-list cnil.fr and *.europa.eu plus sdaia.gov.sa, pdpc.or.th, oaic.gov.au. Ask the Tier 1 daily run to check the CNIL Fnac Darty decision for alert eligibility."
+}
