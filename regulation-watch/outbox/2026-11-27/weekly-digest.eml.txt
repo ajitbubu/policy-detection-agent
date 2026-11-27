@@ -1,0 +1,16 @@
+To: asahu@datasafeguard.ai
+Subject: [ID-PRIVACY Reg Watch] Weekly LOW digest — week of 2026-11-23 (6 items)
+
+Weekly LOW-severity digest from the privacy-regulation-watcher Tier 2 scan on 2026-11-27. Every item is SECONDARY and pending primary confirmation, because WebFetch could not reach primary hosts in this run.
+
+
+- **RW-2026-11-27-D1** | US-AL | Alabama Personal Data Protection Act (HB 351) | signed ~2026-04-16/17 (sources differ); effective 2027-05-01 | https://www.mayerbrown.com/es/insights/publications/2026/04/alabama-enacts-comprehensive-consumer-data-privacy-law (SECONDARY) | Add Virginia-model US-AL ruleset; config only; 155 days out.
+- **RW-2026-11-27-D2** | US-VT | Vermont Data Privacy and Online Surveillance Act | signed ~2026-06-16; effective 2028-01-01 | SECONDARY (search results only; no URL confirmed) | Awareness; add VT to jurisdiction roadmap; check for any consent/opt-out signal provisions.
+- **RW-2026-11-27-D3** | US-LA | Louisiana SB 386 data privacy act | signing/effective dates unconfirmed ("2027") | https://natlawreview.com/article/new-louisiana-data-privacy-act-set-take-effect-2027 (SECONDARY) | Confirm effective date; likely Virginia-model ruleset config.
+- **RW-2026-11-27-D4** | JP | Act No. 56 of 2026 partially amending the APPI | passed 2026-07-10; promulgated 2026-07-17; in force within 2 years (by ~2028-07-17) | https://www.pwc.com/jp/en/knowledge/news/legal-news/legal-20260827-6.html (SECONDARY) | New "contactable personal related information" category and admin fines; check cookie/identifier treatment vs statute before any classification-ML change.
+- **RW-2026-11-27-D5** | AU | Privacy Amendment (Personal Data Protection) Bill 2026 exposure draft (Tranche 2) | exposure draft 2026-08-31; not enacted; no commencement date | https://www.hsfkramer.com/en_US/insights/2026-09/the-draft-tranche-2-privacy-act-reforms-whats-there-whats-new-and-whats-missing (SECONDARY) | Draft widens personal information to cover device identifiers/tracking; monitor. Also verify reported Children's Online Privacy Code deadline of 2026-12-10 (single secondary source) on OAIC site.
+- **RW-2026-11-27-D6** | EU | Digital Omnibus (COM(2025) 837; 2025/0360(COD)) Council mandate | reportedly agreed 2026-10-21; Parliament position not found; not law | https://www.osborneclarke.com/insights/digital-omnibus-reshapes-eu-cookie-rules-leaves-banner-fatigue-largely-intact (SECONDARY) | Reports conflict on whether cookie rules move into GDPR Art. 88a or stay in ePrivacy; no action until trilogue; verify Council text on consilium.europa.eu.
+
+This week's non-LOW alerts, delivered separately: RW-2026-11-27-01 HIGH US-CT (Jira IDP-14730), RW-2026-11-27-02 MEDIUM IN (DPDP Phase II), RW-2026-11-27-03 MEDIUM US-OK (SB 546, effective 2027-01-01).
+
+Not covered this run: MENA/Africa, LatAm, NZ, Thailand, Korea PIPC, China CAC.

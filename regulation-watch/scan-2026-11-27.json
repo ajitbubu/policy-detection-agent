@@ -1,0 +1,24 @@
+{
+  "scanDate": "2026-11-27",
+  "scanType": "weekly-tier2",
+  "lookbackStart": "2026-05-09",
+  "lookbackEnd": "2026-11-27",
+  "priorityWindow": "2026-10-30 to 2026-11-27",
+  "fetchStatus": "WebFetch failed on all attempted hosts (DNS not resolvable in this session: www.pib.gov.in, www.dataprivacyandsecurityinsider.com, news.bgov.com, www.pwc.com). No primary source was verified. All alerts are SECONDARY.",
+  "alerts": [
+    {"alertId":"RW-2026-11-27-01","jurisdictionCode":"US-CT","severity":"HIGH","file":"alerts/2026-11-27/RW-2026-11-27-01.md","primaryVerified":false,"confidence":"MEDIUM"},
+    {"alertId":"RW-2026-11-27-02","jurisdictionCode":"IN","severity":"MEDIUM","file":"alerts/2026-11-27/RW-2026-11-27-02.md","primaryVerified":false,"confidence":"MEDIUM"},
+    {"alertId":"RW-2026-11-27-03","jurisdictionCode":"US-OK","severity":"MEDIUM","file":"alerts/2026-11-27/RW-2026-11-27-03.md","primaryVerified":false,"confidence":"MEDIUM"}
+  ],
+  "digestEntries": ["RW-2026-11-27-D1","RW-2026-11-27-D2","RW-2026-11-27-D3","RW-2026-11-27-D4","RW-2026-11-27-D5","RW-2026-11-27-D6"],
+  "rejected": [
+    "EU-US DPF Latombe appeal C-703/25 P: pending, no event found",
+    "EU-Brazil mutual adequacy 2026-01-26: pre-baseline, pre-window",
+    "UK adequacy renewal 2025-12-19: pre-window",
+    "Singapore/Korea/China: no cookie/tracking instrument found in window (Singapore gen-AI guidelines not relevant)",
+    "No new EU SCCs found"
+  ],
+  "sourcesChecked": ["Web searches: Australia Tranche 2, EU Digital Omnibus, Japan APPI, EU-US DPF, India DPDP, US state laws, APAC regulators, SCC/adequacy, Oklahoma, Connecticut"],
+  "sourcesNotCovered": ["MENA/Africa (UAE, KSA, POPIA, Nigeria, Kenya), LatAm (Mexico, Argentina, Chile, Colombia, Peru), NZ, Thailand — not searched this run due to effort; recommend follow-up"],
+  "counts": {"alerts":3,"critical":0,"high":1,"medium":2,"digestLow":6}
+}

@@ -1,0 +1,85 @@
+To: asahu@datasafeguard.ai
+Subject: [ID-PRIVACY Reg Watch][MEDIUM] RW-2026-11-27-02 — India (IN)
+
+═══════════════════════════════════════════════════════════════
+🛡  ID-PRIVACY REGULATORY ALERT — MEDIUM
+═══════════════════════════════════════════════════════════════
+Alert ID: RW-2026-11-27-02
+Status: SECONDARY — pending primary confirmation (re-check within 72h)
+
+📍 Jurisdiction:     India (IN)
+📜 Instrument:       Regulation — DPDP Rules, 2025: Phase II commencement (Consent Manager registration, Rule 4 + First Schedule; DPDP Act ss. 6(9), 27(1)(d))
+🏛  Issuing body:     MeitY / Data Protection Board of India
+📅 Published:        2025-11-13  (Rules notified; Phase II date set then)
+⏰ Effective:         2026-11-13  (T+14 days — ALREADY IN FORCE)
+⚖️  Enforcement:      Phase III (notice, consent, most operative duties): 2027-05-13 (T-167)
+🔗 Primary source:   https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336151  (reported by search; WebFetch failed — host unreachable; NOT verified. Confirm the PRID corresponds to the Phase II release.)
+🔗 Secondary refs:   https://chambers.com/articles/s-r-data-india-s-digital-personal-data-protection-regime-takes-effect , https://www.bassberry.com/news/indias-data-privacy-rules-what-your-business-needs-to-know/ , https://www.mondaq.com/india/data-protection/1708434/operationalising-indias-data-protection-regime-analysing-the-newly-notified-dpdp-rules-2025
+
+───────────────────────────────────────────────────────────────
+WHAT CHANGED (≤4 sentences, plain English)
+───────────────────────────────────────────────────────────────
+The Consent Manager registration regime went live on 2026-11-13: eligible India-incorporated companies (reported minimum net worth INR 2 crore) can now apply to the Board for registration via its portal. Consent Managers will be the interoperable layer through which Data Principals give, manage and withdraw consent. This does not yet impose consent-collection duties on tenants; those start 2027-05-13. A minor date discrepancy (12/13/14 Nov) exists in some secondary sources; most and the PIB release say 13 Nov.
+
+───────────────────────────────────────────────────────────────
+WHO IS AFFECTED
+───────────────────────────────────────────────────────────────
+- Applicability test:  Entities wishing to act as Consent Managers (India-incorporated only); Data Fiduciaries targeting India must later integrate/accept CM-mediated consent.
+- DataSafeguard customers likely affected: India-facing tenants (segment size unknown) — indirectly now, directly from 2027-05-13
+- Customer notice required:  NO for now (awareness note recommended). Re-evaluate by 2027-02-12 (T-90 to Phase III).
+
+───────────────────────────────────────────────────────────────
+ID-PRIVACY® IMPACT
+───────────────────────────────────────────────────────────────
+Affected subsystems:
+  ☑ Consent Banner               Phase III notice/consent UX (multilingual, itemised notices) — scoping only
+  ☐ Cookie Classification ML     No change
+  ☑ Consent Storage & Proof      Records must be exportable/interoperable with CM-issued consent artefacts
+  ☑ Consent Signals (GPC/TCF/GPP)New ingest: CM consent/revocation callbacks (design needed)
+  ☑ Geo / Jurisdiction Routing   India ruleset to carry Phase II/III toggles
+  ☐ Vendor / SDK Governance      Later (processor disclosure)
+  ☑ DSR Engine                   Withdrawal via CM must propagate
+  ☑ Audit / Logging              Evidence trail for CM-mediated events
+  ☑ Cross-border transfer        Review once Phase III transfer rules apply
+  ☑ Tenant Config / Admin UI     "Accept CM-mediated consent" toggle
+  ☑ Documentation / DPIA / RoPA  India notice templates
+
+───────────────────────────────────────────────────────────────
+RECOMMENDED ACTIONS
+───────────────────────────────────────────────────────────────
+ENGINEERING (Abhishek's track):
+  1. Spike: map consent-record schema to Rules' CM interoperability requirements and draft CM-callback API — est. 5 pts — by 2026-12-18
+  2. Design doc for revocation propagation (CM -> consent store -> vendor gating) — est. 5 pts — by 2027-01-29
+
+ML (Sumeet's track):
+  1. None required at this stage
+
+PRODUCT / LEGAL:
+  1. Strategy decision: become a CM, partner with CMs, or integrate only — by 2027-01-15
+  2. Counsel review of Rules text and technical standards once the Board publishes them — by 2026-12-18
+  3. Customer comms: awareness note to India-facing tenants — by 2027-02-12
+
+DEPENDENCIES / BLOCKERS:
+  • Board technical/interoperability specifications for CMs — publication status not confirmed
+  • Primary source not fetched
+
+───────────────────────────────────────────────────────────────
+TIMELINE
+───────────────────────────────────────────────────────────────
+T-90 (to Phase III): 2027-02-12 — re-alert at HIGH expected; design complete
+T-60: 2027-03-14 — build complete, staging test
+T-30: 2027-04-13 — production-ready, tenant comms sent
+T-7:  2027-05-06 — freeze
+T-0:  2027-05-13 — Phase III effective — must be live
+
+───────────────────────────────────────────────────────────────
+RISK IF NOT ACTIONED
+───────────────────────────────────────────────────────────────
+Phase II itself carries no direct penalty for tenants. Risk is strategic and schedule risk ahead of Phase III; the Act allows penalties up to INR 250 crore for certain failures (verify against Act schedule). The Board's enforcement record is nil so far.
+
+───────────────────────────────────────────────────────────────
+CONFIDENCE
+───────────────────────────────────────────────────────────────
+MEDIUM — multiple secondary sources agree on 2026-11-13 and the 2027-05-13 Phase III date; primary not verified.
+
+═══════════════════════════════════════════════════════════════
