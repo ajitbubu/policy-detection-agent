@@ -1,0 +1,85 @@
+To: asahu@datasafeguard.ai
+Subject: [ID-PRIVACY Reg Watch][HIGH] RW-2026-11-27-01 — United States — Connecticut (US-CT)
+
+═══════════════════════════════════════════════════════════════
+🛡  ID-PRIVACY REGULATORY ALERT — HIGH
+═══════════════════════════════════════════════════════════════
+Alert ID: RW-2026-11-27-01
+Status: SECONDARY — pending primary confirmation (re-check within 72h)
+
+📍 Jurisdiction:     United States — Connecticut (US-CT)
+📜 Instrument:       Legislation (amendment to CTDPA) — SB 4, cited by secondary sources as Public Act 26-64; clean-up via HB 5222 / HB 5563 (2026-06-02/04)
+🏛  Issuing body:     Connecticut General Assembly / Governor
+📅 Published:        2026-05-27  (signing date per Proskauer / WilmerHale / FPF; other outlets differ — confirm)
+⏰ Effective:         2026-10-01  (T+57 days — ALREADY IN FORCE)
+⚖️  Enforcement:      immediate (AG enforcement; secondary sources also cite DCP penalties up to $200/day/consumer for data-broker provisions — verify)
+🔗 Primary source:   NOT FETCHED — cga.ct.gov Public Act 26-64 (citation per secondary sources; URL unconfirmed; WebFetch could not reach any host in this run)
+🔗 Secondary refs:   https://privacylaw.proskauer.com/2026/06/articles/data-privacy-laws/from-data-brokers-to-dna-connecticut-enacts-sweeping-privacy-amendments/ , https://fpf.org/blog/third-times-the-charm-connecticut-enacts-annual-privacy-update/ , https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20260731-connecticut-amends-its-data-privacy-act-to-increase-data-protections
+
+───────────────────────────────────────────────────────────────
+WHAT CHANGED (≤4 sentences, plain English)
+───────────────────────────────────────────────────────────────
+Connecticut's third CTDPA update bars controllers and third parties from selling a consumer's precise geolocation data, regardless of consent. Before, precise geolocation was sensitive data that could be sold with opt-in consent. The same package adds a data-broker registry (registration by 2027-01-01, 45-day deletion-platform checks, central deletion mechanism by 2028-07-01) plus surveillance-pricing and genetic-data provisions. For a CMP, "consent" can no longer legitimise geolocation-sale vendors for CT residents.
+
+───────────────────────────────────────────────────────────────
+WHO IS AFFECTED
+───────────────────────────────────────────────────────────────
+- Applicability test:  Controllers meeting CTDPA thresholds that process CT residents' data; third parties receiving geolocation. Data brokers (registry).
+- DataSafeguard customers likely affected: any CT-facing tenant using ad-tech / location SDKs that monetise precise geo (estimate: small-to-medium segment; needs tenant inventory)
+- Customer notice required:  YES — advisory to CT-facing tenants now (law already live); no banner redeploy needed unless tenants use location-sale vendors.
+
+───────────────────────────────────────────────────────────────
+ID-PRIVACY® IMPACT
+───────────────────────────────────────────────────────────────
+Affected subsystems:
+  ☑ Consent Banner               Sensitive-data (precise geo) consent path must not authorise "sale" for CT; copy/disclosure review
+  ☑ Cookie Classification ML     Precise-geolocation SDK/cookie label must be routable as "sale-prohibited" (reuse MD pattern; ASSUMED partial per gap-analysis #7)
+  ☐ Consent Storage & Proof      No change expected
+  ☐ Consent Signals (GPC/TCF/GPP)No change (CT UOOM already tracked); verify GPP CT section unaffected
+  ☑ Geo / Jurisdiction Routing   CT ruleset needs a "block-on-sale despite consent" flag
+  ☑ Vendor / SDK Governance      Hard-block vendors flagged as selling precise geo for CT visitors
+  ☐ DSR Engine                   Data-broker deletion platform not applicable to CMP unless tenants are brokers (2027+)
+  ☑ Audit / Logging              Evidence that blocked vendors were not fired for CT visitors
+  ☐ Cross-border transfer        N/A
+  ☑ Tenant Config / Admin UI     Per-tenant toggle: "sells precise geolocation" + data-broker flag
+  ☑ Documentation / DPIA / RoPA  Update CT notes; add sale-ban to RoPA templates
+
+───────────────────────────────────────────────────────────────
+RECOMMENDED ACTIONS
+───────────────────────────────────────────────────────────────
+ENGINEERING (Abhishek's track):
+  1. Extend the MD "sensitive-sale prohibited" rule type to jurisdiction == US-CT for purpose=precise_geolocation (consent does not override) — est. 5 pts — by 2026-12-18
+  2. Vendor governance: add per-vendor attribute `sellsPreciseGeo`; suppress for CT visitors — est. 3 pts — by 2026-12-18
+  3. Tenant config + audit event `vendor_blocked_statutory_sale_ban` — est. 3 pts — by 2027-01-15
+
+ML (Sumeet's track):
+  1. Verify precise-geo SDK/cookie label recall on the vendor catalogue; retrain/add rules if gaps — est. 3 pts — by 2027-01-15
+
+PRODUCT / LEGAL:
+  1. Counsel review of final enrolled text (scope of "sale", exceptions, definition of precise geo) — by 2026-12-04
+  2. Customer advisory to CT-facing tenants — by 2026-12-11
+
+DEPENDENCIES / BLOCKERS:
+  • Primary text (PA 26-64 and clean-up acts) not verified; signing date conflicts across sources
+  • Engineering to confirm whether MD rule type already exists (gap-analysis #7 ASSUMED partial)
+
+───────────────────────────────────────────────────────────────
+TIMELINE
+───────────────────────────────────────────────────────────────
+T-90: (past) 2026-07-03 — signed law known
+T-60: (past)
+T-30: (past)
+T-7:  (past)
+T-0:  2026-10-01 — in force. Remaining: data-broker registration 2027-01-01 (T-35); deletion mechanism 2028-07-01.
+
+───────────────────────────────────────────────────────────────
+RISK IF NOT ACTIONED
+───────────────────────────────────────────────────────────────
+Customers that sell precise geo of CT residents are exposed to AG enforcement now; CT AG has an active CTDPA enforcement record. Contractual and reputational exposure if the CMP shows a consent path that implies sale is lawful. Severity set HIGH (code/ruleset change, multi-customer) not CRITICAL because no consent-flow breakage is required and exposure sits mainly with tenants that sell geo.
+
+───────────────────────────────────────────────────────────────
+CONFIDENCE
+───────────────────────────────────────────────────────────────
+MEDIUM — consistent across 5+ law-firm/advocacy sources on the October 1, 2026 date and ban; primary text not fetched; signing date conflicts. Legal review recommended.
+
+═══════════════════════════════════════════════════════════════

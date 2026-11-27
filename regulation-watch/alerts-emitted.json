@@ -2,7 +2,7 @@
   {
     "alertId": "RW-2026-05-09-01",
     "jurisdiction": "United States (federal)",
-    "instrument": "FTC v. Kochava stipulated order — sensitive-location data",
+    "instrument": "FTC v. Kochava stipulated order \u2014 sensitive-location data",
     "publishedDate": "2026-05-04",
     "severity": "HIGH",
     "sentAt": "2026-05-09T18:48:37Z",
@@ -12,5 +12,49 @@
     "emailRecipient": "asahu@datasafeguard.ai",
     "scanType": "tier1-daily",
     "sourceFile": "/root/datasafeguard/regulation-watch/alerts/2026-05-09/RW-2026-05-09-01.md"
+  },
+  {
+    "alertId": "RW-2026-11-27-01",
+    "jurisdiction": "United States \u2014 Connecticut",
+    "instrument": "CTDPA amendment SB 4 (PA 26-64): precise-geolocation sale ban + data-broker registry",
+    "publishedDate": "2026-05-27",
+    "severity": "HIGH",
+    "sentAt": "2026-11-27T16:08:24Z",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "emailDraftId": null,
+    "emailStatus": "PENDING \u2014 Gmail connector has no create_draft tool; body in regulation-watch/outbox/2026-11-27/",
+    "primaryVerified": false,
+    "jiraKey": "IDP-14730",
+    "jiraUrl": "https://datasafeguard-global.atlassian.net/browse/IDP-14730",
+    "sourceFile": "regulation-watch/alerts/2026-11-27/RW-2026-11-27-01.md"
+  },
+  {
+    "alertId": "RW-2026-11-27-02",
+    "jurisdiction": "India",
+    "instrument": "DPDP Rules 2025 Phase II (Consent Manager registration live); Phase III 2027-05-13",
+    "publishedDate": "2025-11-13",
+    "severity": "MEDIUM",
+    "sentAt": "2026-11-27T16:08:24Z",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "emailDraftId": null,
+    "emailStatus": "PENDING \u2014 Gmail connector has no create_draft tool; body in regulation-watch/outbox/2026-11-27/",
+    "primaryVerified": false,
+    "sourceFile": "regulation-watch/alerts/2026-11-27/RW-2026-11-27-02.md"
+  },
+  {
+    "alertId": "RW-2026-11-27-03",
+    "jurisdiction": "United States \u2014 Oklahoma",
+    "instrument": "Oklahoma SB 546 comprehensive privacy law",
+    "publishedDate": "2026-03-20",
+    "severity": "MEDIUM",
+    "sentAt": "2026-11-27T16:08:24Z",
+    "emailRecipient": "asahu@datasafeguard.ai",
+    "scanType": "tier2-weekly",
+    "emailDraftId": null,
+    "emailStatus": "PENDING \u2014 Gmail connector has no create_draft tool; body in regulation-watch/outbox/2026-11-27/",
+    "primaryVerified": false,
+    "sourceFile": "regulation-watch/alerts/2026-11-27/RW-2026-11-27-03.md"
   }
 ]
